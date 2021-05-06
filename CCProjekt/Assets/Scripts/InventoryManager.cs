@@ -7,7 +7,6 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public List<Item> items = new List<Item>();
-    public int selectedItem = 0;
     public TextMeshProUGUI itemUI;
     private void Start()
     {
@@ -17,31 +16,7 @@ public class InventoryManager : MonoBehaviour
 
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1) && selectedItem < items.Count-1)
-        {
-            selectedItem++;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2) && selectedItem > 0)
-        {
-            selectedItem--;
-        }
-        if(items.Count == 0)
-        {
-            itemUI.text = "No Item Selected";
-        }
-        else
-        {
-            itemUI.text = "Current Item: " + items[selectedItem].itemName;
-        }
-    }
 
-    internal Item GetSelectedItem()
-    {
-        if(items.Count == 0)
-        {
-            return null;
-        }
-        return items[selectedItem];
     }
 
 
@@ -52,7 +27,8 @@ public class InventoryManager : MonoBehaviour
     /// <param name="itemToAdd"></param>
     public void AddItem(Item itemToAdd)
     {
-        foreach(Item item in items)
+        itemToAdd.attachedInventory = this;
+        foreach (Item item in items)
         {
             if(item.itemName == itemToAdd.itemName)
             {

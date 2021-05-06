@@ -13,6 +13,11 @@ public class InteractionManager : MonoBehaviour
 
     private void Update()
     {
+        if(target != null && target.gameObject.activeSelf == false)
+        {
+            allInteractablesInRange.Remove(target);
+            target = null;
+        }
         if(Input.GetKeyDown(KeyCode.E) && target != null)
         {
             target.Interact(GameObject.Find("Player"));            
@@ -26,7 +31,7 @@ public class InteractionManager : MonoBehaviour
         foreach(Interactable interactable in allInteractablesInRange)
         {
             float distanceToInteractable = Vector3.Distance(transform.position, interactable.transform.position);
-            if (distanceToInteractable < distance && interactable.isEnabled)
+            if (distanceToInteractable < distance && interactable.isEnabled && interactable.interactionType == Interactable.InteractionType.Direct)
             {
                 target = interactable;
                 interactionTooltipText.transform.position = target.gameObject.transform.position + tooltipOffset;

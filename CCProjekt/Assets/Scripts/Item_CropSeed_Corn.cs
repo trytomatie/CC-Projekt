@@ -10,6 +10,7 @@ public class Item_CropSeed_Corn : Item
         itemName = "Corn seed";
         stackSize = 1;
         itemDescription = "Corn seed";
+        itemType = ItemType.Seed;
         sprite = Icons.GetIcon(0);
     }
 }

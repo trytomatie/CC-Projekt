@@ -8,4 +8,9 @@ public class Item : ScriptableObject
     public int stackSize;
     public string itemDescription;
     public Sprite sprite;
+    public ItemType itemType;
+    public InventoryManager attachedInventory;
+
+    public enum ItemType {Seed,Crop};
+
 }

@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryElement : MonoBehaviour
+public class InventoryElementUI : MonoBehaviour
 {
 
     public Item item;
@@ -12,11 +12,19 @@ public class InventoryElement : MonoBehaviour
     public Image image;
     public TextMeshProUGUI stackText;
 
+
+    private InventoryManagerUI inventoryManagerUI;
+
+    private void Start()
+    {
+        inventoryManagerUI = GameObject.FindObjectOfType<InventoryManagerUI>();
+    }
     // Update is called once per frame
     void Update()
     {
-        if (item == null)
+        if (item == null || item.stackSize <= 0)
         {
+            item = null;
             image.enabled = false;
             stackText.enabled = false;
             return;
@@ -27,7 +35,11 @@ public class InventoryElement : MonoBehaviour
             stackText.enabled = true;
         }
         image.sprite = item.sprite;
-        stackText.text = "x " + item.stackSize;
+        stackText.text = "x" + item.stackSize;
+    }
 
+    public void SelectElement()
+    {
+        inventoryManagerUI.selectedElement = this;
     }
 }

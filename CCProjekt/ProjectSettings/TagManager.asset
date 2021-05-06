@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MouseCollision
   - AimDetector
+  - Field
   layers:
   - Default
   - TransparentFX

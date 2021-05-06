@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class Interactable_Field : Interactable
 {
-    public List<GameObject> crops;
+    public List<CropsScript> crops;
 
     public override void Interact(GameObject interactor)
     {
-        InventoryManager invManager = interactor.GetComponent<InventoryManager>();
-        Item selectedItem = invManager.GetSelectedItem();
+        Item selectedItem = interactor.GetComponent<InventoryManagerUI>().selectedElement.item;
         if(selectedItem != null)
         {
             isEnabled = false;
             switch (selectedItem.itemName)
             {
                 case "Corn seed":
-                    crops[0].SetActive(true);
+                    crops[0].PlantCrop();
+                    selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
                     print("Plant Corn seed");
                     break;
                 case "Carrot seed":
-                    crops[1].SetActive(true);
+                    crops[1].PlantCrop();
+                    selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
                     print("Carrot Corn seed");
                     break;
                 default:
