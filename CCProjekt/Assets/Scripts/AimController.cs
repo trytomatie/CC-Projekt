@@ -15,7 +15,6 @@ public class AimController : MonoBehaviour
     void Update()
     {
         Aim();
-
     }
     /// <summary>
     /// Aims the player towards mouse Position
