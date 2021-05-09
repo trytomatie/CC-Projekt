@@ -84,12 +84,6 @@ public class RatAi : MonoBehaviour
         StatusManager targetStatus = target.GetComponent<StatusManager>();
         anim.SetTrigger("Attack");
         preparingAttack = false;
-        targetStatus.ApplyDamage(statusManager.attackDamage);
-    }
-
-    private void DamageApplication()
-    {
-
     }
 
     /// <summary>

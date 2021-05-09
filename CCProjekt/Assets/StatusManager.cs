@@ -9,7 +9,6 @@ public class StatusManager : MonoBehaviour
     public int maxHp = 10;
     [SerializeField]
     private float hp = 10;
-    public int attackDamage = 1;
 
 
 
@@ -29,7 +28,6 @@ public class StatusManager : MonoBehaviour
     public void ApplyDamage(int damage)
     {
         Hp -= damage;
-        GameManager.SpawnFloatingText("- " + damage, transform);
     }
 
 
