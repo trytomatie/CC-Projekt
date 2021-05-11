@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tree
+  m_Name: Tree 1
   m_Shader: {fileID: 4800000, guid: aa39e15a9f5d0ed47aa0951572b2dc9e, type: 3}
   m_ShaderKeywords: _WINDQUALITY_NONE
   m_LightmapFlags: 4
@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NoiseTexture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 2aa6ab62866ce4439ab7303f7da55e51, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -89,15 +89,15 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _HueVariationKwToggle: 0
-    - _MBAmplitude: 53.3
-    - _MBAmplitudeOffset: 2
-    - _MBDefaultBending: 67.5
-    - _MBFrequency: 1
-    - _MBFrequencyOffset: 0.27
-    - _MBMaxHeight: 21.99
-    - _MBPhase: 1
-    - _MBWindDir: 0
-    - _MBWindDirOffset: 20
+    - _MBAmplitude: 193.41
+    - _MBAmplitudeOffset: 38.78
+    - _MBDefaultBending: 226.8
+    - _MBFrequency: 188.5
+    - _MBFrequencyOffset: 69
+    - _MBMaxHeight: 101.48
+    - _MBPhase: 17.27
+    - _MBWindDir: 360
+    - _MBWindDirOffset: 105
     - _Metallic: 0
     - _NormalMapKwToggle: 0
     - _OcclusionStrength: 1
@@ -143,8 +143,8 @@ Material:
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HueVariationColor: {r: 1, g: 0.5, b: 0, a: 0.1}
-    - _NoisePannerSpeed: {r: 0.48, g: 1.51, b: 0, a: 0}
-    - _NoiseTextureTilling: {r: 1, g: 1, b: 1, a: 1}
+    - _NoisePannerSpeed: {r: 28.5, g: 1.51, b: 0, a: 0}
+    - _NoiseTextureTilling: {r: 109, g: 6.51, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SubsurfaceColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

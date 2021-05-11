@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DayNightCycler : MonoBehaviour
@@ -17,10 +19,12 @@ public class DayNightCycler : MonoBehaviour
 
     public Light[] lights;
 
+    public TextMeshProUGUI timeText;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating("UpdateTimeText", 0.2f, 0.2f);
     }
 
     // Update is called once per frame
@@ -49,5 +53,11 @@ public class DayNightCycler : MonoBehaviour
         {
             light.color = currentColor;
         }
+    }
+
+    private void UpdateTimeText()
+    {
+        TimeSpan span = TimeSpan.FromSeconds(86400 * (dayTime / dayLenght) + (86400/2));
+        timeText.text = "Time: " + span.ToString(@"hh\:mm");
     }
 }

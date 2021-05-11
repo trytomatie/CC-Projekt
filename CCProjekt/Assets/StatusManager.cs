@@ -9,7 +9,7 @@ public class StatusManager : MonoBehaviour
     public int maxHp = 10;
     [SerializeField]
     private float hp = 10;
-
+    public int damage = 1;
 
 
     // Start is called before the first frame update
@@ -28,6 +28,7 @@ public class StatusManager : MonoBehaviour
     public void ApplyDamage(int damage)
     {
         Hp -= damage;
+        GameManager.SpawnFloatingText("-"+damage,transform);
     }
 
 

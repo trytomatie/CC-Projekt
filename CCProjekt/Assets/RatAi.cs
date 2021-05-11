@@ -12,6 +12,7 @@ public class RatAi : MonoBehaviour
     public Animator anim;
 
     public float attackDelay = 0.4f;
+    public float attackApplicationDelay = 0.3f;
     public float attackCooldown = 1f;
     private bool preparingAttack = false;
     private bool isOnAttackCooldown = false;
@@ -53,12 +54,16 @@ public class RatAi : MonoBehaviour
     {
         Vector3 direction = (moveTarget.position - transform.position).normalized;
         direction.y = 0;
-        rb.position += (direction * statusManager.movementSpeed * Time.deltaTime);
-        transform.LookAt(moveTarget.position);
-        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        rb.position += (direction * (statusManager.movementSpeed * Time.deltaTime));
+        RotateToTaget(moveTarget);
         anim.SetBool("Moving", true);
     }
 
+    private void RotateToTaget(Transform roationTaget)
+    {
+        transform.LookAt(roationTaget.position);
+        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+    }
 
     /// <summary>
     /// Checks attack conditions
@@ -70,6 +75,7 @@ public class RatAi : MonoBehaviour
         {
             preparingAttack = true;
             isOnAttackCooldown = true;
+            RotateToTaget(target.transform);
             Invoke("Attack", attackDelay);
             Invoke("ResetAttackCooldown", attackCooldown);
         }
@@ -81,9 +87,8 @@ public class RatAi : MonoBehaviour
     /// <param name="target"></param>
     private void Attack()
     {
-        StatusManager targetStatus = target.GetComponent<StatusManager>();
         anim.SetTrigger("Attack");
-        preparingAttack = false;
+        Invoke("ApplyDamage", attackApplicationDelay);
     }
 
     /// <summary>
@@ -93,6 +98,17 @@ public class RatAi : MonoBehaviour
     private void ResetAttackCooldown()
     {
         isOnAttackCooldown = false;
+    }
+
+    /// <summary>
+    /// Apply Damage
+    /// - By Christian Scherzer
+    /// </summary>
+    private void ApplyDamage()
+    {
+        StatusManager targetStatus = target.GetComponent<StatusManager>();
+        preparingAttack = false;
+        targetStatus.ApplyDamage(statusManager.damage);
     }
 
 
