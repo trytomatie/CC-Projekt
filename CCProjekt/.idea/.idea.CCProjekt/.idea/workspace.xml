@@ -13,6 +13,7 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/RatAi.cs" />
+      <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sNibrK5Xgxu7kcctUJWni4BlDg" />
@@ -58,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620719524507</updated>
-      <workItem from="1620719539905" duration="1392000" />
+      <workItem from="1620719539905" duration="1451000" />
     </task>
     <servers />
   </component>

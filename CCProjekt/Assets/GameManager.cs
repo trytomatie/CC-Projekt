@@ -18,6 +18,6 @@ public class GameManager : MonoBehaviour
     public static void SpawnFloatingText(string text,Transform targetTransform)
     {
         GameObject go = Instantiate(instance.damageText, targetTransform.position + new Vector3(0, 1, 0), instance.damageText.transform.rotation, instance.worldSpaceCanvas.transform);
-        instance.damageText.GetComponent<TextMeshProUGUI>().text = text;
+        go.GetComponent<TextMeshProUGUI>().text = text;
     }
 }
