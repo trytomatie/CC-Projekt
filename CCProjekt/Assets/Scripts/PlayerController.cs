@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 
     public float speed;
     public Animator anim;
-    public GameObject bubbleParticles;
+    public ParticleSystem bubbleParticles;
 
     private Rigidbody playerRb;
 
@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        bubbleParticles.Stop();
 
     }
 
@@ -30,11 +31,15 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = (transform.forward * verticalInput + transform.right * horizontalInput);
 
 
-        playerRb.velocity = new Vector3(movement.x * speed, movement.y, movement.z * speed);
+        playerRb.velocity = new Vector3(movement.x * speed, playerRb.velocity.y, movement.z * speed);
 
-        if (Input.GetMouseButtonDown(2))
+        if (Input.GetMouseButtonDown(1))
         {
-            Instantiate(bubbleParticles, transform.position, bubbleParticles.transform.rotation);
+            bubbleParticles.Play();
+        }
+        else if (Input.GetMouseButtonUp(1))
+        {
+            bubbleParticles.Stop();
         }
     }
 }
