@@ -1,329 +1,1361 @@
 Using pre-set license
-Built from '2021.1/staging' branch; Version is '2021.1.6f1 (c0fade0cc7e9) revision 12647134'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'de' Physical Memory: 16334 MB
+Built from '2021.1/staging' branch; Version is '2021.1.2f1 (e5d502d80fbb) revision 15062274'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'en' Physical Memory: 7541 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.1.6f1\Editor\Unity.exe
+C:\Program Files\2021.1.2f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Shainchen/Documents/GitHub/CC-Projekt/CCProjekt
+C:/Users/tryto/Documents/GitHub/CC-Projekt/CCProjekt
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65364
-Successfully changed project path to: C:/Users/Shainchen/Documents/GitHub/CC-Projekt/CCProjekt
-C:/Users/Shainchen/Documents/GitHub/CC-Projekt/CCProjekt
+60745
+Successfully changed project path to: C:/Users/tryto/Documents/GitHub/CC-Projekt/CCProjekt
+C:/Users/tryto/Documents/GitHub/CC-Projekt/CCProjekt
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 69.82 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 103.02 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.1.6f1 (c0fade0cc7e9)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Shainchen/Documents/GitHub/CC-Projekt/CCProjekt/Assets
+Initialize engine version: 2021.1.2f1 (e5d502d80fbb)
+[Subsystems] Discovering subsystems at path C:/Program Files/2021.1.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/tryto/Documents/GitHub/CC-Projekt/CCProjekt/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon RX 580 Series (ID=0x67df)
-    Vendor:   ATI
-    VRAM:     8171 MB
-    Driver:   27.20.15003.1004
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   27.21.14.5763
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56116
+Mono path[0] = 'C:/Program Files/2021.1.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/2021.1.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/2021.1.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002589 seconds.
+Register platform support module: C:/Program Files/2021.1.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.014684 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 80.33 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 83.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.598 seconds
+- Completed reload, in  3.680 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001838 seconds.
+Registered in 0.003719 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 74.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 86.12 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.255 seconds
+- Completed reload, in  2.573 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3139 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 149.7 MB.
-System memory in use after: 149.9 MB.
+Unloading 3145 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 199.1 MB.
+System memory in use after: 199.3 MB.
 
-Unloading 109 unused Assets to reduce memory usage. Loaded Objects now: 3592.
-Total: 4.000400 ms (FindLiveObjects: 0.341900 ms CreateObjectMapping: 0.088700 ms MarkObjects: 3.321300 ms  DeleteObjects: 0.246600 ms)
+Unloading 107 unused Assets to reduce memory usage. Loaded Objects now: 3632.
+Total: 4.808600 ms (FindLiveObjects: 0.573400 ms CreateObjectMapping: 0.214700 ms MarkObjects: 3.800700 ms  DeleteObjects: 0.216500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/PlayerController.cs
-  artifactKey: Guid(6ba0849f217019b439809e6498354a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerController.cs using Guid(6ba0849f217019b439809e6498354a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd58e8773f62f2260fbe0c8c848b58903') in 0.044744 seconds 
+  path: Assets/LowPolyWater_Pack/_Demo/DemoScene.unity
+  artifactKey: Guid(5af012a8b7991a84fb99a854db8dfc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyWater_Pack/_Demo/DemoScene.unity using Guid(5af012a8b7991a84fb99a854db8dfc21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964f63db17fe229ae41962eac93e6a11') in 0.020713 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 41.221202 seconds.
-  path: Assets/Scripts/PlayerController.cs
-  artifactKey: Guid(6ba0849f217019b439809e6498354a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerController.cs using Guid(6ba0849f217019b439809e6498354a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b3f548002f12f8d21b05283f68a0f13') in 0.002970 seconds 
+  Time since last request: 21.583965 seconds.
+  path: Assets/Low Poly Water/Plane Meshes
+  artifactKey: Guid(7b4627e2733a487448ca47dfe3d3fda2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Water/Plane Meshes using Guid(7b4627e2733a487448ca47dfe3d3fda2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd689e991452ea53577f8b9b787e52312') in 0.010289 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.200614 seconds.
-  path: Assets/Scripts/PlayerController.cs
-  artifactKey: Guid(6ba0849f217019b439809e6498354a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerController.cs using Guid(6ba0849f217019b439809e6498354a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51c26c0fdada81db6b3a0b20b4bca2e0') in 0.003605 seconds 
+  Time since last request: 0.043437 seconds.
+  path: Assets/Low Poly Water/Plane Meshes/Water1x1W1H1.asset
+  artifactKey: Guid(305a5869183b9d343a2d1208fc15f980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Water/Plane Meshes/Water1x1W1H1.asset using Guid(305a5869183b9d343a2d1208fc15f980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1fdd0c16866ba2b3c2ad0163c04da8f') in 0.111252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.159001 seconds.
+  path: Assets/Grass 1.fbx
+  artifactKey: Guid(5e1cbea3fdd722d4986d20334277945d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Grass 1.fbx using Guid(5e1cbea3fdd722d4986d20334277945d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aabbee7a7bbec7ced4d8395811e645a') in 0.257403 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001913 seconds.
+Registered in 0.002051 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.186 seconds
+- Completed reload, in  1.400 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2981 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.3 MB.
-System memory in use after: 139.5 MB.
+Unloading 2990 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.5 MB.
+System memory in use after: 193.7 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3595.
-Total: 3.225600 ms (FindLiveObjects: 0.343500 ms CreateObjectMapping: 0.079900 ms MarkObjects: 2.727000 ms  DeleteObjects: 0.074100 ms)
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3683.
+Total: 8.182800 ms (FindLiveObjects: 0.339500 ms CreateObjectMapping: 0.103000 ms MarkObjects: 7.534900 ms  DeleteObjects: 0.202500 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002060 seconds.
+Registered in 0.002686 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.194 seconds
+- Completed reload, in  1.286 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.6 MB.
+System memory in use after: 193.9 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3686.
+Total: 7.219900 ms (FindLiveObjects: 1.248000 ms CreateObjectMapping: 0.270400 ms MarkObjects: 5.271800 ms  DeleteObjects: 0.427700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 137.283407 seconds.
+  path: Assets/LowPolyWater_Pack/Textures/Foam.tga
+  artifactKey: Guid(5fbcffe9c2077f04186883cb39275fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyWater_Pack/Textures/Foam.tga using Guid(5fbcffe9c2077f04186883cb39275fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c611c5241337c79556e5058c5a191bef') in 0.088592 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003667 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.513 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2993 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 196.7 MB.
+System memory in use after: 196.9 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3706.
+Total: 10.476400 ms (FindLiveObjects: 0.772700 ms CreateObjectMapping: 0.363100 ms MarkObjects: 8.740200 ms  DeleteObjects: 0.596900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 201.598330 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(700896b01fc5a0442bf75f84e99a4fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(700896b01fc5a0442bf75f84e99a4fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19fb5d7e8ffb2621643239d77a883622') in 0.023065 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002251 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.276 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 196.7 MB.
+System memory in use after: 196.9 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3709.
+Total: 3.685000 ms (FindLiveObjects: 0.415600 ms CreateObjectMapping: 0.166400 ms MarkObjects: 2.972800 ms  DeleteObjects: 0.128700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001804 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.224 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.76 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2981 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.4 MB.
-System memory in use after: 139.6 MB.
+Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 196.7 MB.
+System memory in use after: 196.9 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3598.
-Total: 3.692200 ms (FindLiveObjects: 0.287800 ms CreateObjectMapping: 0.080600 ms MarkObjects: 3.201700 ms  DeleteObjects: 0.120500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002337 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.240 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2981 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.4 MB.
-System memory in use after: 139.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3601.
-Total: 4.031800 ms (FindLiveObjects: 0.322300 ms CreateObjectMapping: 0.086300 ms MarkObjects: 3.331300 ms  DeleteObjects: 0.290500 ms)
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3712.
+Total: 3.851800 ms (FindLiveObjects: 0.485400 ms CreateObjectMapping: 0.204800 ms MarkObjects: 3.040200 ms  DeleteObjects: 0.119200 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002031 seconds.
+Registered in 0.001844 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.197 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2981 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.4 MB.
-System memory in use after: 139.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3604.
-Total: 3.422100 ms (FindLiveObjects: 0.292500 ms CreateObjectMapping: 0.086400 ms MarkObjects: 2.776700 ms  DeleteObjects: 0.265100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002230 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.223 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2981 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.4 MB.
-System memory in use after: 139.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3607.
-Total: 3.562900 ms (FindLiveObjects: 0.300300 ms CreateObjectMapping: 0.080100 ms MarkObjects: 2.935600 ms  DeleteObjects: 0.245600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001932 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.210 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2981 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.4 MB.
-System memory in use after: 139.6 MB.
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3610.
-Total: 3.873000 ms (FindLiveObjects: 0.345500 ms CreateObjectMapping: 0.129400 ms MarkObjects: 3.134700 ms  DeleteObjects: 0.261800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001846 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.167 seconds
+- Completed reload, in  1.239 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2981 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.5 MB.
-System memory in use after: 139.6 MB.
+Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 196.7 MB.
+System memory in use after: 197.0 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3613.
-Total: 3.427900 ms (FindLiveObjects: 0.302800 ms CreateObjectMapping: 0.081100 ms MarkObjects: 2.960400 ms  DeleteObjects: 0.082000 ms)
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3715.
+Total: 5.298800 ms (FindLiveObjects: 0.547400 ms CreateObjectMapping: 0.259400 ms MarkObjects: 4.341600 ms  DeleteObjects: 0.148700 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002167 seconds.
+Registered in 0.001870 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.284 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 196.8 MB.
+System memory in use after: 197.0 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3718.
+Total: 5.133800 ms (FindLiveObjects: 0.537800 ms CreateObjectMapping: 0.180700 ms MarkObjects: 4.286100 ms  DeleteObjects: 0.126800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1700.103370 seconds.
+  path: Assets/Models/Spring.fbx
+  artifactKey: Guid(f68cecb118520414ea90480e666ce872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Spring.fbx using Guid(f68cecb118520414ea90480e666ce872) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbfa59fa55cf584efbd0bb718ca2422') in 0.296833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.922140 seconds.
+  path: Assets/Models/tree_cone_dark.fbx
+  artifactKey: Guid(6a7e4779d722afd46acbf5af4103dda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/tree_cone_dark.fbx using Guid(6a7e4779d722afd46acbf5af4103dda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b565a8c801479490d48b1b4e50c2492e') in 0.075489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.317419 seconds.
+  path: Assets/Models/tree_small_dark.fbx
+  artifactKey: Guid(2151452327cc61c4c8aef5df05ed8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/tree_small_dark.fbx using Guid(2151452327cc61c4c8aef5df05ed8697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bde524db8fa27443b1b7a048b9f8c9d') in 0.036316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Models/tree_thin_dark.fbx
+  artifactKey: Guid(053de49f6811e2248b984bfb0da5b6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/tree_thin_dark.fbx using Guid(053de49f6811e2248b984bfb0da5b6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06e5a0b553a6326bc6828ab25fbf0f4') in 0.035872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.966628 seconds.
+  path: Assets/LowPolyWater_Pack/Materials/LowPolyWaterMaterial.mat
+  artifactKey: Guid(8538bd626cb3e80478f62e319f75e337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyWater_Pack/Materials/LowPolyWaterMaterial.mat using Guid(8538bd626cb3e80478f62e319f75e337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '212c160416934599ff88e37922116ce6') in 0.035032 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001880 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
 Mono: successfully reloaded assembly
-- Completed reload, in  1.172 seconds
+- Completed reload, in  1.325 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 197.1 MB.
+System memory in use after: 197.3 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3790.
+Total: 4.876400 ms (FindLiveObjects: 0.452800 ms CreateObjectMapping: 0.119100 ms MarkObjects: 4.110000 ms  DeleteObjects: 0.193000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001970 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.349 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 197.1 MB.
+System memory in use after: 197.3 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3793.
+Total: 5.485900 ms (FindLiveObjects: 0.511000 ms CreateObjectMapping: 0.209500 ms MarkObjects: 4.618900 ms  DeleteObjects: 0.144700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002256 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.200 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 197.0 MB.
+System memory in use after: 197.2 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3796.
+Total: 13.060200 ms (FindLiveObjects: 0.835000 ms CreateObjectMapping: 0.378600 ms MarkObjects: 11.576700 ms  DeleteObjects: 0.267600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 584.218009 seconds.
+  path: Assets/Jiggly Bubble Free/Materials/bubble_sheet.mat
+  artifactKey: Guid(57f73b2c859446646ab31ce06c104c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Jiggly Bubble Free/Materials/bubble_sheet.mat using Guid(57f73b2c859446646ab31ce06c104c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b3169f33c98169698ba8ed415a9ab7') in 0.258666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.240076 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_03_1_rig.fbx
+  artifactKey: Guid(d7075dac07a77d54b8c4985589a6d1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_03_1_rig.fbx using Guid(d7075dac07a77d54b8c4985589a6d1f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '791286b8fd46cd5f546414d541135f3a') in 0.158922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000715 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_07_parts.fbx
+  artifactKey: Guid(c5654d02905bb704f820c400c4e4bddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_07_parts.fbx using Guid(c5654d02905bb704f820c400c4e4bddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b766d80280ffcedc11a091a3ce03a55a') in 0.751877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000848 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_6_1.fbx
+  artifactKey: Guid(5a173694f4c8e7a4fad380e512f6e561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_6_1.fbx using Guid(5a173694f4c8e7a4fad380e512f6e561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22ff74689304b4b3a9359349e9cfb1a') in 0.730310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000514 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_13_1.fbx
+  artifactKey: Guid(29f357faf40af644c897b46eefda583c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_13_1.fbx using Guid(29f357faf40af644c897b46eefda583c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90e7ddbff7221b2963b6c904b9618815') in 1.100580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_12_rig.fbx
+  artifactKey: Guid(18c33ed212eba2149a544d33b5673ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_12_rig.fbx using Guid(18c33ed212eba2149a544d33b5673ad9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1996e802545101009fe015887a7059af') in 0.102354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000771 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_2_1.fbx
+  artifactKey: Guid(f6e2a8c645cfc32438b3fce9cd5d6c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_2_1.fbx using Guid(f6e2a8c645cfc32438b3fce9cd5d6c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '378ebceafb08698a39d19f7fc17f0cfe') in 0.816416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_16_full.fbx
+  artifactKey: Guid(c206dcaee9fb871409f52eebaf03efc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_16_full.fbx using Guid(c206dcaee9fb871409f52eebaf03efc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7765f19bd720ca42fc8e5c3a49163e8b') in 2.545249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000607 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_20_full.fbx
+  artifactKey: Guid(976f9807715c43a449e7d0a960f65798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_20_full.fbx using Guid(976f9807715c43a449e7d0a960f65798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658bfbdd793ae27e940c8a1ab9c067f5') in 2.112530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_04_1_rig.fbx
+  artifactKey: Guid(145f0574f937e0e4ab481695a0b9f12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_04_1_rig.fbx using Guid(145f0574f937e0e4ab481695a0b9f12a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8388b75338cf6b9f7b388ee3f1889fe4') in 0.057091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000659 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_16_parts.fbx
+  artifactKey: Guid(5255c56b6dc9483468dee794279fac16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_16_parts.fbx using Guid(5255c56b6dc9483468dee794279fac16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4390e86d3431a038ce74aa1500565a5b') in 2.376469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/WINDOW_06_1_rig.fbx
+  artifactKey: Guid(ac3edca3e2cf2c249b1f049698f1042a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/WINDOW_06_1_rig.fbx using Guid(ac3edca3e2cf2c249b1f049698f1042a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c31da918dea417d95fe87aa522e4df6') in 0.058310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000543 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_19_1.fbx
+  artifactKey: Guid(59c23563ec0290542bb58f8a3f96f435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_19_1.fbx using Guid(59c23563ec0290542bb58f8a3f96f435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69cc50b61a1c1a574404d7df8bccd7d') in 2.373571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_01_Balkon_1.fbx
+  artifactKey: Guid(acaf53ef9b40d9e4087bad4844e61054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_01_Balkon_1.fbx using Guid(acaf53ef9b40d9e4087bad4844e61054) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1517921a5ae26a97b2fb4511d7e30db') in 0.051205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_12_1.fbx
+  artifactKey: Guid(6031178171edb23428fd47ba419c8622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_12_1.fbx using Guid(6031178171edb23428fd47ba419c8622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfcf74a018023bfac136722814cd1eca') in 0.828074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_04_1.fbx
+  artifactKey: Guid(b8e5a4c36afd1fa4cbc63db8fcac90bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_04_1.fbx using Guid(b8e5a4c36afd1fa4cbc63db8fcac90bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b8d509d931f4f168105e600e26b4fa') in 0.042609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_20_parts.fbx
+  artifactKey: Guid(2b5cb838560629242986aa569bcf56c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_20_parts.fbx using Guid(2b5cb838560629242986aa569bcf56c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932a81ec27b2954b77c98a3449b6fe8e') in 1.963307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_09_parts.fbx
+  artifactKey: Guid(0ec7c8926dd2e0d49aa8881b5c13520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_09_parts.fbx using Guid(0ec7c8926dd2e0d49aa8881b5c13520a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b03add10a08083992dfa7a7a980926') in 1.081564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_11_rig.fbx
+  artifactKey: Guid(e688f5c5718456a4f9371df39c1b09ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_11_rig.fbx using Guid(e688f5c5718456a4f9371df39c1b09ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a35355c60bb2b1846e94195f06bccbf2') in 0.058058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000564 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_20_rig.fbx
+  artifactKey: Guid(a5090095bfcf0414c9fa769d00211846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_20_rig.fbx using Guid(a5090095bfcf0414c9fa769d00211846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b33fb17f340574f14967f1965f669a4') in 0.168041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_11_1.fbx
+  artifactKey: Guid(0d7bac13550201840bcf94c84ce3daf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_11_1.fbx using Guid(0d7bac13550201840bcf94c84ce3daf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8fa72caef67d9943c362609183e2240') in 0.874335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_19_parts.fbx
+  artifactKey: Guid(2a68055405f744e4c93851eb87716d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_19_parts.fbx using Guid(2a68055405f744e4c93851eb87716d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '510231ed26e9933c476cc3f168ce5444') in 2.469154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000500 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_14_1.fbx
+  artifactKey: Guid(ce8b17dbf494ed340bddade0aecad471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_14_1.fbx using Guid(ce8b17dbf494ed340bddade0aecad471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad7c63608aa52b23ab00897c6adee47') in 1.422546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000506 seconds.
+  path: Assets/Unterlagen/_Source_Files/FBX/SM_Tile_Cube_FloatingIsland_01.fbx
+  artifactKey: Guid(8654e43d5b3a28d4f821bc6203abdf26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unterlagen/_Source_Files/FBX/SM_Tile_Cube_FloatingIsland_01.fbx using Guid(8654e43d5b3a28d4f821bc6203abdf26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b28d5658541e279307585806a84c84') in 0.040883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_06_rig.fbx
+  artifactKey: Guid(7932682713bee3b47998f11c220be04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_06_rig.fbx using Guid(7932682713bee3b47998f11c220be04c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '924fb3a6e7aa2a4788014abd6088b72f') in 0.067399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001089 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_13_rig.fbx
+  artifactKey: Guid(41392e3e4f0205148b901176788765f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_13_rig.fbx using Guid(41392e3e4f0205148b901176788765f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7875bafaa9f3428b2a77fe44e91d8737') in 0.089913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_05_1.fbx
+  artifactKey: Guid(62eb5575f2ff73347a7f0a0f29513633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_05_1.fbx using Guid(62eb5575f2ff73347a7f0a0f29513633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66761bd9263df6da167092b7d576f5f8') in 0.051412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000855 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_small_inner_corner_1.fbx
+  artifactKey: Guid(3b5bd7c1e90a2dc4aa75f6ec7471cf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_small_inner_corner_1.fbx using Guid(3b5bd7c1e90a2dc4aa75f6ec7471cf4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0e807ec4f145370b3b1270517d5183c') in 0.050969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_17_parts.fbx
+  artifactKey: Guid(9b22e732c30a83046875510a9a32b270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_17_parts.fbx using Guid(9b22e732c30a83046875510a9a32b270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5ac59f6961c91932a4013bb00ab442') in 1.209143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_02_Balkon_1.fbx
+  artifactKey: Guid(0f799648fd553144db56204608e3423b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_02_Balkon_1.fbx using Guid(0f799648fd553144db56204608e3423b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50927fb9051b503bc30984010658cd1') in 0.042048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/_ROOF_up_quad_1.fbx
+  artifactKey: Guid(145aff991a7d2394498bfe36c0ed29d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/_ROOF_up_quad_1.fbx using Guid(145aff991a7d2394498bfe36c0ed29d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8fd6c394e6a356d0af25010f08090a6') in 0.043513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_01_1.fbx
+  artifactKey: Guid(448e39944087bfe4c897de74b908fcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_01_1.fbx using Guid(448e39944087bfe4c897de74b908fcca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf47f023cb17e829593feaf29a56066d') in 0.044509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_06_full.fbx
+  artifactKey: Guid(9c0bf8582df29b04f8058be395b5eb79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_06_full.fbx using Guid(9c0bf8582df29b04f8058be395b5eb79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6df81e736e491ccf7e0b9a70727f28') in 0.702936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_8_1.fbx
+  artifactKey: Guid(7be99e566e93a6648a47de2b5b532b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_8_1.fbx using Guid(7be99e566e93a6648a47de2b5b532b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9984d2f8b91abe1f65ca28b7bf22c8e8') in 0.629879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/WINDOW_07_1_rig.fbx
+  artifactKey: Guid(01ec4d49ae19ee74ab952bb1ecf8af59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/WINDOW_07_1_rig.fbx using Guid(01ec4d49ae19ee74ab952bb1ecf8af59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '397696112c22daddf8bb25ef6dbdce16') in 0.057506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_5_1.fbx
+  artifactKey: Guid(1f80d3fb79ad5754fb6bd192031ff99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_5_1.fbx using Guid(1f80d3fb79ad5754fb6bd192031ff99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7795ef1a2f31e2276eb49ba5ec0b5895') in 0.839351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_04_1.fbx
+  artifactKey: Guid(d229105a1c3fb514d8f1c668636b6e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_04_1.fbx using Guid(d229105a1c3fb514d8f1c668636b6e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70cf4a932583d0c2b87291219a0b09a1') in 0.052699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_14_full.fbx
+  artifactKey: Guid(108afda2a06245b4a8955f550478ca72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_14_full.fbx using Guid(108afda2a06245b4a8955f550478ca72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8f192f55c4c276de7bc93b3f312ad0') in 1.505375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000495 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_03_full.fbx
+  artifactKey: Guid(3e7369e538da5c34c819d713f9acecd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_03_full.fbx using Guid(3e7369e538da5c34c819d713f9acecd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb53a1c20dc7266c26b52e0aca95758a') in 0.776473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_9_1.fbx
+  artifactKey: Guid(db82994ce8da7e7498e1ef181c3ddfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_9_1.fbx using Guid(db82994ce8da7e7498e1ef181c3ddfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f428786f7b0331d501cb0e7521d004e') in 1.224344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_17_1.fbx
+  artifactKey: Guid(8abd8b709be7a14489f5f0623704eb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_17_1.fbx using Guid(8abd8b709be7a14489f5f0623704eb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3251af6654ffc1ef6657a184d9c36900') in 1.444638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_10_1.fbx
+  artifactKey: Guid(ad5cda2b289ba6d489342bc41d1e97bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_10_1.fbx using Guid(ad5cda2b289ba6d489342bc41d1e97bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '832265811bb58bd3d81508e5653d6ba4') in 1.722856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000511 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_14_rig.fbx
+  artifactKey: Guid(8adf221506be76b4b9593ad137309ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_14_rig.fbx using Guid(8adf221506be76b4b9593ad137309ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f79b7c68ae43c5a50cb4c9703994ae') in 0.158565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000742 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_15_full.fbx
+  artifactKey: Guid(07d070438481d854183e707e0cf540cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_15_full.fbx using Guid(07d070438481d854183e707e0cf540cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8ed20e93a1f806ca1218f0e3cb0471') in 0.319301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000502 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_07_rig.fbx
+  artifactKey: Guid(5b96a715099652149b9d2f1c6fe115e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_07_rig.fbx using Guid(5b96a715099652149b9d2f1c6fe115e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b7329e2bd7a4581d3c6b342cf5224ee') in 0.104125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_15_parts.fbx
+  artifactKey: Guid(2f13c30f9bb17c24191832d14a194473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_15_parts.fbx using Guid(2f13c30f9bb17c24191832d14a194473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54410db8a91d9c64a3891cd2d9acc9e4') in 0.279593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000485 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_corner_out_1.fbx
+  artifactKey: Guid(efdf5f7f3335cc846ae6fffbd4264df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_corner_out_1.fbx using Guid(efdf5f7f3335cc846ae6fffbd4264df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e92c28349c3d39a6952f3ae59278bf') in 0.047487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_11_parts.fbx
+  artifactKey: Guid(ae6fb46e3e205084ea0cc25b687c0a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_11_parts.fbx using Guid(ae6fb46e3e205084ea0cc25b687c0a1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df434f8277621940405f35d2d4f0c7d') in 0.894783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000455 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_base_1.fbx
+  artifactKey: Guid(57c754a9676f7194194368f1330d2fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_base_1.fbx using Guid(57c754a9676f7194194368f1330d2fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a0499c07a507aee0bef76ffb05c10a') in 0.054512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_03_parts.fbx
+  artifactKey: Guid(c3492ed74dd69e94d85cac67762b83f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_03_parts.fbx using Guid(c3492ed74dd69e94d85cac67762b83f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b212ce6207a9e8c685c6a4708556238') in 0.749774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000532 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_17_rig.fbx
+  artifactKey: Guid(936b0d20a881b134b93aa6ca0bc27c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_17_rig.fbx using Guid(936b0d20a881b134b93aa6ca0bc27c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896ef2e1ffbea14aa34eb752481b34fe') in 0.105041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000518 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_20_1.fbx
+  artifactKey: Guid(7e7e1a1bda5a65444b129b5fc91d17c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_20_1.fbx using Guid(7e7e1a1bda5a65444b129b5fc91d17c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e899279c3282d15b78879aa895cfc91') in 2.385216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000615 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_08_full.fbx
+  artifactKey: Guid(e30ce642893bad04a98309c3253c8d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_08_full.fbx using Guid(e30ce642893bad04a98309c3253c8d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edded9a2d2b9a23b8d0ad341c4f1d5e') in 0.670408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Unterlagen/_Source_Files/Materials/SimpleFarmer_Farmer_Brown.mat
+  artifactKey: Guid(d4f57b669d9639544b1d50ba3f22dbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unterlagen/_Source_Files/Materials/SimpleFarmer_Farmer_Brown.mat using Guid(d4f57b669d9639544b1d50ba3f22dbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48fdcb3ec90d3eb8c71d1b1ad207cd95') in 0.054252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001147 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_3_1.fbx
+  artifactKey: Guid(97a39d447604e6f40add44739984b652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_3_1.fbx using Guid(97a39d447604e6f40add44739984b652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f830374166530d9710cfd815e9b447') in 0.760361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000492 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_5_rig.fbx
+  artifactKey: Guid(4c3f98d7d4c9c1645b8cea72ccf056d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_5_rig.fbx using Guid(4c3f98d7d4c9c1645b8cea72ccf056d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa75a99dcb3ec4c1b760d65aa9589c29') in 0.098520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001180 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_04_1.fbx
+  artifactKey: Guid(158c35402bfdc4e4aa8fff1ecff8c696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_04_1.fbx using Guid(158c35402bfdc4e4aa8fff1ecff8c696) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8169e688b9420e4c249bf02203e09c6c') in 0.051703 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_15_rig.fbx
+  artifactKey: Guid(1ac74abebf09a13409a6c5d1441e1715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_15_rig.fbx using Guid(1ac74abebf09a13409a6c5d1441e1715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def151ffdf219c3b52666605b80ed7bb') in 0.071469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_03_1.fbx
+  artifactKey: Guid(26fc4bcc4c957a94eb58a594bced29df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_03_1.fbx using Guid(26fc4bcc4c957a94eb58a594bced29df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053317eb2b03d16119eefa5701ecd332') in 0.036605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_05_1.fbx
+  artifactKey: Guid(a54702429fce75b4c882bd88852853d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_05_1.fbx using Guid(a54702429fce75b4c882bd88852853d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2afe36b4a593741588173bb55d9965') in 0.035092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000531 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_19_rig.fbx
+  artifactKey: Guid(f92c8ebabd8347348bf59c93ed54d45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_19_rig.fbx using Guid(f92c8ebabd8347348bf59c93ed54d45f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1103f0aae0e44d43e9c49bfa166868ed') in 0.040097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_18_Full.fbx
+  artifactKey: Guid(e75b6ff06b0f62147baf6d27016bc9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_18_Full.fbx using Guid(e75b6ff06b0f62147baf6d27016bc9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e66cd73d982fdaed1b22d680e0422c8') in 2.377657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_02_1_rig.fbx
+  artifactKey: Guid(bfda5a50cbdea57439c2874c41c035fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_02_1_rig.fbx using Guid(bfda5a50cbdea57439c2874c41c035fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb3ce9ecefac86b18feab1ca687f6d28') in 0.059642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_triangles_up_wood_1.fbx
+  artifactKey: Guid(6248630b99045b2499617ec17fb6ba22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_triangles_up_wood_1.fbx using Guid(6248630b99045b2499617ec17fb6ba22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed17927c12a593f5837640a3de51765') in 0.047249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_08_parts.fbx
+  artifactKey: Guid(9d9dd0bdf1eebde4ba4fb737d6d33741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_08_parts.fbx using Guid(9d9dd0bdf1eebde4ba4fb737d6d33741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a769eacef50e02da928b592fa1f42c') in 0.577897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000776 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_09_full.fbx
+  artifactKey: Guid(7ef42bf69fbb26e4fa3e78d29d861e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_09_full.fbx using Guid(7ef42bf69fbb26e4fa3e78d29d861e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04f547655062fa7c7e9902816129911') in 1.183626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000705 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_12_full.fbx
+  artifactKey: Guid(531be3ca687ddc24fb8690bed57e36ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_12_full.fbx using Guid(531be3ca687ddc24fb8690bed57e36ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ccdba05e388e4fba612ba4086e2bd4') in 0.921473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/_ROOF_Window_round_1.fbx
+  artifactKey: Guid(ad7b199b24499ec409901ecbe618564c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/_ROOF_Window_round_1.fbx using Guid(ad7b199b24499ec409901ecbe618564c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac47fa87ad19670ed668d37b17acbc4') in 0.047999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/_ROOF_trinagle_right_wood_1.fbx
+  artifactKey: Guid(3ae955b90edc1394ca58c7285584cb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/_ROOF_trinagle_right_wood_1.fbx using Guid(3ae955b90edc1394ca58c7285584cb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292f91ab092f26d5a76e7a459e2f99e0') in 0.057881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_11_full.fbx
+  artifactKey: Guid(637b9a516a919ca46beac03cef6d3e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_11_full.fbx using Guid(637b9a516a919ca46beac03cef6d3e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd99bbb84621eefd75cc33c49c46cc8c') in 0.954169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_03_1_rig.fbx
+  artifactKey: Guid(e04f32a5b96a2644e8d7005733f437ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_03_1_rig.fbx using Guid(e04f32a5b96a2644e8d7005733f437ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6573876f3f419a99f9ef57a9bddd1160') in 0.064933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_4_1.fbx
+  artifactKey: Guid(669fc5086f665d94494c80e53fe2d901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_4_1.fbx using Guid(669fc5086f665d94494c80e53fe2d901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff67fdf720bc079bd482d5ee7e8f0d0') in 0.796965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_02_1.fbx
+  artifactKey: Guid(42112cf4bf83ed846a3b737bfeca24cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_02_1.fbx using Guid(42112cf4bf83ed846a3b737bfeca24cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ddd4c0e1dd0911a5d117816df6bdd18') in 0.055192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/_ROOF_trinagle_left_wood_1.fbx
+  artifactKey: Guid(e70964f4a83d7f84583b1ee420bb11a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/_ROOF_trinagle_left_wood_1.fbx using Guid(e70964f4a83d7f84583b1ee420bb11a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ec74b574cf997b048a11ff583c8fff') in 0.051782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_01_1.fbx
+  artifactKey: Guid(7936f3b939db4024ea77cb4d0e6ea4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_01_1.fbx using Guid(7936f3b939db4024ea77cb4d0e6ea4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc6f6659cbbcbdf22246e5d963e2b01') in 0.056070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000397 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_tile_up_1.fbx
+  artifactKey: Guid(8ec76446699cb954584b97646e21b135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_tile_up_1.fbx using Guid(8ec76446699cb954584b97646e21b135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ac7cd067505b9ecf624e01f4d7509e') in 0.055071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000634 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_18_parts.fbx
+  artifactKey: Guid(1553aaa2a7c1fc94a9e1577a2066d2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_18_parts.fbx using Guid(1553aaa2a7c1fc94a9e1577a2066d2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd239e0265c0e82b524b0fef4ab7efa') in 2.768117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_base_round_1.fbx
+  artifactKey: Guid(7bc90f0b3f0c91b4b8bb5aefc6da7344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_base_round_1.fbx using Guid(7bc90f0b3f0c91b4b8bb5aefc6da7344) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da29e216fe466c62ee32c6e341a9acc5') in 0.054990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_02_1.fbx
+  artifactKey: Guid(767e9e1e6d24e294ebdbfcd3c4ad0187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_02_1.fbx using Guid(767e9e1e6d24e294ebdbfcd3c4ad0187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8d1042120b1f2f03916410629d431e1') in 0.056733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_10_parts.fbx
+  artifactKey: Guid(a695a04f10b537e46bacb291a2528619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_10_parts.fbx using Guid(a695a04f10b537e46bacb291a2528619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3c5e20e0cfe0ff16a4216b7c4dec80') in 1.616940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000563 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_01_full.fbx
+  artifactKey: Guid(62a0e63f2fd7de74182f074d19e479ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_01_full.fbx using Guid(62a0e63f2fd7de74182f074d19e479ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7fe4ab0284986480f9ca13bd149314b') in 0.985403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000538 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_18_1.fbx
+  artifactKey: Guid(5d37239ffb0b1984d9d182e09ae64324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_18_1.fbx using Guid(5d37239ffb0b1984d9d182e09ae64324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9436ea7baa22bdc5f88966a1c9933ed7') in 2.859475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_16_rig.fbx
+  artifactKey: Guid(110fe0adfcc6cea4882830be2234f157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_16_rig.fbx using Guid(110fe0adfcc6cea4882830be2234f157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '452896a5868e8f11cdcb97cbc4f7b93b') in 0.088315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_13_parts.fbx
+  artifactKey: Guid(ebc6a22b38f30894fb32b17a5dba7aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_13_parts.fbx using Guid(ebc6a22b38f30894fb32b17a5dba7aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb865e5a5a8429e5afed070f8d6d4903') in 1.111849 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_04_parts.fbx
+  artifactKey: Guid(adb162b5bc98a144a9b3b8bc78ec3208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_04_parts.fbx using Guid(adb162b5bc98a144a9b3b8bc78ec3208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a39cbd2aa5e06e05864310c1bc455c') in 0.754330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_05_full.fbx
+  artifactKey: Guid(bcc12e3479c66354c82b080d6a7c3cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_05_full.fbx using Guid(bcc12e3479c66354c82b080d6a7c3cfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54e31f21c1c8069180a802d03378e90') in 0.801423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_7_1.fbx
+  artifactKey: Guid(dfcb4f2800915854b8f6b4fdfae8876a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_7_1.fbx using Guid(dfcb4f2800915854b8f6b4fdfae8876a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c5464afa1f36e999e570c935f938e0') in 0.854059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_inner_corner_1.fbx
+  artifactKey: Guid(a02d91ecc62ef60449ba393deada2476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_inner_corner_1.fbx using Guid(a02d91ecc62ef60449ba393deada2476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424d2e11e319f4ac155d82e3a36509e1') in 0.050027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_01_1_rig.fbx
+  artifactKey: Guid(08310b3c7dca3d94e876c9e6b94d1d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_01_1_rig.fbx using Guid(08310b3c7dca3d94e876c9e6b94d1d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4a191e579dfcb7d839fbc6ad46a755') in 0.055252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/LowPolyWater_Pack/LowPoly Island/Materials/IslandMat.mat
+  artifactKey: Guid(45d08f8aef3838d45806cd4442223977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyWater_Pack/LowPoly Island/Materials/IslandMat.mat using Guid(45d08f8aef3838d45806cd4442223977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08230ca729b0dcd3c855aaa63818feb9') in 0.062192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_13_full.fbx
+  artifactKey: Guid(4ee3808d4ac92e545b2aaff99b2a7025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_13_full.fbx using Guid(4ee3808d4ac92e545b2aaff99b2a7025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8020058b924081a6005316c5adf88f39') in 1.139833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_15_1.fbx
+  artifactKey: Guid(ee2997dd7f906ee4e9f73f85b7c451c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_15_1.fbx using Guid(ee2997dd7f906ee4e9f73f85b7c451c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '647d14d570bfe5a1135854d5148f6b02') in 0.328340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_12_parts.fbx
+  artifactKey: Guid(66db8f202cd2bee4b88f9ed2cf41f2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_12_parts.fbx using Guid(66db8f202cd2bee4b88f9ed2cf41f2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b9eb57ff7b604e2191ae6c3d5a9e26c') in 0.873423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001359 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_1_1.fbx
+  artifactKey: Guid(d2dbc86412135ca45a043c7bbe1d51a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_1_1.fbx using Guid(d2dbc86412135ca45a043c7bbe1d51a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b919c39203abcfbea01f3c2b7b5d4f') in 0.968268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000625 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_16_1.fbx
+  artifactKey: Guid(259f8fed590003042996aa44a5dec906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_1_unity/house_16_1.fbx using Guid(259f8fed590003042996aa44a5dec906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0994318d7bcf6e8e14d4746ed7ab156f') in 2.229791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_07_full.fbx
+  artifactKey: Guid(06e4c13887af6054a80acb3e2401ff8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/house_07_full.fbx using Guid(06e4c13887af6054a80acb3e2401ff8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0898dda6282125a7704d276a15418def') in 0.741520 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_04_1_rig.fbx
+  artifactKey: Guid(adbba106a8505374e83c85ef7ea41921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_04_1_rig.fbx using Guid(adbba106a8505374e83c85ef7ea41921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6afc5fa5bd130a0c1ceb6fc3f8dc313a') in 0.048145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_05_1.fbx
+  artifactKey: Guid(62019df6327ab4e4083308118595ff07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_05_1.fbx using Guid(62019df6327ab4e4083308118595ff07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b39aa66554039d560237e14c9a2a321a') in 0.046501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_04_rig.fbx
+  artifactKey: Guid(006a75d05e384114d9a845fd223f1db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_04_rig.fbx using Guid(006a75d05e384114d9a845fd223f1db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42f24c9b01a3b3df4210ee3825517daa') in 0.052722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_06_parts.fbx
+  artifactKey: Guid(737a2f0b2b8e3c1459aa73dbace9a782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_06_parts.fbx using Guid(737a2f0b2b8e3c1459aa73dbace9a782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c1b6c6b87bfbe4935a28bc90717002') in 0.566890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_06_Balkon_1.fbx
+  artifactKey: Guid(8e7b60a1696277a448712ef1462ce715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/DOOR_06_Balkon_1.fbx using Guid(8e7b60a1696277a448712ef1462ce715) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14be163434ca5e3a0685a818020bb171') in 0.044863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_10_rig.fbx
+  artifactKey: Guid(a172ecb1e0525a54bb6d361fc851efdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_10_rig.fbx using Guid(a172ecb1e0525a54bb6d361fc851efdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45dd05ad473605f3451cb66a10502e15') in 0.103323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_17_full.fbx
+  artifactKey: Guid(6bd467e2a8ec6954f8d6e728e4894536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_17_full.fbx using Guid(6bd467e2a8ec6954f8d6e728e4894536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7a95af37b441bce717362b3aae40d1') in 0.947455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000426 seconds.
+  path: Assets/Unterlagen/_Source_Files/FBX/SM_Prop_Synty_Cube_01.fbx
+  artifactKey: Guid(6cfe01e70a444224f8eb725e2b22452d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unterlagen/_Source_Files/FBX/SM_Prop_Synty_Cube_01.fbx using Guid(6cfe01e70a444224f8eb725e2b22452d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f67acf72d89014cb53bb95c27a7c9e7') in 0.028871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_05_1_rig.fbx
+  artifactKey: Guid(2e5a262bfdd8e5241adffd1cd18caddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_05_1_rig.fbx using Guid(2e5a262bfdd8e5241adffd1cd18caddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b15cd0432ce83568371aa671aca7ec98') in 0.043176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_14_parts.fbx
+  artifactKey: Guid(50c5a5464ab83624ba4308d2f0852ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_14_parts.fbx using Guid(50c5a5464ab83624ba4308d2f0852ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dff98b70e4698a7c88a1a4839c3742f') in 1.041481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000548 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_19_full.fbx
+  artifactKey: Guid(4b91bb38cd32ca241a8ac5f634da073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_19_full.fbx using Guid(4b91bb38cd32ca241a8ac5f634da073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d0a8197433072b4066de86a45a6d1b') in 2.138552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_small_triangle_up_1.fbx
+  artifactKey: Guid(4825faf7bd6691a4c9f7b09d565b1f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_small_triangle_up_1.fbx using Guid(4825faf7bd6691a4c9f7b09d565b1f12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b54a7a98af2a9ba48b466b877dc6765') in 0.051279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_tile_side_1.fbx
+  artifactKey: Guid(62a7ebea3cdc485419a4a82f4d88fa7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_tile_side_1.fbx using Guid(62a7ebea3cdc485419a4a82f4d88fa7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61d0935f785762ca3c91a4e5c314fbba') in 0.053130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_03_1.fbx
+  artifactKey: Guid(bec1ba0d9965954479b4f66c96ca6ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WALL_03_1.fbx using Guid(bec1ba0d9965954479b4f66c96ca6ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4798ab5ff5e43a306e0e949be83d531') in 0.046317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_05_parts.fbx
+  artifactKey: Guid(15aaa81a3e90b6546b1747bfd94f372c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_05_parts.fbx using Guid(15aaa81a3e90b6546b1747bfd94f372c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc435dcbfd4fd71ef316c46dc4d3f096') in 0.606470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_02_1_rig.fbx
+  artifactKey: Guid(e18877f60ac7e204eaf1ecf911d2d77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_02_1_rig.fbx using Guid(e18877f60ac7e204eaf1ecf911d2d77b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c0ffb38e50c2c518ff4fece678bec7') in 0.046932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_base_small_1.fbx
+  artifactKey: Guid(a205ef3e2949b4e49bb3b0bbb771fb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_base_small_1.fbx using Guid(a205ef3e2949b4e49bb3b0bbb771fb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4822e3a7671cd8432e72b691c002495e') in 0.043773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_09_rig.fbx
+  artifactKey: Guid(96a58a1e69f87a04e8f3e15f482714f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/house_09_rig.fbx using Guid(96a58a1e69f87a04e8f3e15f482714f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab6a11aa82ffe485baf1e604581373dd') in 0.049529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000566 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_02_full.fbx
+  artifactKey: Guid(3c7b0ca5da78f8248b4a933ddea00847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_02_full.fbx using Guid(3c7b0ca5da78f8248b4a933ddea00847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4ec5b507a72a5c80acb8e0a61b885a') in 0.761067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000844 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_10_full.fbx
+  artifactKey: Guid(bb20c94e4b522cc489098f35ede5e2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_10_full.fbx using Guid(bb20c94e4b522cc489098f35ede5e2d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8632656ec9d53d92412e9065baa382e2') in 1.448916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_07_1.fbx
+  artifactKey: Guid(9b7f69ee3b2603d4b8c16db588517068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_07_1.fbx using Guid(9b7f69ee3b2603d4b8c16db588517068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97bc5a0ef0c1ab077c853a6ed2c24043') in 0.045014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/WINDOW_06_1_rig.fbx
+  artifactKey: Guid(c0907f37373eeec4092dc605e9723f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/WINDOW_06_1_rig.fbx using Guid(c0907f37373eeec4092dc605e9723f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beee3763a615355f0b1aaf0f939da8fa') in 0.052972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/WINDOW_05_1_rig.fbx
+  artifactKey: Guid(9166b6eebd7811f40a1b0543e667c214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/WINDOW_05_1_rig.fbx using Guid(9166b6eebd7811f40a1b0543e667c214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af52fbcd61b5aaa5afbc8dc8af4fe2f') in 0.056923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000724 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_02_parts.fbx
+  artifactKey: Guid(a49c654dffc40c64a840841609bbc6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_02_parts.fbx using Guid(a49c654dffc40c64a840841609bbc6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d25ccf0047b51018ef77396b2d3b0d4') in 0.749619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_08_rig.fbx
+  artifactKey: Guid(f68032f17e862b34fbd40db4c6f39a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_08_rig.fbx using Guid(f68032f17e862b34fbd40db4c6f39a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e449eb2f6b3945838c3544e075f77c08') in 0.110532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_06_Balkon_1_rig.fbx
+  artifactKey: Guid(11d4c2b986f844644a214af350154d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_06_Balkon_1_rig.fbx using Guid(11d4c2b986f844644a214af350154d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a566152548814610174ec7fde496990') in 0.053953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000364 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_06_1.fbx
+  artifactKey: Guid(c361a619230e5714385fa87dbc7571ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_06_1.fbx using Guid(c361a619230e5714385fa87dbc7571ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d23a86ead5840fb4be9ab461d4e968b') in 0.044877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_05_1_rig.fbx
+  artifactKey: Guid(a408cc43e649100498c153f2140c8bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_05_1_rig.fbx using Guid(a408cc43e649100498c153f2140c8bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eae10c8f4ff19dfef35373266117201') in 0.048738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000529 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_02_rig.fbx
+  artifactKey: Guid(64c31fd6fb4de174396d73d52a12e1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_02_rig.fbx using Guid(64c31fd6fb4de174396d73d52a12e1d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a25f7aa8ba023d0ddc7e3f724e5a28a') in 0.149202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_06_Balkon_1_rig.fbx
+  artifactKey: Guid(6dfcb9f530cf9f148aff7ffd137189f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/DOOR_06_Balkon_1_rig.fbx using Guid(6dfcb9f530cf9f148aff7ffd137189f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b85f28b319b079071c5684c46fc1df0') in 0.052791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000351 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_01_parts.fbx
+  artifactKey: Guid(5bd2a54f7de390242a6d38207725b52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_01_parts.fbx using Guid(5bd2a54f7de390242a6d38207725b52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1623f14abae6c7a1c8137ad6c2b4a0e4') in 0.716344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_01_1_rig.fbx
+  artifactKey: Guid(3d4b16b4675b0b849852dacf91e47c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/rig_unity/DOOR_01_1_rig.fbx using Guid(3d4b16b4675b0b849852dacf91e47c26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e26083218a49d2a093bf700a03f258') in 0.047552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_18_rig.fbx
+  artifactKey: Guid(f0651013bc5687f44bd2ee37c358b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_18_rig.fbx using Guid(f0651013bc5687f44bd2ee37c358b29b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3276e8c6d1dcd6e25d0d6b3c0f49836f') in 0.083573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_03_1.fbx
+  artifactKey: Guid(731fbaa897b3a1541a7c65109c6040ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/WINDOW_03_1.fbx using Guid(731fbaa897b3a1541a7c65109c6040ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c8561444f5c8c8bedf0010bff4cf976') in 0.042490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000700 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_04_full.fbx
+  artifactKey: Guid(b663a6ce7af180249a739ea67a4777a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/House_Full_ordinar/House_04_full.fbx using Guid(b663a6ce7af180249a739ea67a4777a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e745070dd71554cc5ad60e5d89c63c4') in 0.601973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_01_rig.fbx
+  artifactKey: Guid(767aa6fecadf2a8448121a5866b55801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/house_unreal/House_01_rig.fbx using Guid(767aa6fecadf2a8448121a5866b55801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673ee0d8b5ed9da8e6c9b133890a4f20') in 0.080753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000552 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_triangle_window_grid_1.fbx
+  artifactKey: Guid(b3da24393b1061b4398f4d622d21a029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/Parts/ROOF_triangle_window_grid_1.fbx using Guid(b3da24393b1061b4398f4d622d21a029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3cfb222ada785a84ff7ce45b286b17') in 0.043197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000533 seconds.
+  path: Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/WINDOW_07_1_rig.fbx
+  artifactKey: Guid(f89b0e59516a83a4cace217c7b746c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/free-medieval-houses-3d-low-poly-pack/fbx/RIG_unreal/WINDOW_07_1_rig.fbx using Guid(f89b0e59516a83a4cace217c7b746c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706f61adde0834e4ea1b5bfd2287fe6f') in 0.051025 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004284 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2981 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.5 MB.
-System memory in use after: 139.6 MB.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.812 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2992 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 222.9 MB.
+System memory in use after: 223.1 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3616.
-Total: 3.693700 ms (FindLiveObjects: 0.342100 ms CreateObjectMapping: 0.080000 ms MarkObjects: 3.184500 ms  DeleteObjects: 0.086100 ms)
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3836.
+Total: 7.128600 ms (FindLiveObjects: 1.148600 ms CreateObjectMapping: 0.329500 ms MarkObjects: 5.253300 ms  DeleteObjects: 0.394100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 438.361206 seconds.
+  path: Assets/Unterlagen/Prototyp 2/Animals/Farm/Animal_Horse_Brown.prefab
+  artifactKey: Guid(68a45bf17ac566545b70a13c90a7ee65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unterlagen/Prototyp 2/Animals/Farm/Animal_Horse_Brown.prefab using Guid(68a45bf17ac566545b70a13c90a7ee65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3425880a7c45ab1dbc3acb0c66d16ba') in 0.247856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/Unterlagen/Prototyp 2/Animals/Farm/Animal_Rooster_Brown.prefab
+  artifactKey: Guid(3fe800c166ae0d04881a20247bde736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unterlagen/Prototyp 2/Animals/Farm/Animal_Rooster_Brown.prefab using Guid(3fe800c166ae0d04881a20247bde736d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0192f98d1e48414de518c5b95ecfb119') in 0.045731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Unterlagen/_Source_Files/FBX/SA_Animal_Chick.fbx
+  artifactKey: Guid(5cffd02f329556b48a122caf2426df2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unterlagen/_Source_Files/FBX/SA_Animal_Chick.fbx using Guid(5cffd02f329556b48a122caf2426df2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3281ab97229fdd1ee1a4b966ba6a3c') in 0.057524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Unterlagen/_Source_Files/FBX/SA_Animal_Birds.fbx
+  artifactKey: Guid(693459689483f9e4aa5a1a6e8b37269e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unterlagen/_Source_Files/FBX/SA_Animal_Birds.fbx using Guid(693459689483f9e4aa5a1a6e8b37269e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf8c9e1d271694e1252d9598eceb6097') in 0.091723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 286.012584 seconds.
+  path: Assets/LowPolyWater_Pack/Scripts/Editor
+  artifactKey: Guid(34df541ef38b1c0498aec787c3861a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyWater_Pack/Scripts/Editor using Guid(34df541ef38b1c0498aec787c3861a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a54bcc6cf3f47e16ea8dd56f8785dd0') in 0.008804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.660761 seconds.
+  path: Assets/Scripts/Item.cs
+  artifactKey: Guid(2ddad32b784db1f4197df13e5de59294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Item.cs using Guid(2ddad32b784db1f4197df13e5de59294) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5801ee5694f629a43b32db7550d203ac') in 0.020760 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003361 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.874 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2996 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 223.1 MB.
+System memory in use after: 223.3 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3879.
+Total: 11.230400 ms (FindLiveObjects: 0.919200 ms CreateObjectMapping: 0.233000 ms MarkObjects: 9.341600 ms  DeleteObjects: 0.733700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003725 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.368 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2996 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 223.1 MB.
+System memory in use after: 223.3 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3882.
+Total: 6.357500 ms (FindLiveObjects: 0.635300 ms CreateObjectMapping: 0.285200 ms MarkObjects: 5.293100 ms  DeleteObjects: 0.141300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003009 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.444 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2996 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 223.0 MB.
+System memory in use after: 223.2 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3885.
+Total: 5.815300 ms (FindLiveObjects: 0.665600 ms CreateObjectMapping: 0.286800 ms MarkObjects: 4.740100 ms  DeleteObjects: 0.121400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004000 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.515 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2996 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 223.0 MB.
+System memory in use after: 223.2 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3888.
+Total: 6.372900 ms (FindLiveObjects: 0.747800 ms CreateObjectMapping: 0.324300 ms MarkObjects: 5.058400 ms  DeleteObjects: 0.240300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002325 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.304 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2996 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 223.0 MB.
+System memory in use after: 223.2 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3891.
+Total: 6.412500 ms (FindLiveObjects: 0.502400 ms CreateObjectMapping: 0.158100 ms MarkObjects: 5.122300 ms  DeleteObjects: 0.627000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 677.940863 seconds.
+  path: Assets/FloatingTextScript.cs
+  artifactKey: Guid(c312837dbff41cd49bcecbe3e0a5b517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FloatingTextScript.cs using Guid(c312837dbff41cd49bcecbe3e0a5b517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a082af338939fe8dcc96cce26d05231e') in 0.018547 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001854 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.308 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2996 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 223.0 MB.
+System memory in use after: 223.3 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3894.
+Total: 5.027200 ms (FindLiveObjects: 0.738000 ms CreateObjectMapping: 0.194500 ms MarkObjects: 3.947700 ms  DeleteObjects: 0.143600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002271 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.347 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2996 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 223.0 MB.
+System memory in use after: 223.3 MB.
+
+Unloading 103 unused Assets to reduce memory usage. Loaded Objects now: 3897.
+Total: 5.469700 ms (FindLiveObjects: 0.537500 ms CreateObjectMapping: 0.189400 ms MarkObjects: 4.601000 ms  DeleteObjects: 0.140200 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

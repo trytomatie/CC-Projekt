@@ -17,12 +17,26 @@ public class Interactable_Field : Interactable
                 case "Corn seed":
                     crops[0].PlantCrop();
                     selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
-                    print("Plant Corn seed");
                     break;
                 case "Carrot seed":
                     crops[1].PlantCrop();
                     selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
-                    print("Carrot Corn seed");
+                    break;
+                case "Wheat seed":
+                    crops[2].PlantCrop();
+                    selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
+                    break;
+                case "Melon seed":
+                    crops[3].PlantCrop();
+                    selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
+                    break;
+                case "Turnip seed":
+                    crops[4].PlantCrop();
+                    selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
+                    break;
+                case "Pumpkin seed":
+                    crops[5].PlantCrop();
+                    selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
                     break;
                 default:
                     print(selectedItem.itemName + " cannot be planted");

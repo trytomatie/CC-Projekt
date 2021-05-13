@@ -12,6 +12,10 @@ public class InventoryManager : MonoBehaviour
     {
         AddItem(ScriptableObject.CreateInstance<Item_CropSeed_Corn>());
         AddItem(ScriptableObject.CreateInstance<Item_CropSeed_Carrot>());
+        AddItem(ScriptableObject.CreateInstance<Item_CropSeed_Melon>());
+        AddItem(ScriptableObject.CreateInstance<Item_CropSeed_Wheat>());
+        AddItem(ScriptableObject.CreateInstance<Item_CropSeed_Turnip>());
+        AddItem(ScriptableObject.CreateInstance<Item_CropSeed_Pumpkin>());
     }
 
     public void Update()
