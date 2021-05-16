@@ -14,6 +14,6 @@ public class FloatingTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, 0.5f, 0) * Time.deltaTime;
+        GetComponent<RectTransform>().position += new Vector3(0, 200f, 0) * Time.deltaTime;
     }
 }

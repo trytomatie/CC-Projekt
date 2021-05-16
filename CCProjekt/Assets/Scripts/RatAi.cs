@@ -14,7 +14,7 @@ public class RatAi : MonoBehaviour
     public float attackDelay = 0.4f;
     public float attackApplicationDelay = 0.3f;
     public float attackCooldown = 1f;
-    private bool preparingAttack = false;
+    //private bool preparingAttack = false;
     private bool isOnAttackCooldown = false;
 
     // Start is called before the first frame update
@@ -22,7 +22,7 @@ public class RatAi : MonoBehaviour
     {
         statusManager = GetComponent<StatusManager>();
         rb = GetComponent<Rigidbody>();
-
+        target = GameObject.Find("Player");
     }
 
     // Update is called once per frame
@@ -73,7 +73,7 @@ public class RatAi : MonoBehaviour
     {
         if(!isOnAttackCooldown)
         {
-            preparingAttack = true;
+            //preparingAttack = true;
             isOnAttackCooldown = true;
             RotateToTaget(target.transform);
             Invoke("Attack", attackDelay);
@@ -107,7 +107,7 @@ public class RatAi : MonoBehaviour
     private void ApplyDamage()
     {
         StatusManager targetStatus = target.GetComponent<StatusManager>();
-        preparingAttack = false;
+        //preparingAttack = false;
         targetStatus.ApplyDamage(statusManager.damage);
     }
 
