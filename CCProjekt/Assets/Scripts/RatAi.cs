@@ -6,16 +6,21 @@ public class RatAi : MonoBehaviour
 {
 
     public GameObject target;
-    public float minMoveDistanceToTarget = 1;
-    private StatusManager statusManager;
-    private Rigidbody rb;
     public Animator anim;
+    public ParticleSystem waterParticles;
 
     public float attackDelay = 0.4f;
     public float attackApplicationDelay = 0.3f;
     public float attackCooldown = 1f;
+    public float minMoveDistanceToTarget = 1;
+  
     //private bool preparingAttack = false;
+
     private bool isOnAttackCooldown = false;
+    private bool isDead = false;
+    private SpawnManager spawnManager;
+    private StatusManager statusManager;
+    private Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +28,10 @@ public class RatAi : MonoBehaviour
         statusManager = GetComponent<StatusManager>();
         rb = GetComponent<Rigidbody>();
         target = GameObject.Find("Player");
+
+        spawnManager = GameObject.FindObjectOfType<SpawnManager>();
+
+        waterParticles.Stop();
     }
 
     // Update is called once per frame
@@ -43,6 +52,8 @@ public class RatAi : MonoBehaviour
         {
             CheckForAttack();
         }
+
+        IsDead();
     }
 
     /// <summary>
@@ -71,13 +82,17 @@ public class RatAi : MonoBehaviour
     /// </summary>
     private void CheckForAttack()
     {
-        if(!isOnAttackCooldown)
+        if(!isOnAttackCooldown && !isDead)
         {
             //preparingAttack = true;
             isOnAttackCooldown = true;
             RotateToTaget(target.transform);
             Invoke("Attack", attackDelay);
             Invoke("ResetAttackCooldown", attackCooldown);
+        }
+        else if (isDead)
+        {
+            Destroy(gameObject);
         }
     }
     /// <summary>
@@ -111,5 +126,17 @@ public class RatAi : MonoBehaviour
         targetStatus.ApplyDamage(statusManager.damage);
     }
 
+    /*
+        if HP reach 0, Rat returns to one of the Spawn Locations
+     */
+    private void IsDead()
+    {
+        if (statusManager.Hp == 0 && !isDead)
+        {
+            isDead = true;
+            target = spawnManager.spawnpoints[Random.Range(0, spawnManager.spawnpoints.Length)].gameObject;
+            waterParticles.Play();
 
+        }
+    }
 }

@@ -8,6 +8,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject ratPrefab;
     public Transform[] spawnpoints;
     public DayNightCycler dnc;
+
     // Start is called before the first frame update
     void Start()
     {

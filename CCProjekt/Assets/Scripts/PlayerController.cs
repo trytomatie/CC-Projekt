@@ -8,20 +8,19 @@ public class PlayerController : MonoBehaviour
 {
 
     public float speed;
+    public bool isFiring; 
+    public float waterUsage = 7.5f;
+    public float maxWater = 100;
+
     public Animator anim;
     public ParticleSystem bubbleParticles;
     public Rig blasterRig;
     public GameObject blaster;
-    private float water = 100;
-    public float waterUsage = 7.5f;
-    public float maxWater = 100;
     public TextMeshProUGUI waterText;
-    public bool isFiring;
+    
+    private float water = 100;
 
     private Rigidbody playerRb;
-
-
-
 
     // Start is called before the first frame update
     void Start()
