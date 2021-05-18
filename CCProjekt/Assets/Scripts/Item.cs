@@ -10,7 +10,8 @@ public class Item : ScriptableObject
     public Sprite sprite;
     public ItemType itemType;
     public InventoryManager attachedInventory;
+    public int creditValue = 0;
 
-    public enum ItemType {Seed,Crop};
+    public enum ItemType {Seed,Crop,Other};
 
 }

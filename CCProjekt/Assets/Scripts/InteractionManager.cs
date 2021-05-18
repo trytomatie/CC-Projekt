@@ -30,18 +30,23 @@ public class InteractionManager : MonoBehaviour
         float distance = 5;
         foreach(Interactable interactable in allInteractablesInRange)
         {
+            if(interactable == null)
+            {
+                continue;
+            }
             float distanceToInteractable = Vector3.Distance(transform.position, interactable.transform.position);
             if (distanceToInteractable < distance && interactable.isEnabled && interactable.interactionType == Interactable.InteractionType.Direct)
             {
                 target = interactable;
-                interactionTooltipText.transform.position = target.gameObject.transform.position + tooltipOffset;
+                interactionTooltipText.GetComponent<TooltipScriptUI>().tooltipTarget = target.transform;
+                interactionTooltipText.text = interactable.interactableText;
                 distance = distanceToInteractable;
 
             }
         }
         if(target == null)
         {
-            interactionTooltipText.transform.position = new Vector3(0,-100,0);
+            interactionTooltipText.GetComponent<TooltipScriptUI>().tooltipTarget = null;
         }
     }
     private void OnTriggerEnter(Collider other)

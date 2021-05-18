@@ -27,16 +27,32 @@ public class RatAi : MonoBehaviour
     {
         statusManager = GetComponent<StatusManager>();
         rb = GetComponent<Rigidbody>();
-        target = GameObject.Find("Player");
-
+        FindTarget();
         spawnManager = GameObject.FindObjectOfType<SpawnManager>();
 
         waterParticles.Stop();
     }
 
+    private void FindTarget()
+    {
+        CropsScript[] crops = GameObject.FindObjectsOfType<CropsScript>();
+        if (crops.Length == 0)
+        {
+            target = GameObject.Find("Player");
+        }
+        else
+        {
+            target = crops[Random.Range(0, crops.Length)].gameObject;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (target == null)
+        {
+            FindTarget();
+        }
         float distanceToTarget = Vector3.Distance(target.transform.position, transform.position);
         // Checks if Ai should move
         if (target!= null && distanceToTarget > minMoveDistanceToTarget && !isOnAttackCooldown)
@@ -47,7 +63,6 @@ public class RatAi : MonoBehaviour
         {
             anim.SetBool("Moving", false);
         }
-
         if(minMoveDistanceToTarget >= distanceToTarget)
         {
             CheckForAttack();
@@ -122,6 +137,10 @@ public class RatAi : MonoBehaviour
     private void ApplyDamage()
     {
         StatusManager targetStatus = target.GetComponent<StatusManager>();
+        if(targetStatus == null)
+        {
+            return;
+        }
         //preparingAttack = false;
         targetStatus.ApplyDamage(statusManager.damage);
     }
@@ -133,6 +152,7 @@ public class RatAi : MonoBehaviour
     {
         if (statusManager.Hp == 0 && !isDead)
         {
+            gameObject.layer = 9;
             isDead = true;
             target = spawnManager.spawnpoints[Random.Range(0, spawnManager.spawnpoints.Length)].gameObject;
             waterParticles.Play();

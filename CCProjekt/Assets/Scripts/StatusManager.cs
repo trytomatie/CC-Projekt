@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class StatusManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class StatusManager : MonoBehaviour
     [SerializeField]
     private float hp = 10;
     public int damage = 1;
+
+    public UnityEvent deathEvent;
 
 
     // Start is called before the first frame update
@@ -40,7 +43,11 @@ public class StatusManager : MonoBehaviour
             hp = value;
             if (value <= 0)
             {
-                print("I died!");
+                if(deathEvent == null)
+                {
+                    print("No DeathEvent set");
+                }
+                deathEvent.Invoke();
                 hp = 0;
             }
             if(value > maxHp)

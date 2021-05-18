@@ -66,4 +66,9 @@ public class CropsScript : MonoBehaviour
         currentCropStage = 0;
         gameObject.SetActive(false);
     }
+
+    public void DeathEvent()
+    {
+        Destroy(gameObject);
+    }
 }

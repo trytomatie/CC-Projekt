@@ -6,6 +6,10 @@ public class Interactable_Field : Interactable
 {
     public List<CropsScript> crops;
 
+    private void Start()
+    {
+        interactableText = "Plant";
+    }
     public override void Interact(GameObject interactor)
     {
         Item selectedItem = interactor.GetComponent<InventoryManagerUI>().selectedElement.item;

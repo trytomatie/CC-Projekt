@@ -14,6 +14,7 @@ public class Interactable_Crop : Interactable
 
     private void Start()
     {
+        interactableText = "Harvest";
         cropScript = GetComponent<CropsScript>();
     }
     public override void Interact(GameObject interactor)

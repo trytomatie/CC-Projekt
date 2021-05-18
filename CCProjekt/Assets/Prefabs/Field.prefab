@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 13804720}
   - component: {fileID: 13804719}
   - component: {fileID: 13804718}
+  - component: {fileID: 659521365}
   m_Layer: 0
   m_Name: CropField_Wheat
   m_TagString: Untagged
@@ -81,11 +82,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+  interactableText: 
   interactionType: 1
   crops: []
   seedDrop: Item_CropSeed_Wheat
-  cropDrop: Item_CropSeed_Wheat
+  cropDrop: Item_Crop_Wheat
   field: {fileID: 629224535083934968}
+--- !u!114 &659521365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13804716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
+  maxHp: 10
+  hp: 10
+  damage: 1
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 13804720}
+        m_TargetAssemblyTypeName: CropsScript, Assembly-CSharp
+        m_MethodName: DeathEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &582302786
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,6 +131,7 @@ GameObject:
   - component: {fileID: 582302790}
   - component: {fileID: 582302789}
   - component: {fileID: 582302788}
+  - component: {fileID: 1296712394}
   m_Layer: 0
   m_Name: CropField_Turnip
   m_TagString: Untagged
@@ -167,11 +201,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+  interactableText: 
   interactionType: 1
   crops: []
   seedDrop: Item_CropSeed_Turnip
-  cropDrop: Item_CropSeed_Turnip
+  cropDrop: Item_Crop_Turnip
   field: {fileID: 629224535083934968}
+--- !u!114 &1296712394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582302786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
+  maxHp: 10
+  hp: 10
+  damage: 1
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 582302790}
+        m_TargetAssemblyTypeName: CropsScript, Assembly-CSharp
+        m_MethodName: DeathEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &777726632
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,6 +250,7 @@ GameObject:
   - component: {fileID: 777726636}
   - component: {fileID: 777726635}
   - component: {fileID: 777726634}
+  - component: {fileID: 2129250299}
   m_Layer: 0
   m_Name: CropField_Pumpkin
   m_TagString: Untagged
@@ -253,11 +320,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+  interactableText: 
   interactionType: 1
   crops: []
   seedDrop: Item_CropSeed_Pumpkin
-  cropDrop: Item_CropSeed_Pumpkin
+  cropDrop: Item_Crop_Pumpkin
   field: {fileID: 629224535083934968}
+--- !u!114 &2129250299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777726632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
+  maxHp: 10
+  hp: 10
+  damage: 1
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 777726636}
+        m_TargetAssemblyTypeName: CropsScript, Assembly-CSharp
+        m_MethodName: DeathEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &322602965716927621
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+  interactableText: 
   interactionType: 0
   crops:
   - {fileID: 6640137351162567508}
@@ -395,6 +495,7 @@ GameObject:
   - component: {fileID: 7371412130798120928}
   - component: {fileID: 4017066200040786141}
   - component: {fileID: 8557970359467208868}
+  - component: {fileID: 1848122435}
   m_Layer: 0
   m_Name: CropField_Melon
   m_TagString: Untagged
@@ -464,11 +565,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+  interactableText: 
   interactionType: 1
   crops: []
   seedDrop: Item_CropSeed_Melon
-  cropDrop: Item_CropSeed_Melon
+  cropDrop: Item_Crop_Melon
   field: {fileID: 629224535083934968}
+--- !u!114 &1848122435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263225143334476500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
+  maxHp: 10
+  hp: 10
+  damage: 1
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7371412130798120928}
+        m_TargetAssemblyTypeName: CropsScript, Assembly-CSharp
+        m_MethodName: DeathEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1792297467880469905
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +614,7 @@ GameObject:
   - component: {fileID: 6640137351162567508}
   - component: {fileID: 2044377783}
   - component: {fileID: 8578888890173279838}
+  - component: {fileID: 299789132}
   m_Layer: 0
   m_Name: CropField_Corn
   m_TagString: Untagged
@@ -539,10 +673,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+  interactableText: 
   interactionType: 1
   crops: []
   seedDrop: Item_CropSeed_Corn
-  cropDrop: Item_CropSeed_Corn
+  cropDrop: Item_Crop_Corn
   field: {fileID: 629224535083934968}
 --- !u!65 &8578888890173279838
 BoxCollider:
@@ -557,6 +692,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 1, z: 0.5}
   m_Center: {x: 0, y: 0.5, z: 0}
+--- !u!114 &299789132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792297467880469905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
+  maxHp: 10
+  hp: 10
+  damage: 1
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6640137351162567508}
+        m_TargetAssemblyTypeName: CropsScript, Assembly-CSharp
+        m_MethodName: DeathEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3939052344589330445
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +735,7 @@ GameObject:
   - component: {fileID: 5940354624501907853}
   - component: {fileID: 1309237769}
   - component: {fileID: 1309237770}
+  - component: {fileID: 1341394343}
   m_Layer: 0
   m_Name: CropField_Carrot
   m_TagString: Untagged
@@ -638,11 +805,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnabled: 1
+  interactableText: 
   interactionType: 1
   crops: []
   seedDrop: Item_CropSeed_Carrot
-  cropDrop: Item_CropSeed_Carrot
+  cropDrop: Item_Crop_Carrot
   field: {fileID: 629224535083934968}
+--- !u!114 &1341394343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3939052344589330445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 1
+  maxHp: 10
+  hp: 10
+  damage: 1
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5940354624501907853}
+        m_TargetAssemblyTypeName: CropsScript, Assembly-CSharp
+        m_MethodName: DeathEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &423563085935677932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -787,14 +986,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdac3ecb4e7f56a4e9ff453eb4d68264, type: 3}
---- !u!1 &322602966807084338 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bdac3ecb4e7f56a4e9ff453eb4d68264, type: 3}
-  m_PrefabInstance: {fileID: 629224535258349667}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1094881708642510728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: bdac3ecb4e7f56a4e9ff453eb4d68264, type: 3}
+  m_PrefabInstance: {fileID: 629224535258349667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &322602966807084338 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bdac3ecb4e7f56a4e9ff453eb4d68264, type: 3}
   m_PrefabInstance: {fileID: 629224535258349667}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &629224535358652954
@@ -941,14 +1140,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
---- !u!4 &1094881708425496787 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
-  m_PrefabInstance: {fileID: 629224535517507384}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322602967200305769 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
+  m_PrefabInstance: {fileID: 629224535517507384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1094881708425496787 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
   m_PrefabInstance: {fileID: 629224535517507384}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &629224535853668234
@@ -1020,14 +1219,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae43e3a1a60bdeb40aabd1c93dfd57a7, type: 3}
---- !u!1 &322602966329174747 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae43e3a1a60bdeb40aabd1c93dfd57a7, type: 3}
-  m_PrefabInstance: {fileID: 629224535853668234}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1094881708080754785 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae43e3a1a60bdeb40aabd1c93dfd57a7, type: 3}
+  m_PrefabInstance: {fileID: 629224535853668234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &322602966329174747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae43e3a1a60bdeb40aabd1c93dfd57a7, type: 3}
   m_PrefabInstance: {fileID: 629224535853668234}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &629224536135260462
@@ -1091,14 +1290,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3213af2687aec7429b44927dbc70cb5, type: 3}
---- !u!4 &1094881707773935301 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e3213af2687aec7429b44927dbc70cb5, type: 3}
-  m_PrefabInstance: {fileID: 629224536135260462}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322602965670061183 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e3213af2687aec7429b44927dbc70cb5, type: 3}
+  m_PrefabInstance: {fileID: 629224536135260462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1094881707773935301 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e3213af2687aec7429b44927dbc70cb5, type: 3}
   m_PrefabInstance: {fileID: 629224536135260462}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &629224536649078062
@@ -1312,14 +1511,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
---- !u!4 &1094881707216245863 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
-  m_PrefabInstance: {fileID: 629224536718439308}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322602965179485917 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
+  m_PrefabInstance: {fileID: 629224536718439308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1094881707216245863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
   m_PrefabInstance: {fileID: 629224536718439308}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &629224536723337249
@@ -1395,14 +1594,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e78617fd34ed79d49abd619632298fce, type: 3}
---- !u!4 &1094881707219736522 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e78617fd34ed79d49abd619632298fce, type: 3}
-  m_PrefabInstance: {fileID: 629224536723337249}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322602965185039728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e78617fd34ed79d49abd619632298fce, type: 3}
+  m_PrefabInstance: {fileID: 629224536723337249}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1094881707219736522 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e78617fd34ed79d49abd619632298fce, type: 3}
   m_PrefabInstance: {fileID: 629224536723337249}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &629224537076880415
@@ -1535,14 +1734,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02d2db318e9ee4947942713b7aec4845, type: 3}
---- !u!1 &433249926252736313 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 02d2db318e9ee4947942713b7aec4845, type: 3}
-  m_PrefabInstance: {fileID: 775286895231832680}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &957268013238875523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 02d2db318e9ee4947942713b7aec4845, type: 3}
+  m_PrefabInstance: {fileID: 775286895231832680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &433249926252736313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 02d2db318e9ee4947942713b7aec4845, type: 3}
   m_PrefabInstance: {fileID: 775286895231832680}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1052398872154810049
@@ -1606,14 +1805,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33a97532a84867e47b6a2afba70f0aad, type: 3}
---- !u!1 &169930497781275536 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 33a97532a84867e47b6a2afba70f0aad, type: 3}
-  m_PrefabInstance: {fileID: 1052398872154810049}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &653134438518112554 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 33a97532a84867e47b6a2afba70f0aad, type: 3}
+  m_PrefabInstance: {fileID: 1052398872154810049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &169930497781275536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 33a97532a84867e47b6a2afba70f0aad, type: 3}
   m_PrefabInstance: {fileID: 1052398872154810049}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1290212530958905428
@@ -1677,14 +1876,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09a65ecc308c1ab439c9751c55f1f527, type: 3}
---- !u!1 &2100551715397635333 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 09a65ecc308c1ab439c9751c55f1f527, type: 3}
-  m_PrefabInstance: {fileID: 1290212530958905428}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1616079831918532543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 09a65ecc308c1ab439c9751c55f1f527, type: 3}
+  m_PrefabInstance: {fileID: 1290212530958905428}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2100551715397635333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 09a65ecc308c1ab439c9751c55f1f527, type: 3}
   m_PrefabInstance: {fileID: 1290212530958905428}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4242614954188877567
@@ -1961,14 +2160,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d15e7af5dd79441b4ff7edfbe57a55, type: 3}
---- !u!4 &7679620234356746818 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 01d15e7af5dd79441b4ff7edfbe57a55, type: 3}
-  m_PrefabInstance: {fileID: 7861530778713263529}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7050575735828525304 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 01d15e7af5dd79441b4ff7edfbe57a55, type: 3}
+  m_PrefabInstance: {fileID: 7861530778713263529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7679620234356746818 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 01d15e7af5dd79441b4ff7edfbe57a55, type: 3}
   m_PrefabInstance: {fileID: 7861530778713263529}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8236924178329744450
@@ -2032,14 +2231,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dcfc4d00ab87f4084e852eed9d6b52, type: 3}
---- !u!4 &8486426135005418409 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 44dcfc4d00ab87f4084e852eed9d6b52, type: 3}
-  m_PrefabInstance: {fileID: 8236924178329744450}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9119234231751837971 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 44dcfc4d00ab87f4084e852eed9d6b52, type: 3}
+  m_PrefabInstance: {fileID: 8236924178329744450}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8486426135005418409 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 44dcfc4d00ab87f4084e852eed9d6b52, type: 3}
   m_PrefabInstance: {fileID: 8236924178329744450}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8623419467645767452
@@ -2103,14 +2302,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
---- !u!1 &8894014981280625229 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
-  m_PrefabInstance: {fileID: 8623419467645767452}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8081202846920059127 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
+  m_PrefabInstance: {fileID: 8623419467645767452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8894014981280625229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1ad3ead49545f5f4fa748a6ee0b95c03, type: 3}
   m_PrefabInstance: {fileID: 8623419467645767452}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9099505570588237537

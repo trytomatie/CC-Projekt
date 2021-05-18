@@ -16,8 +16,8 @@ TagManager:
   - UI
   - Grass
   - Player
-  - 
-  - 
+  - Floor
+  - IgnoreCollision
   - 
   - 
   - 
