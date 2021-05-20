@@ -80,7 +80,7 @@ public class RatAi : MonoBehaviour
     {
         Vector3 direction = (moveTarget.position - transform.position).normalized;
         direction.y = 0;
-        rb.position += (direction * (statusManager.movementSpeed * Time.deltaTime));
+        rb.position += (direction * (statusManager.MovementSpeed * Time.deltaTime));
         RotateToTaget(moveTarget);
         anim.SetBool("Moving", true);
     }

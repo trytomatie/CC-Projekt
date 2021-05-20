@@ -10,7 +10,27 @@ public class InventoryManager : MonoBehaviour
     public TextMeshProUGUI itemUI;
     private void Start()
     {
-
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Fence>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Farmland>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Farmland>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Farmland>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Farmland>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Farmland>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Farmland>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Farmland>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Farmland>());
+        AddItem(ScriptableObject.CreateInstance<Item_Other_Farmland>());
     }
 
     public void Update()

@@ -9,20 +9,26 @@ public class GameManager : MonoBehaviour
     public GameObject canvas;
     public TextMeshProUGUI creditText;
     private int credits = 0;
-    public static GameManager instance;
+    private static GameManager instance;
     private Camera gameCamera;
+    public float difficutlyScaling = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
+        if(Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
         gameCamera = Camera.main;
     }
 
 
     public static void SpawnFloatingText(string text,Transform targetTransform)
     {
-        GameObject go = Instantiate(instance.damageText, instance.gameCamera.WorldToScreenPoint(targetTransform.position + new Vector3(0, 1, 0)), instance.damageText.transform.rotation, instance.canvas.transform);
+        GameObject go = Instantiate(Instance.damageText, Instance.gameCamera.WorldToScreenPoint(targetTransform.position + new Vector3(0, 1, 0)), Instance.damageText.transform.rotation, Instance.canvas.transform);
         go.GetComponent<TextMeshProUGUI>().text = text;
     }
 
@@ -35,4 +41,6 @@ public class GameManager : MonoBehaviour
             creditText.text = "Credits: " + credits;
         }
     }
+
+    public static GameManager Instance { get => instance; private set => instance = value; }
 }

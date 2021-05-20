@@ -22,7 +22,7 @@ public class Interactable_Vendor : Interactable
         }
         foreach(Item item in itemsToRemove)
         {
-            GameManager.instance.Credits += item.stackSize * item.creditValue;
+            GameManager.Instance.Credits += item.stackSize * item.creditValue;
             invManager.RemoveItem(item, item.stackSize);
         }
     }

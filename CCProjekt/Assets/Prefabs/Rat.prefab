@@ -4840,7 +4840,7 @@ GameObject:
   - component: {fileID: 5712724427971808781}
   m_Layer: 0
   m_Name: Rat
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4908,10 +4908,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 2
+  baseMovmentSpeed: 2
+  movementspeedModifier: 1
   maxHp: 10
   hp: 10
   damage: 1
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &5712724427971808781
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public class AimController : MonoBehaviour
     /// </summary>
     private void Aim()
     {
-        if (lastMousePos != Input.mousePosition)
+        if (lastMousePos != Input.mousePosition || Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit[] hits = Physics.RaycastAll(ray);

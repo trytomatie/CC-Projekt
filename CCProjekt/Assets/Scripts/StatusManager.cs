@@ -5,8 +5,9 @@ using UnityEngine.Events;
 
 public class StatusManager : MonoBehaviour
 {
-
-    public float movementSpeed = 1;
+    public float baseMovmentSpeed = 1;
+    public float movementspeedModifier = 1;
+    private float movementSpeed;
     public int maxHp = 10;
     [SerializeField]
     private float hp = 10;
@@ -34,6 +35,11 @@ public class StatusManager : MonoBehaviour
         GameManager.SpawnFloatingText("-"+damage,transform);
     }
 
+    public void BaseDeathEvent()
+    {
+        Destroy(gameObject);
+    }
+
 
     public float Hp
     {
@@ -52,5 +58,10 @@ public class StatusManager : MonoBehaviour
             }
             
         }
+    }
+
+    public float MovementSpeed 
+    { 
+        get => (baseMovmentSpeed * movementspeedModifier); 
     }
 }
