@@ -17,7 +17,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRat", 0f, 3f);
-        InvokeRepeating("SpawnSeeds", 0f, 0.5f);
+        InvokeRepeating("SpawnMultipleSeeds", 0f, 180f);
     }
 
     // Update is called once per frame
@@ -26,7 +26,10 @@ public class SpawnManager : MonoBehaviour
   
     }
 
-    void SpawnRat ()
+    /// <summary>
+    /// spawns rats at midnight
+    /// </summary>
+    private void SpawnRat ()
     {
         if (dnc.dayTime > dnc.dayLenght / 2)
         {
@@ -36,11 +39,36 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    void SpawnSeeds ()
+    /// <summary>
+    /// checks if location already has an object, if not a seedpack is spawned
+    /// </summary>
+    private void SpawnSeeds ()
     {
-        if (!Physics.CheckSphere(transform.position, boxRadius))
+        int i = 0;
+        bool placeOccupied = true;
+
+        while (placeOccupied && i < 100)
         {
-            Instantiate(seedPrefab, new Vector3(Random.Range(-24, -32), 0, Random.Range(5, -30)), seedPrefab.transform.rotation);
+            Vector3 randomPosition = new Vector3(Random.Range(-24, -32), 0.1f, Random.Range(5, -30));
+            placeOccupied = Physics.CheckSphere(randomPosition, boxRadius);
+
+            if (!placeOccupied)
+            {
+                Instantiate(seedPrefab, randomPosition, seedPrefab.transform.rotation);
+            }
+           
+            i++;
+        }
+
+    }
+    /// <summary>
+    /// spawns up to 6 seed packs
+    /// </summary>
+    private void SpawnMultipleSeeds ()
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            SpawnSeeds();
         }
     }
 }
