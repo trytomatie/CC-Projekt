@@ -145,13 +145,15 @@ public class RatAi : MonoBehaviour
         targetStatus.ApplyDamage(statusManager.damage);
     }
 
-    /*
-        if HP reach 0, Rat returns to one of the Spawn Locations
-     */
+
+    /// <summary>
+    /// if HP reach 0, Rat returns to one of the Spawn Locations
+    /// </summary>
     private void IsDead()
     {
         if (statusManager.Hp == 0 && !isDead)
         {
+            Destroy(gameObject, 20f);
             gameObject.layer = 9;
             isDead = true;
             target = spawnManager.spawnpoints[Random.Range(0, spawnManager.spawnpoints.Length)].gameObject;

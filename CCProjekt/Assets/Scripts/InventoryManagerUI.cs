@@ -6,7 +6,7 @@ public class InventoryManagerUI : MonoBehaviour
 {
 
     public List<InventoryElementUI> inventoryElements;
-
+    public List<InventoryElementUI> cropsElements;
     public InventoryManager invManager;
 
     public InventoryElementUI selectedElement;
@@ -17,8 +17,13 @@ public class InventoryManagerUI : MonoBehaviour
         int i = 0;
         foreach(InventoryElementUI inventoryElement in inventoryElements)
         {
-            if(i < invManager.items.Count)
+            while (i < invManager.items.Count && invManager.items[i].itemType == Item.ItemType.Crop)
             {
+                i++;
+            }
+            if (i < invManager.items.Count)
+            {
+
                 inventoryElement.item = invManager.items[i];
             }
             else
@@ -27,8 +32,26 @@ public class InventoryManagerUI : MonoBehaviour
             }
             i++;
         }
+        i = 0;
+        foreach (InventoryElementUI cropsElement in cropsElements)
+        {
+            while (i < invManager.items.Count && invManager.items[i].itemType != Item.ItemType.Crop)
+            {
+                i++;
+            }
+            if (i < invManager.items.Count)
+            {
 
-        if(Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
+                cropsElement.item = invManager.items[i];
+            }
+            else
+            {
+                cropsElement.item = null;
+            }
+            i++;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetMouseButtonDown(1))
         {
             selectedElement = null;
         }

@@ -30,4 +30,13 @@ public class DamageObject : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        StatusManager otherStatus = other.GetComponent<StatusManager>();
+        if (otherStatus != null)
+        {
+            otherStatus.ApplyDamage(damage);
+        }
+    }
+
 }

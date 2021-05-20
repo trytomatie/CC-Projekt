@@ -43,10 +43,6 @@ public class StatusManager : MonoBehaviour
             hp = value;
             if (value <= 0)
             {
-                if(deathEvent == null)
-                {
-                    print("No DeathEvent set");
-                }
                 deathEvent.Invoke();
                 hp = 0;
             }
