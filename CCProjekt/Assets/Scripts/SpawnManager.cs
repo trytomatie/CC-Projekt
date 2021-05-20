@@ -17,7 +17,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRat", 0f, 3f);
-        InvokeRepeating("SpawnSeeds", 0f, 50f);
+        InvokeRepeating("SpawnSeeds", 0f, 0.5f);
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (!Physics.CheckSphere(transform.position, boxRadius))
         {
-            Instantiate(seedPrefab, new Vector3(Random.Range(-24, -32), 15.9f, Random.Range(5, -30)), seedPrefab.transform.rotation);
+            Instantiate(seedPrefab, new Vector3(Random.Range(-24, -32), 0, Random.Range(5, -30)), seedPrefab.transform.rotation);
         }
     }
 }
