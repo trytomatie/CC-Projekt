@@ -66,6 +66,7 @@ public class CropsScript : MonoBehaviour
 
     public void DeathEvent()
     {
+        GetComponent<Interactable_Crop>().field.isEnabled = true;
         Destroy(gameObject);
     }
 }

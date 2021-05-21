@@ -9,7 +9,7 @@ public class Interactable_ItemVendor : Interactable
     private void Start()
     {
         item = (Item)ScriptableObject.CreateInstance(itemName);
-        interactableText = "Buy" + item.itemName + " " + item.creditValue + " credits";
+        interactableText = "Buy <color=yellow>" + item.itemName + "</color> " + item.creditValue + " credits";
     }
     public override void Interact(GameObject interactor)
     {

@@ -53,7 +53,7 @@ public class Interactable_Field : Interactable
 
     private void PlantField(int i)
     {
-         GameObject go = Instantiate(cropPrefabs[i], transform.position, transform.rotation,transform);
+        GameObject go = Instantiate(cropPrefabs[i], transform.position, transform.rotation,transform);
         go.GetComponent<Interactable_Crop>().field = this;
     }
 }

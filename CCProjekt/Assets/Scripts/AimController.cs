@@ -22,7 +22,7 @@ public class AimController : MonoBehaviour
     /// </summary>
     private void Aim()
     {
-        if (lastMousePos != Input.mousePosition || Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        //if (lastMousePos != Input.mousePosition || Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit[] hits = Physics.RaycastAll(ray);
@@ -30,8 +30,10 @@ public class AimController : MonoBehaviour
             {
                 if (hit.collider.tag == "AimDetector")
                 {
+                    Quaternion currentRotation = transform.rotation;
                     transform.LookAt(hit.point);
-                    transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+                    Quaternion targetRotation = transform.rotation;
+                    transform.rotation = Quaternion.Euler(0,  Mathf.LerpAngle(currentRotation.eulerAngles.y,targetRotation.eulerAngles.y,0.04f), 0);
                     break;
                 }
             }
