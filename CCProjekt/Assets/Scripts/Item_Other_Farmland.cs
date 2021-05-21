@@ -12,6 +12,6 @@ public class Item_Other_Farmland : Item
         itemDescription = "Can be placed. Allows for crops to be planted.";
         itemType = ItemType.Other;
         sprite = Icons.GetIcon(7);
-        creditValue = 0;
+        creditValue = 100;
     }
 }

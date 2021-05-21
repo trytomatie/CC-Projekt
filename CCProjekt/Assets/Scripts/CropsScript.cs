@@ -13,7 +13,7 @@ public class CropsScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        PlantCrop();
     }
 
     // Update is called once per frame
@@ -48,10 +48,7 @@ public class CropsScript : MonoBehaviour
 
     public void PlantCrop()
     {
-        ResetCrop();
         currentCropObjet = cropStages[currentCropStage];
-        currentCropObjet.SetActive(true);
-        gameObject.SetActive(true);
         InvokeRepeating("ProgressCropStage", growthSpeed, growthSpeed);
     }
 

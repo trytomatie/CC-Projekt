@@ -8,7 +8,7 @@ public class Icons : MonoBehaviour
 
     public static Icons instance;
 
-    private void Start()
+    private void Awake()
     {
         instance = GameObject.FindObjectOfType<Icons>();
     }

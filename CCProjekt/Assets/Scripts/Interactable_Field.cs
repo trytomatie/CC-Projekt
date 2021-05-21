@@ -5,7 +5,7 @@ using UnityEngine;
 public class Interactable_Field : Interactable
 {
     public List<CropsScript> crops;
-
+    public List<GameObject> cropPrefabs;
     private void Start()
     {
         interactableText = "Plant";
@@ -19,27 +19,27 @@ public class Interactable_Field : Interactable
             switch (selectedItem.itemName)
             {
                 case "Corn seed":
-                    crops[0].PlantCrop();
+                    PlantField(0);
                     selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
                     break;
                 case "Carrot seed":
-                    crops[1].PlantCrop();
+                    PlantField(1);
                     selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
                     break;
                 case "Wheat seed":
-                    crops[2].PlantCrop();
+                    PlantField(2);
                     selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
                     break;
                 case "Melon seed":
-                    crops[3].PlantCrop();
+                    PlantField(3);
                     selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
                     break;
                 case "Turnip seed":
-                    crops[4].PlantCrop();
+                    PlantField(4);
                     selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
                     break;
                 case "Pumpkin seed":
-                    crops[5].PlantCrop();
+                    PlantField(5);
                     selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
                     break;
                 default:
@@ -49,5 +49,11 @@ public class Interactable_Field : Interactable
 
             }
         }
+    }
+
+    private void PlantField(int i)
+    {
+         GameObject go = Instantiate(cropPrefabs[i], transform.position, transform.rotation,transform);
+        go.GetComponent<Interactable_Crop>().field = this;
     }
 }

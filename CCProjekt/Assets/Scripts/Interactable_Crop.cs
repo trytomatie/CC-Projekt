@@ -19,7 +19,7 @@ public class Interactable_Crop : Interactable
     }
     public override void Interact(GameObject interactor)
     {
-        cropScript.gameObject.SetActive(false);
+        Destroy(gameObject);
         interactor.GetComponent<InventoryManager>().AddItem((Item)ScriptableObject.CreateInstance(seedDrop));
         interactor.GetComponent<InventoryManager>().AddItem((Item)ScriptableObject.CreateInstance(cropDrop));
         field.isEnabled = true;

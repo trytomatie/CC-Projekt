@@ -11,6 +11,7 @@ public class DayNightCycler : MonoBehaviour
     public float totaltime;
     public int dayCount = 0;
     public float dayLenght = 120;
+    public int currentDayTimeInMinutes;
 
 
     public Color dayColor;
@@ -21,9 +22,19 @@ public class DayNightCycler : MonoBehaviour
 
     public TextMeshProUGUI timeText;
 
+    private static DayNightCycler instance;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
+        if(Instance != null)
+        {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
         InvokeRepeating("UpdateTimeText", 0.2f, 0.2f);
     }
 
@@ -58,6 +69,9 @@ public class DayNightCycler : MonoBehaviour
     private void UpdateTimeText()
     {
         TimeSpan span = TimeSpan.FromSeconds(86400 * (dayTime / dayLenght) + (86400/2));
+        currentDayTimeInMinutes = (int)span.TotalMinutes;
         timeText.text = "Time: " + span.ToString(@"hh\:mm");
     }
+
+    public static DayNightCycler Instance { get => instance; private set => instance = value; }
 }
