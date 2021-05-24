@@ -473,7 +473,7 @@ MonoBehaviour:
   - {fileID: 2828296329244382891}
   - {fileID: 2528948104055955970}
   currentCropStage: 0
-  growthSpeed: 2
+  growthSpeed: 15
   myInteractable: {fileID: 2396783639581917989}
 --- !u!114 &2396783639581917989
 MonoBehaviour:

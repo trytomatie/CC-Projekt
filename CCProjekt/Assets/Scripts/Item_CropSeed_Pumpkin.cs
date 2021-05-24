@@ -9,7 +9,7 @@ public class Item_CropSeed_Pumpkin : Item
     {
         itemName = "Pumpkin seed";
         stackSize = 1;
-        itemDescription = "Pumpkin seed";
+        itemDescription = "Can be used to plant Pumpkins.";
         itemType = ItemType.Seed;
         sprite = Icons.GetIcon(5);
     }

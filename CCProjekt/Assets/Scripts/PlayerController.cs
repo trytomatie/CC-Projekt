@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed;
     public bool isFiring; 
     public float waterUsage = 7.5f;
     public float maxWater = 100;
@@ -17,16 +17,20 @@ public class PlayerController : MonoBehaviour
     public Rig blasterRig;
     public GameObject blaster;
     public TextMeshProUGUI waterText;
+    public Slider staminaBar;
     
     private float water = 100;
 
     private Rigidbody playerRb;
+    private StatusManager statusmanager;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
+        statusmanager = GetComponent<StatusManager>();
         bubbleParticles.Stop();
+        staminaBar.maxValue = statusmanager.maxStamina;
 
     }
 
@@ -34,14 +38,27 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Character Movement
-
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 movement = (transform.forward * verticalInput + transform.right * horizontalInput);
-        playerRb.velocity = new Vector3(movement.x * speed, playerRb.velocity.y, movement.z * speed);
+        playerRb.velocity = new Vector3(movement.x * statusmanager.MovementSpeed, playerRb.velocity.y, movement.z * statusmanager.MovementSpeed);
 
         CheckShooting();
+
+        if(Input.GetAxis("Sprint") > 0 && statusmanager.Stamina > 0)
+        {
+            statusmanager.staminaRegenEnabled = false;
+            statusmanager.Stamina -= 20 * Time.deltaTime;
+            statusmanager.movementspeedModifier = 1.4f;
+            anim.speed = 1.4f;
+        }
+        else
+        {
+            statusmanager.staminaRegenEnabled = true;
+            statusmanager.movementspeedModifier = 1;
+            anim.speed = 1;
+        }
 
         if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
         {
@@ -51,6 +68,7 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetFloat("Speed_f", 0);
         }
+        staminaBar.value = statusmanager.Stamina;
     }
 
     private void CheckShooting()

@@ -9,7 +9,7 @@ public class Item_CropSeed_Wheat : Item
     {
         itemName = "Wheat seed";
         stackSize = 1;
-        itemDescription = "Wheat seed";
+        itemDescription = "Can be used to plant Wheat.";
         itemType = ItemType.Seed;
         sprite = Icons.GetIcon(2);
     }

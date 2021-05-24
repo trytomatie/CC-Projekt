@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class InventoryManagerUI : MonoBehaviour
@@ -9,7 +10,15 @@ public class InventoryManagerUI : MonoBehaviour
     public List<InventoryElementUI> cropsElements;
     public InventoryManager invManager;
 
+    private Item hoveredItem;
+    public GameObject itemDescription;
+    public TextMeshProUGUI itemDescriptionText;
+    public TextMeshProUGUI itemDescriptionNameText;
+
+
     public InventoryElementUI selectedElement;
+
+
 
     // Update is called once per frame
     void Update()
@@ -55,5 +64,25 @@ public class InventoryManagerUI : MonoBehaviour
         {
             selectedElement = null;
         }
+    }
+
+    public Item HoveredItem 
+    { 
+        get => hoveredItem;
+        set {
+
+            hoveredItem = value;
+            if(hoveredItem == null)
+            {
+                itemDescription.SetActive(false);
+            }
+            else
+            {
+                itemDescription.SetActive(true);
+                itemDescriptionNameText.text = hoveredItem.itemName;
+                itemDescriptionText.text = hoveredItem.itemDescription;
+            }
+                
+         }
     }
 }

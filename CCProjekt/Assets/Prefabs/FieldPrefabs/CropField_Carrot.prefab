@@ -218,7 +218,7 @@ MonoBehaviour:
   - {fileID: 2918986555320554489}
   - {fileID: 5225331047022576620}
   currentCropStage: 0
-  growthSpeed: 2
+  growthSpeed: 20
   myInteractable: {fileID: 9125903517359125064}
 --- !u!65 &9125903517359125067
 BoxCollider:
@@ -266,8 +266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseMovmentSpeed: 1
   movementspeedModifier: 1
-  maxHp: 10
-  hp: 10
+  maxHp: 5
+  hp: 5
   damage: 1
   deathEvent:
     m_PersistentCalls:

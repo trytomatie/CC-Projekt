@@ -8,18 +8,29 @@ public class StatusManager : MonoBehaviour
     public float baseMovmentSpeed = 1;
     public float movementspeedModifier = 1;
     private float movementSpeed;
-    public int maxHp = 10;
-    [SerializeField]
-    private float hp = 10;
+    public float maxHp = 10;
+    public float maxStamina = 0;
+    public float staminaRegen;
+
+
+
+    public bool staminaRegenEnabled = true;
     public int damage = 1;
 
     public UnityEvent deathEvent;
 
+    [SerializeField]
+    private float stamina = 0;
+    [SerializeField]
+    private float hp = 10;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(maxStamina > 0)
+        {
+            InvokeRepeating("StaminaRegen", 0, 0.2f);
+        }
     }
 
     // Update is called once per frame
@@ -63,5 +74,25 @@ public class StatusManager : MonoBehaviour
     public float MovementSpeed 
     { 
         get => (baseMovmentSpeed * movementspeedModifier); 
+    }
+    public float Stamina { get => stamina; set 
+        {
+            if(value > maxStamina)
+            {
+                stamina = maxStamina;
+            }
+            else
+            { 
+                stamina = value;
+            }
+        } 
+    }
+
+    private void StaminaRegen()
+    {
+        if(staminaRegenEnabled)
+        { 
+            Stamina += staminaRegen / 5;
+        }
     }
 }

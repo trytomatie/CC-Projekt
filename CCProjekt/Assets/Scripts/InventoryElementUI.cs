@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventoryElementUI : MonoBehaviour
+public class InventoryElementUI : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
 {
 
     public Item item;
@@ -41,5 +42,15 @@ public class InventoryElementUI : MonoBehaviour
     public void SelectElement()
     {
         inventoryManagerUI.selectedElement = this;
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        inventoryManagerUI.HoveredItem = item;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        inventoryManagerUI.HoveredItem = null;
     }
 }
