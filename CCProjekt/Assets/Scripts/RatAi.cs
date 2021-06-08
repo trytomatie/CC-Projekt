@@ -85,6 +85,11 @@ public class RatAi : MonoBehaviour
         anim.SetBool("Moving", true);
     }
 
+    /// <summary>
+    /// Rotates to target
+    /// - By Christian Scherzer
+    /// </summary>
+    /// <param name="roationTaget"></param>
     private void RotateToTaget(Transform roationTaget)
     {
         transform.LookAt(roationTaget.position);

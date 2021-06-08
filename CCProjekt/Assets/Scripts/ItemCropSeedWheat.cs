@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item_CropSeed_Wheat : Item
+public class ItemCropSeedWheat : Item
 {
 
-    public Item_CropSeed_Wheat()
+    public ItemCropSeedWheat()
     {
         itemName = "Wheat seed";
         stackSize = 1;

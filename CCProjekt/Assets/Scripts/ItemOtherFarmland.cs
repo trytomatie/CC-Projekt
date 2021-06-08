@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item_Other_Farmland : Item
+public class ItemOtherFarmland : Item
 {
 
-    public Item_Other_Farmland()
+    public ItemOtherFarmland()
     {
         itemName = "Farmland";
         stackSize = 1;

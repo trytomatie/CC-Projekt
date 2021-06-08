@@ -85,8 +85,8 @@ MonoBehaviour:
   interactableText: 
   interactionType: 1
   crops: []
-  seedDrop: Item_CropSeed_Turnip
-  cropDrop: Item_Crop_Turnip
+  seedDrop: ItemCropSeedTurnip
+  cropDrop: ItemCropTurnip
   field: {fileID: 0}
 --- !u!114 &3525755670263605449
 MonoBehaviour:
@@ -103,7 +103,9 @@ MonoBehaviour:
   baseMovmentSpeed: 1
   movementspeedModifier: 1
   maxHp: 50
-  hp: 50
+  maxStamina: 0
+  staminaRegen: 0
+  staminaRegenEnabled: 1
   damage: 1
   deathEvent:
     m_PersistentCalls:
@@ -120,6 +122,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  stamina: 0
+  hp: 50
 --- !u!1 &3788685802844864728
 GameObject:
   m_ObjectHideFlags: 0

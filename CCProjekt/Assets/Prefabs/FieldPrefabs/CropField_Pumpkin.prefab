@@ -416,8 +416,8 @@ MonoBehaviour:
   interactableText: 
   interactionType: 1
   crops: []
-  seedDrop: Item_CropSeed_Pumpkin
-  cropDrop: Item_Crop_Pumpkin
+  seedDrop: ItemCropSeedPumpkin
+  cropDrop: ItemCropPumpkin
   field: {fileID: 0}
 --- !u!114 &8438043885272004985
 MonoBehaviour:
@@ -434,7 +434,9 @@ MonoBehaviour:
   baseMovmentSpeed: 1
   movementspeedModifier: 1
   maxHp: 25
-  hp: 25
+  maxStamina: 0
+  staminaRegen: 0
+  staminaRegenEnabled: 1
   damage: 1
   deathEvent:
     m_PersistentCalls:
@@ -451,3 +453,5 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  stamina: 0
+  hp: 25

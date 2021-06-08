@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item_Crop_Pumpkin : Item
+public class ItemCropPumpkin : Item
 {
 
-    public Item_Crop_Pumpkin()
+    public ItemCropPumpkin()
     {
         itemName = "Pumpkin";
         stackSize = 1;

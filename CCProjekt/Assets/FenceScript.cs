@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FenceScript : MonoBehaviour
 {
+    public float speedModifer = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class FenceScript : MonoBehaviour
     {
         if(other.CompareTag("Enemy"))
         {
-            other.GetComponent<StatusManager>().movementspeedModifier = 0.3f;
+            other.GetComponent<StatusManager>().movementspeedModifier = speedModifer;
         }
     }
 

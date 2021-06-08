@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item_Crop_Turnip : Item
+public class ItemCropTurnip : Item
 {
 
-    public Item_Crop_Turnip()
+    public ItemCropTurnip()
     {
         itemName = "Turnip";
         stackSize = 1;

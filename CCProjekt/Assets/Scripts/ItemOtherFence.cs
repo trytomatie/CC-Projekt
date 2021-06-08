@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item_Other_Fence : Item
+public class ItemOtherFence : Item
 {
 
-    public Item_Other_Fence()
+    public ItemOtherFence()
     {
         itemName = "Fence";
         stackSize = 1;
