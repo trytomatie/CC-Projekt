@@ -18,11 +18,17 @@ public class PlayerController : MonoBehaviour
     public GameObject blaster;
     public TextMeshProUGUI waterText;
     public Slider staminaBar;
-    
+
+    public Image healthbar;
+
+    public bool isDead = false;
+
     private float water = 100;
 
     private Rigidbody playerRb;
     private StatusManager statusmanager;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +75,9 @@ public class PlayerController : MonoBehaviour
             anim.SetFloat("Speed_f", 0);
         }
         staminaBar.value = statusmanager.Stamina;
+
+        float hpPercentage = statusmanager.Hp / statusmanager.maxHp;
+        healthbar.fillAmount = hpPercentage;
     }
 
     private void CheckShooting()
@@ -104,4 +113,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void IsDead ()
+    {
+        isDead = true;
+        GameManager.Instance.SetGameOver();
+    }
 }

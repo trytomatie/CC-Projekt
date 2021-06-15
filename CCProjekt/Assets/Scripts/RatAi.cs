@@ -102,18 +102,22 @@ public class RatAi : MonoBehaviour
     /// </summary>
     private void CheckForAttack()
     {
-        if(!isOnAttackCooldown && !isDead)
+        if (!GameManager.Instance.isGameOver)
         {
-            //preparingAttack = true;
-            isOnAttackCooldown = true;
-            RotateToTaget(target.transform);
-            Invoke("Attack", attackDelay);
-            Invoke("ResetAttackCooldown", attackCooldown);
+            if (!isOnAttackCooldown && !isDead)
+            {
+                //preparingAttack = true;
+                isOnAttackCooldown = true;
+                RotateToTaget(target.transform);
+                Invoke("Attack", attackDelay);
+                Invoke("ResetAttackCooldown", attackCooldown);
+            }
+            else if (isDead)
+            {
+                Destroy(gameObject);
+            }
         }
-        else if (isDead)
-        {
-            Destroy(gameObject);
-        }
+
     }
     /// <summary>
     /// Attack target

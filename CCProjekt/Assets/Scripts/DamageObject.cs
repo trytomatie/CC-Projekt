@@ -8,6 +8,8 @@ public class DamageObject : MonoBehaviour
     private ParticleSystem part;
     public List<ParticleCollisionEvent> collisionEvents;
 
+    public GameObject origin;
+
     private void Start()
     {
         part = GetComponent<ParticleSystem>();
@@ -23,7 +25,7 @@ public class DamageObject : MonoBehaviour
         for(int i = 0; i <numCollisionEvents;i++)
         {
             StatusManager otherStatus = other.GetComponent<StatusManager>();
-            if (otherStatus != null)
+            if (otherStatus != null && other.gameObject != origin)
             {
                 otherStatus.ApplyDamage(damage);
             }
@@ -33,7 +35,7 @@ public class DamageObject : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         StatusManager otherStatus = other.GetComponent<StatusManager>();
-        if (otherStatus != null)
+        if (otherStatus != null && other.gameObject != origin)
         {
             otherStatus.ApplyDamage(damage);
         }

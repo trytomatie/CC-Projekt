@@ -15,6 +15,11 @@ public class FloatingTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.isGameOver)
+        {
+            Destroy(gameObject);
+        }
+
         GetComponent<RectTransform>().position += new Vector3(0, 200f, 0) * Time.deltaTime;
     }
 }
