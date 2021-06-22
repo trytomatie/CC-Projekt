@@ -17,9 +17,11 @@ public class PlayerController : MonoBehaviour
     public Rig blasterRig;
     public GameObject blaster;
     public TextMeshProUGUI waterText;
-    public Slider staminaBar;
+
 
     public Image healthbar;
+    public Image staminaBar;
+    public Image waterBar;
 
     public bool isDead = false;
 
@@ -36,7 +38,7 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         statusmanager = GetComponent<StatusManager>();
         bubbleParticles.Stop();
-        staminaBar.maxValue = statusmanager.maxStamina;
+
 
     }
 
@@ -74,10 +76,12 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetFloat("Speed_f", 0);
         }
-        staminaBar.value = statusmanager.Stamina;
 
         float hpPercentage = statusmanager.Hp / statusmanager.maxHp;
         healthbar.fillAmount = hpPercentage;
+
+        float staminaPercentage = statusmanager.Stamina / statusmanager.maxStamina;
+        staminaBar.fillAmount = staminaPercentage;
     }
 
     private void CheckShooting()
@@ -109,7 +113,9 @@ public class PlayerController : MonoBehaviour
         set 
         {
             water = value;
-            waterText.text = Water.ToString("N0") + " / " + maxWater.ToString("N0");
+
+            float waterPercentage = water / maxWater;
+            waterBar.fillAmount = waterPercentage;
         }
     }
 

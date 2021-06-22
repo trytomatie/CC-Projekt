@@ -114,12 +114,12 @@ MonoBehaviour:
   interactableText: ...
   interactionType: 1
   seedDrops:
-  - Item_CropSeed_Carrot
-  - Item_CropSeed_Corn
-  - Item_CropSeed_Melon
-  - Item_CropSeed_Pumpkin
-  - Item_CropSeed_Turnip
-  - Item_CropSeed_Wheat
+  - ItemCropSeedCarrot
+  - ItemCropSeedCorn
+  - ItemCropSeedMelon
+  - ItemCropSeedPumpkin
+  - ItemCropSeedTurnip
+  - ItemCropSeedWheat
 --- !u!54 &1768062005
 Rigidbody:
   m_ObjectHideFlags: 0
