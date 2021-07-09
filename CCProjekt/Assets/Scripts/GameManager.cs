@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
     private Camera gameCamera;
 
+    public DayNightCycler dayNightCycler;
+
     public bool isGameOver = false;
     public bool isPaused = false;
 
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
     public SpawnManager spawnManager;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         if(Instance != null)
         {
@@ -33,6 +35,8 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         gameCamera = Camera.main;
+
+        
 
         gameOverDialog.SetActive(false);
         pauseDialog.SetActive(false);

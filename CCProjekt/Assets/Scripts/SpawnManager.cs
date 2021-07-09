@@ -7,6 +7,7 @@ public class SpawnManager : MonoBehaviour
 
     public GameObject ratPrefab;
     public Transform[] spawnpoints;
+    public Transform[] caveSpawnpoints;
     public DayNightCycler dnc;
 
     public float boxRadius;
@@ -17,7 +18,8 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         InvokeRepeating("SpawnRat", 0f, 3f);
-        InvokeRepeating("SpawnMultipleSeeds", 0f, 180f);
+        InvokeRepeating("SpawnMultipleSeeds", 0f, GameManager.Instance.dayNightCycler.dayLenght);
+        InvokeRepeating("SpawnMultipleRats", 0f, GameManager.Instance.dayNightCycler.dayLenght);
     }
 
     // Update is called once per frame
@@ -69,6 +71,16 @@ public class SpawnManager : MonoBehaviour
         for (int i = 0; i < 6; i++)
         {
             SpawnSeeds();
+        }
+    }
+
+    private void SpawnMultipleRats ()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            int randomPos = Random.Range(0, caveSpawnpoints.Length);
+
+            Instantiate(ratPrefab, caveSpawnpoints[randomPos].position, ratPrefab.transform.rotation);
         }
     }
 }

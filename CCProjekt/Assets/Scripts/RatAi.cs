@@ -165,6 +165,7 @@ public class RatAi : MonoBehaviour
             Destroy(gameObject, 20f);
             gameObject.layer = 9;
             isDead = true;
+            Instantiate(spawnManager.seedPrefab, transform.position, spawnManager.seedPrefab.transform.rotation);
             target = spawnManager.spawnpoints[Random.Range(0, spawnManager.spawnpoints.Length)].gameObject;
             waterParticles.Play();
 
