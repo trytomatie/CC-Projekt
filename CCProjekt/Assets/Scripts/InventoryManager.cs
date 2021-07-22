@@ -7,6 +7,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public List<Item> items = new List<Item>();
+    public int inventoryLimit = 5;
     public TextMeshProUGUI itemUI;
     private void Start()
     {
@@ -44,18 +45,25 @@ public class InventoryManager : MonoBehaviour
     /// - By Chstian Scherzer
     /// </summary>
     /// <param name="itemToAdd"></param>
-    public void AddItem(Item itemToAdd)
+    public bool AddItem(Item itemToAdd)
     {
+
         itemToAdd.attachedInventory = this;
         foreach (Item item in items)
         {
             if(item.itemName == itemToAdd.itemName)
             {
                 item.stackSize += itemToAdd.stackSize;
-                return;
+                return true;
             }
         }
-        items.Add(itemToAdd);
+        if(items.Count < inventoryLimit)
+        {
+            items.Add(itemToAdd);
+            return true;
+        }
+        return false;
+
     }
 
     /// <summary>

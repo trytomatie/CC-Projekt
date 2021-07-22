@@ -8,16 +8,20 @@ public class RatAi : MonoBehaviour
     public GameObject target;
     public Animator anim;
     public ParticleSystem waterParticles;
+    public AudioClip damageClip;
 
+    public bool isCaveRat;
     public float attackDelay = 0.4f;
     public float attackApplicationDelay = 0.3f;
     public float attackCooldown = 1f;
     public float minMoveDistanceToTarget = 1;
+    public float aggroDistance = 1f;
+
   
-    //private bool preparingAttack = false;
 
     private bool isOnAttackCooldown = false;
     private bool isDead = false;
+
     private SpawnManager spawnManager;
     private StatusManager statusManager;
     private Rigidbody rb;
@@ -33,7 +37,7 @@ public class RatAi : MonoBehaviour
         waterParticles.Stop();
     }
 
-    private void FindTarget()
+    private bool FindTarget()
     {
         CropsScript[] crops = GameObject.FindObjectsOfType<CropsScript>();
         if (crops.Length == 0)
@@ -44,6 +48,12 @@ public class RatAi : MonoBehaviour
         {
             target = crops[Random.Range(0, crops.Length)].gameObject;
         }
+        if(isCaveRat && Vector3.Distance(transform.position,target.transform.position) > aggroDistance)
+        {
+            target = null;
+            return false;
+        }
+        return true;
     }
 
     // Update is called once per frame
@@ -51,7 +61,10 @@ public class RatAi : MonoBehaviour
     {
         if (target == null)
         {
-            FindTarget();
+            if (!FindTarget())
+            {
+                return;
+            }
         }
         float distanceToTarget = Vector3.Distance(target.transform.position, transform.position);
         // Checks if Ai should move
@@ -170,5 +183,15 @@ public class RatAi : MonoBehaviour
             waterParticles.Play();
 
         }
+    }
+
+    public void OnTakingDamage()
+    {
+        GameObject go = Instantiate(GameManager.Instance.soundObject,transform.position,transform.rotation);
+        AudioSource audioSource = go.GetComponent<AudioSource>();
+        audioSource.clip = damageClip;
+        audioSource.pitch = Random.Range(0.8f, 1.2f);
+        audioSource.Play();
+        Destroy(go, damageClip.length);
     }
 }

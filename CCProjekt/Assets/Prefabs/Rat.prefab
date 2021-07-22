@@ -4892,10 +4892,13 @@ MonoBehaviour:
   target: {fileID: 0}
   anim: {fileID: 5712724428670114601}
   waterParticles: {fileID: 1705478328}
+  damageClip: {fileID: 8300000, guid: 19c6377e7e7882b46b1755966ff3f88e, type: 3}
+  isCaveRat: 0
   attackDelay: 0.4
   attackApplicationDelay: 0.3
   attackCooldown: 1
   minMoveDistanceToTarget: 1
+  aggroDistance: 8
 --- !u!114 &5712724427971808771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4911,11 +4914,30 @@ MonoBehaviour:
   baseMovmentSpeed: 2
   movementspeedModifier: 1
   maxHp: 10
-  hp: 10
+  maxStamina: 0
+  staminaRegen: 0
+  staminaRegenEnabled: 1
   damage: 1
   deathEvent:
     m_PersistentCalls:
       m_Calls: []
+  takingDamageEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5712724427971808770}
+        m_TargetAssemblyTypeName: RatAi, Assembly-CSharp
+        m_MethodName: OnTakingDamage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  stamina: 0
+  hp: 10
 --- !u!65 &5712724427971808781
 BoxCollider:
   m_ObjectHideFlags: 0

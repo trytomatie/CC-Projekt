@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI creditText;
     public GameObject gameOverDialog;
     public GameObject pauseDialog;
+    public GameObject soundObject;
 
     private int credits = 0;
     private static GameManager instance;

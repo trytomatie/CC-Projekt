@@ -18,6 +18,7 @@ public class StatusManager : MonoBehaviour
     public int damage = 1;
 
     public UnityEvent deathEvent;
+    public UnityEvent takingDamageEvent;
 
     [SerializeField]
     private float stamina = 0;
@@ -44,6 +45,7 @@ public class StatusManager : MonoBehaviour
     {
         Hp -= damage;
         GameManager.SpawnFloatingText("-"+damage,transform);
+        takingDamageEvent.Invoke();
     }
 
     public void BaseDeathEvent()

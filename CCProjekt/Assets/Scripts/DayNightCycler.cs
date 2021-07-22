@@ -59,6 +59,7 @@ public class DayNightCycler : MonoBehaviour
         float r = Mathf.Lerp(dayColor.r, nightColor.r, lerpValue);
         float g = Mathf.Lerp(dayColor.g, nightColor.g, lerpValue);
         float b = Mathf.Lerp(dayColor.b, nightColor.b, lerpValue);
+        lights[0].transform.rotation = Quaternion.Euler(Mathf.Round(lights[0].transform.rotation.eulerAngles.x), lights[0].transform.rotation.eulerAngles.y + (360 / dayLenght * Time.deltaTime), lights[0].transform.rotation.eulerAngles.z);
         currentColor = new Color(r, g, b,1);
         foreach (Light light in lights)
         {

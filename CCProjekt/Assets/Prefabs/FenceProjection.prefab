@@ -138,11 +138,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3043383782422191224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbe9d4212153e1f4ba52fdeb66ab34e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedModifer: 0.1
 --- !u!114 &3043383782422191228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3043383782422191224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
   m_Name: 
@@ -158,7 +159,9 @@ MonoBehaviour:
   baseMovmentSpeed: 1
   movementspeedModifier: 1
   maxHp: 10
-  hp: 10
+  maxStamina: 0
+  staminaRegen: 0
+  staminaRegenEnabled: 1
   damage: 1
   deathEvent:
     m_PersistentCalls:
@@ -175,3 +178,5 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  stamina: 0
+  hp: 10

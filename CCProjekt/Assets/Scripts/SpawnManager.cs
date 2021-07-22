@@ -80,7 +80,8 @@ public class SpawnManager : MonoBehaviour
         {
             int randomPos = Random.Range(0, caveSpawnpoints.Length);
 
-            Instantiate(ratPrefab, caveSpawnpoints[randomPos].position, ratPrefab.transform.rotation);
+            GameObject rat = Instantiate(ratPrefab, caveSpawnpoints[randomPos].position, ratPrefab.transform.rotation);
+            rat.GetComponent<RatAi>().isCaveRat = true;
         }
     }
 }

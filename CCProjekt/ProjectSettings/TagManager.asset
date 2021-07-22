@@ -9,6 +9,7 @@ TagManager:
   - Field
   - Enemy
   - Floor
+  - Stone
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Floor
   - IgnoreCollision
   - IgnorePlayerCollision
-  - 
+  - Interaction
   - 
   - 
   - 
