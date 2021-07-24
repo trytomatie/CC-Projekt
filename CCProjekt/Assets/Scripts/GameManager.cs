@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void RestartGame ()
     {
-        Time.timeScale = 1;            
+        Time.timeScale = 1;     //makes sure that time scale is set to 1       
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // game scene will be reloaded
     }
@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void BackToTitle ()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 1; //makes sure that time scale is set to 1
 
         SceneManager.LoadScene(0); // title menu will be loaded
     }
