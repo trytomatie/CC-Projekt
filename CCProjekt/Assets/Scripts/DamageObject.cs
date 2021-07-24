@@ -5,10 +5,10 @@ using UnityEngine;
 public class DamageObject : MonoBehaviour
 {
     public int damage;
-    private ParticleSystem part;
     public List<ParticleCollisionEvent> collisionEvents;
-
     public GameObject origin;
+
+    private ParticleSystem part;
 
     private void Start()
     {

@@ -10,16 +10,17 @@ public class MouseRaycasterUI : MonoBehaviour
     public GameObject fenceIndicator;
     public GameObject farmlandIndicator;
     public EventSystem eventSystem;
-
     public GameObject target = null;
-    private InventoryManagerUI inventoryManagerUI;
+    
     public int[] test = new int[2];
 
-    private Vector3 lastMousePos;
     public Vector3 lastRaycastImpactPoint;
     public Vector3 roundedImpactPoint;
 
+    private Vector3 lastMousePos;
+    private InventoryManagerUI inventoryManagerUI;
     private GameObject currentObjectIndicator;
+
     // Start is called before the first frame update
     void Start()
     {

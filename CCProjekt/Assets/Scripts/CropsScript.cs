@@ -8,8 +8,9 @@ public class CropsScript : MonoBehaviour
     public List<GameObject> cropStages;
     public int currentCropStage = 0;
     public float growthSpeed = 2;
-    private GameObject currentCropObjet;
     public Interactable myInteractable;
+
+    private GameObject currentCropObjet;
     // Start is called before the first frame update
     void Start()
     {

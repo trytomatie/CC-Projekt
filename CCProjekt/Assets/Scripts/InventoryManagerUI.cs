@@ -10,7 +10,6 @@ public class InventoryManagerUI : MonoBehaviour
     public List<InventoryElementUI> cropsElements;
     public InventoryManager invManager;
 
-    private Item hoveredItem;
     public GameObject itemDescription;
     public TextMeshProUGUI itemDescriptionText;
     public TextMeshProUGUI itemDescriptionNameText;
@@ -18,7 +17,7 @@ public class InventoryManagerUI : MonoBehaviour
 
     public InventoryElementUI selectedElement;
 
-
+    private Item hoveredItem;
 
     // Update is called once per frame
     void Update()

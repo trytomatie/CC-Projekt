@@ -17,8 +17,6 @@ public class RatAi : MonoBehaviour
     public float minMoveDistanceToTarget = 1;
     public float aggroDistance = 1f;
 
-  
-
     private bool isOnAttackCooldown = false;
     private bool isDead = false;
 
@@ -169,18 +167,18 @@ public class RatAi : MonoBehaviour
 
 
     /// <summary>
-    /// if HP reach 0, Rat returns to one of the Spawn Locations
+    /// if HP reaches 0 and rat didnt die yet, it returns to one of the spawnpoints
     /// </summary>
     private void IsDead()
     {
         if (statusManager.Hp == 0 && !isDead)
         {
-            Destroy(gameObject, 20f);
-            gameObject.layer = 9;
+            Destroy(gameObject, 20f); // guarantees that game object will be destroyed after 20 seconds
+            gameObject.layer = 9; // rat ignores collision except the floor
             isDead = true;
-            Instantiate(spawnManager.seedPrefab, transform.position, spawnManager.seedPrefab.transform.rotation);
-            target = spawnManager.spawnpoints[Random.Range(0, spawnManager.spawnpoints.Length)].gameObject;
-            waterParticles.Play();
+            Instantiate(spawnManager.seedPrefab, transform.position, spawnManager.seedPrefab.transform.rotation); // rat drops a seed once it dies
+            target = spawnManager.spawnpoints[Random.Range(0, spawnManager.spawnpoints.Length)].gameObject;       // rat returns to one of the set spawnpoints
+            waterParticles.Play();                                                                                
 
         }
     }

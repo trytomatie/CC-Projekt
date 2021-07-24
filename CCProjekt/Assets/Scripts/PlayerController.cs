@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour
     public bool isDead = false;
 
     private float water = 100;
-
     private Rigidbody playerRb;
     private StatusManager statusmanager;
 
@@ -38,8 +37,6 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         statusmanager = GetComponent<StatusManager>();
         bubbleParticles.Stop();
-
-
     }
 
     // Update is called once per frame
@@ -119,6 +116,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// If the Player is dead the Game gets set to Game Over
+    /// </summary>
     public void IsDead ()
     {
         isDead = true;

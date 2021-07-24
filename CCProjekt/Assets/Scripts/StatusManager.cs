@@ -7,18 +7,17 @@ public class StatusManager : MonoBehaviour
 {
     public float baseMovmentSpeed = 1;
     public float movementspeedModifier = 1;
-    private float movementSpeed;
     public float maxHp = 10;
     public float maxStamina = 0;
     public float staminaRegen;
-
-
 
     public bool staminaRegenEnabled = true;
     public int damage = 1;
 
     public UnityEvent deathEvent;
     public UnityEvent takingDamageEvent;
+
+    private float movementSpeed;
 
     [SerializeField]
     private float stamina = 0;

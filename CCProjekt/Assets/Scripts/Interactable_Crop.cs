@@ -10,6 +10,7 @@ public class Interactable_Crop : Interactable
     public string cropDrop;
 
     public Interactable_Field field;
+
     private CropsScript cropScript;
 
     private void Start()

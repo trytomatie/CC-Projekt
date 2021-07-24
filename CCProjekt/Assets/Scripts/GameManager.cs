@@ -13,10 +13,6 @@ public class GameManager : MonoBehaviour
     public GameObject pauseDialog;
     public GameObject soundObject;
 
-    private int credits = 0;
-    private static GameManager instance;
-    private Camera gameCamera;
-
     public DayNightCycler dayNightCycler;
 
     public bool isGameOver = false;
@@ -25,6 +21,11 @@ public class GameManager : MonoBehaviour
     public float difficutlyScaling = 1;
 
     public SpawnManager spawnManager;
+
+    private int credits = 0;
+    private static GameManager instance;
+    private Camera gameCamera;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -39,13 +40,13 @@ public class GameManager : MonoBehaviour
 
         
 
-        gameOverDialog.SetActive(false);
+        gameOverDialog.SetActive(false); // game over dialog & pause dialog will not be display at the beginning of the game
         pauseDialog.SetActive(false);
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !isGameOver)
+        if (Input.GetKeyDown(KeyCode.Escape) && !isGameOver) // if the player presses the escape key and isnt game over, he can pause the game
         {
             PauseGame(!isPaused);
         }
@@ -67,23 +68,32 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// game over
+    /// </summary>
     public void SetGameOver()
     {
         isGameOver = true;
-        gameOverDialog.SetActive(true);
+        gameOverDialog.SetActive(true); // game over dialog will be displayed
 
-        Time.timeScale = 0;
+        Time.timeScale = 0;             // freezes the game
 
-        spawnManager.CancelInvoke();
+        spawnManager.CancelInvoke();    // all invokes from the spawnmanager will be stopped
     }
 
+    /// <summary>
+    /// restarts the game
+    /// </summary>
     public void RestartGame ()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 1;            
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // game scene will be reloaded
     }
-
+    
+    /// <summary>
+    /// pauses the game
+    /// </summary>
     public void PauseGame (bool setPause)
     {
         isPaused = setPause;
@@ -92,20 +102,23 @@ public class GameManager : MonoBehaviour
 
         if (isPaused)
         {
-            Time.timeScale = 0;
+            Time.timeScale = 0; // if game gets paused, time will freeze
         }
         else
         {
-            Time.timeScale = 1;
+            Time.timeScale = 1; //unfreezes time
         }
         
     }
 
+    /// <summary>
+    /// returns to title screen
+    /// </summary>
     public void BackToTitle ()
     {
         Time.timeScale = 1;
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0); // title menu will be loaded
     }
 
     public static GameManager Instance { get => instance; private set => instance = value; }
