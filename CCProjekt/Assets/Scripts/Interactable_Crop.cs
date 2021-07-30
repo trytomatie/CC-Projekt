@@ -26,7 +26,10 @@ public class Interactable_Crop : Interactable
     public override void Interact(GameObject interactor)
     {
         Destroy(gameObject);
-        interactor.GetComponent<InventoryManager>().AddItem((Item)ScriptableObject.CreateInstance(seedDrop));
+        if (Random.Range(0, 101) < 25 )
+        {
+            interactor.GetComponent<InventoryManager>().AddItem((Item)ScriptableObject.CreateInstance(seedDrop));
+        } 
         interactor.GetComponent<InventoryManager>().AddItem((Item)ScriptableObject.CreateInstance(cropDrop));
         field.isEnabled = true;
     }

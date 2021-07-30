@@ -32,6 +32,21 @@ public class RatAi : MonoBehaviour
         FindTarget();
         spawnManager = GameObject.FindObjectOfType<SpawnManager>();
 
+
+        // Changes HP of rats depeding on the difficulty
+        switch (GameManager.Instance.difficulty)
+        {
+            case 0:
+                statusManager.InitalizeHP(5);
+                break;
+            case 1:
+                statusManager.InitalizeHP(10);
+                break;
+            case 2:
+                statusManager.InitalizeHP(15);
+                break;
+        }
+
         waterParticles.Stop();
     }
 
@@ -195,7 +210,12 @@ public class RatAi : MonoBehaviour
             isDead = true;
             Instantiate(spawnManager.seedPrefab, transform.position, spawnManager.seedPrefab.transform.rotation); // rat drops a seed once it dies
             target = spawnManager.spawnpoints[Random.Range(0, spawnManager.spawnpoints.Length)].gameObject;       // rat returns to one of the set spawnpoints
-            waterParticles.Play();                                                                                
+            waterParticles.Play();
+
+            if (Random.Range(0, 101) < 25)
+            {
+                Instantiate(spawnManager.fieldPrefab, transform.position, spawnManager.fieldPrefab.transform.rotation);
+            }
 
         }
     }

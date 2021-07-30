@@ -93,6 +93,12 @@ public class StatusManager : MonoBehaviour
         } 
     }
 
+    public void InitalizeHP (int value)
+    {
+        maxHp = value;
+        hp = value;
+    }
+
     private void StaminaRegen()
     {
         if(staminaRegenEnabled)

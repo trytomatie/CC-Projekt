@@ -13,14 +13,16 @@ public class GameManager : MonoBehaviour
     public GameObject pauseDialog;
     public GameObject soundObject;
     public GameObject damageObject;
+    public TextMeshProUGUI daysText;
 
     public DayNightCycler dayNightCycler;
 
     public bool isGameOver = false;
     public bool isPaused = false;
 
-    public float difficutlyScaling = 1;
+    public int difficulty = -1;
     public float cropYieldMultipier = 1;
+    public float growthMulitiplier = 1;
 
     public SpawnManager spawnManager;
 
@@ -40,7 +42,35 @@ public class GameManager : MonoBehaviour
         Instance = this;
         gameCamera = Camera.main;
 
-        
+        difficulty = PlayerPrefs.GetInt("difficulty", 1);
+
+
+        // Changes the Multiplier depending on the difficulty
+        switch (difficulty)
+        {
+            case 0:
+                cropYieldMultipier = 1.3f;
+                break;
+            case 1:
+                cropYieldMultipier = 1f;
+                break;
+            case 2:
+                cropYieldMultipier = 0.7f;
+                break;
+        }
+
+        switch (difficulty)
+        {
+            case 0:
+                growthMulitiplier = 1.3f;
+                break;
+            case 1:
+                growthMulitiplier = 1f;
+                break;
+            case 2:
+                growthMulitiplier = 0.7f;
+                break;
+        }
 
         gameOverDialog.SetActive(false); // game over dialog & pause dialog will not be display at the beginning of the game
         pauseDialog.SetActive(false);
@@ -83,6 +113,7 @@ public class GameManager : MonoBehaviour
     public void SetGameOver()
     {
         isGameOver = true;
+        daysText.text = "Days survived: " + dayNightCycler.realDayCount;
         gameOverDialog.SetActive(true); // game over dialog will be displayed
 
         Time.timeScale = 0;             // freezes the game

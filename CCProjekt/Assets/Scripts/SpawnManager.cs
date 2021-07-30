@@ -13,11 +13,29 @@ public class SpawnManager : MonoBehaviour
     public float boxRadius;
     public float zRange = 5;
     public GameObject seedPrefab;
+    public GameObject fieldPrefab;
+
+    private int timeInterval = 0;
+    private int maxTimeInterval = 3;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnRat", 0f, 3f); // spawns rat at midnight
+        // Sets spawn rate of rats depending on the difficulty
+        switch (GameManager.Instance.difficulty)
+        {
+            case 0:
+                maxTimeInterval = 10;
+                break;
+            case 1:
+                maxTimeInterval = 7;
+                break;
+            case 2:
+                maxTimeInterval = 4;
+                break;
+        }
+
+        InvokeRepeating("SpawnRat", 0f, 1f); // spawns rat at midnight
         InvokeRepeating("SpawnMultipleSeeds", 0f, GameManager.Instance.dayNightCycler.dayLenght); // spawns seeds at the beginning of the day
         InvokeRepeating("SpawnMultipleRats", 0f, GameManager.Instance.dayNightCycler.dayLenght); // spawns caverats at the beginning of the day
     }
@@ -35,6 +53,19 @@ public class SpawnManager : MonoBehaviour
     {
         if (dnc.dayTime > dnc.dayLenght / 2)
         {
+            if (timeInterval < maxTimeInterval)
+            {
+                timeInterval = timeInterval + 1;
+
+                return;
+
+            }
+
+            if (timeInterval >= maxTimeInterval)
+            {
+                timeInterval = 0;
+            }
+
             int randomPos = Random.Range(0, spawnpoints.Length);
 
             Instantiate(ratPrefab, spawnpoints[randomPos].position, ratPrefab.transform.rotation);  // spawns rats at a random set spawnpoint

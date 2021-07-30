@@ -50,7 +50,7 @@ public class CropsScript : MonoBehaviour
     public void PlantCrop()
     {
         currentCropObjet = cropStages[currentCropStage];
-        InvokeRepeating("ProgressCropStage", growthSpeed, growthSpeed);
+        InvokeRepeating("ProgressCropStage", growthSpeed * GameManager.Instance.growthMulitiplier, growthSpeed * GameManager.Instance.growthMulitiplier);
     }
 
     /// <summary>
