@@ -22,12 +22,15 @@ public class AimController : MonoBehaviour
     /// </summary>
     private void Aim()
     {
-        //if (lastMousePos != Input.mousePosition || Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            // Creates ray
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
+            // Casts ray
             RaycastHit[] hits = Physics.RaycastAll(ray);
+            // Checks all raycast hits for collision with aim Detector
             foreach (RaycastHit hit in hits)
             {
+                // If aim detector is hit, turn player toward impactpoint
                 if (hit.collider.tag == "AimDetector")
                 {
                     Quaternion currentRotation = transform.rotation;

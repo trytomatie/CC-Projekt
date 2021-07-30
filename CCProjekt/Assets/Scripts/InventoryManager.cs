@@ -102,20 +102,24 @@ public class InventoryManager : MonoBehaviour
     /// </summary>
     /// <param name="itemName"></param>
     /// <param name="ammount"></param>
-    public void RemoveItem(Item itemToRemove, int ammount)
+    public bool RemoveItem(Item itemToRemove, int ammount)
     {
+        // Checks items in inventory
         foreach (Item item in items)
         {
+            // Checks the Item name for match
             if (item.itemName == itemToRemove.itemName)
             {
+                // Checks if enough stacks are present
                 if (item.stackSize >= ammount)
                 {
                     item.stackSize -= ammount;
+                    // if the stacksize reaches 0, remove the item from the inventory
                     if (item.stackSize == 0)
                     {
                         items.Remove(item);
                     }
-                    return;
+                    return true;
                 }
                 else
                 {
@@ -124,5 +128,6 @@ public class InventoryManager : MonoBehaviour
             }
         }
         print("Item to remove not found");
+        return false;
     }
 }

@@ -9,6 +9,10 @@ public class Interactable_Vendor : Interactable
     {
         interactableText = "Sell Crops";
     }
+    /// <summary>
+    /// Sell crops from interactor Inventory
+    /// </summary>
+    /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)
     {
         InventoryManager invManager = interactor.GetComponent<InventoryManager>();

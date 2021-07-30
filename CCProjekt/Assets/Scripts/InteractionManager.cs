@@ -49,6 +49,10 @@ public class InteractionManager : MonoBehaviour
             interactionTooltipText.GetComponent<TooltipScriptUI>().tooltipTarget = null;
         }
     }
+    /// <summary>
+    /// Add Interactables from Interactablelist
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if(other.GetComponent<Interactable>() != null)
@@ -56,7 +60,10 @@ public class InteractionManager : MonoBehaviour
             allInteractablesInRange.Add(other.GetComponent<Interactable>());
         }
     }
-
+    /// <summary>
+    /// Remove Interactables from Interactablelist
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerExit(Collider other)
     {
         if (other.GetComponent<Interactable>() != null)

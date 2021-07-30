@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  faction: 2
   baseMovmentSpeed: 1
   movementspeedModifier: 1
   maxHp: 50
@@ -122,6 +123,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  takingDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
   stamina: 0
   hp: 50
 --- !u!1 &3788685802844864728

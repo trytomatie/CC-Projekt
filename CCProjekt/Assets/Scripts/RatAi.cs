@@ -38,13 +38,31 @@ public class RatAi : MonoBehaviour
     private bool FindTarget()
     {
         CropsScript[] crops = GameObject.FindObjectsOfType<CropsScript>();
+        Interactable_FreeSeeds[] seeds = GameObject.FindObjectsOfType<Interactable_FreeSeeds>();
         if (crops.Length == 0)
         {
-            target = GameObject.Find("Player");
+            int rnd = Random.Range(0, 2);
+            if (rnd == 0 && seeds.Length != 0)
+            {
+
+                target = seeds[Random.Range(0, seeds.Length)].gameObject;
+            }
+            else
+            { 
+                target = GameObject.Find("Player");
+            }
         }
         else
         {
-            target = crops[Random.Range(0, crops.Length)].gameObject;
+            int rnd = Random.Range(0, 2);
+            if(rnd == 0 && seeds.Length != 0)
+            {
+                target = seeds[Random.Range(0, seeds.Length)].gameObject;
+            }
+            else
+            {
+                target = crops[Random.Range(0, crops.Length)].gameObject;
+            }
         }
         if(isCaveRat && Vector3.Distance(transform.position,target.transform.position) > aggroDistance)
         {
@@ -138,7 +156,7 @@ public class RatAi : MonoBehaviour
     private void Attack()
     {
         anim.SetTrigger("Attack");
-        Invoke("ApplyDamage", attackApplicationDelay);
+        Invoke("SpawnDamageObject", attackApplicationDelay);
     }
 
     /// <summary>
@@ -151,18 +169,17 @@ public class RatAi : MonoBehaviour
     }
 
     /// <summary>
-    /// Apply Damage
+    /// Spawn Damage Object
     /// - By Christian Scherzer
     /// </summary>
-    private void ApplyDamage()
+    private void SpawnDamageObject()
     {
-        StatusManager targetStatus = target.GetComponent<StatusManager>();
-        if(targetStatus == null)
-        {
-            return;
-        }
-        //preparingAttack = false;
-        targetStatus.ApplyDamage(statusManager.damage);
+        GameObject go =  Instantiate(GameManager.Instance.damageObject,transform.position + transform.forward * 0.7f,transform.rotation);
+        go.GetComponent<SphereCollider>().radius = 0.5f;
+        DamageObject damageObject = go.GetComponent<DamageObject>();
+        damageObject.origin = gameObject;
+        damageObject.damage = statusManager.damage;
+        damageObject.lingeringTime = 0.1f;
     }
 
 

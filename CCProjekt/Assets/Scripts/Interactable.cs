@@ -8,6 +8,11 @@ public class Interactable : MonoBehaviour
     public string interactableText = "...";
     public enum InteractionType { Mouse, Direct}
     public InteractionType interactionType = InteractionType.Direct;
+
+    /// <summary>
+    /// Virtual method for Interaction
+    /// </summary>
+    /// <param name="interactor"></param>
     public virtual void Interact(GameObject interactor)
     {
         

@@ -51,12 +51,20 @@ public class PlayerController : MonoBehaviour
 
         CheckShooting();
 
-        if(Input.GetAxis("Sprint") > 0 && statusmanager.Stamina > 0)
+        if(Input.GetAxis("Sprint") > 0)
         {
             statusmanager.staminaRegenEnabled = false;
-            statusmanager.Stamina -= 20 * Time.deltaTime;
-            statusmanager.movementspeedModifier = 1.4f;
-            anim.speed = 1.4f;
+            if(statusmanager.Stamina > 0)
+            { 
+                statusmanager.Stamina -= 20 * Time.deltaTime;
+                statusmanager.movementspeedModifier = 1.4f;
+                anim.speed = 1.4f;
+            }
+            else
+            {
+                statusmanager.movementspeedModifier = 1;
+                anim.speed = 1;
+            }
         }
         else
         {

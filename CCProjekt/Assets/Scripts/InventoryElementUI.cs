@@ -52,5 +52,6 @@ public class InventoryElementUI : MonoBehaviour , IPointerEnterHandler, IPointer
     public void OnPointerExit(PointerEventData eventData)
     {
         inventoryManagerUI.HoveredItem = null;
+        
     }
 }

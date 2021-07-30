@@ -17,6 +17,10 @@ public class FenceScript : MonoBehaviour
         
     }
 
+    /// <summary>
+    /// Slows Enemys on enter
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Enemy"))
@@ -25,6 +29,10 @@ public class FenceScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Sets Enemy speed back to 100%
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Enemy"))

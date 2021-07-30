@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverDialog;
     public GameObject pauseDialog;
     public GameObject soundObject;
+    public GameObject damageObject;
 
     public DayNightCycler dayNightCycler;
 
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     public bool isPaused = false;
 
     public float difficutlyScaling = 1;
+    public float cropYieldMultipier = 1;
 
     public SpawnManager spawnManager;
 
@@ -52,6 +54,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Spawns floating ui-text
+    /// By Christian Scherzer
+    /// </summary>
+    /// <param name="text"></param>
+    /// <param name="targetTransform"></param>
     public static void SpawnFloatingText(string text,Transform targetTransform)
     {
         GameObject go = Instantiate(Instance.damageText, Instance.gameCamera.WorldToScreenPoint(targetTransform.position + new Vector3(0, 1, 0)), Instance.damageText.transform.rotation, Instance.canvas.transform);
@@ -70,6 +78,7 @@ public class GameManager : MonoBehaviour
 
     /// <summary>
     /// game over
+    /// by Shaina Milde
     /// </summary>
     public void SetGameOver()
     {
@@ -83,6 +92,7 @@ public class GameManager : MonoBehaviour
 
     /// <summary>
     /// restarts the game
+    /// By Shaina Milde
     /// </summary>
     public void RestartGame ()
     {
@@ -93,9 +103,15 @@ public class GameManager : MonoBehaviour
     
     /// <summary>
     /// pauses the game
+    /// By Shaina Milde
     /// </summary>
     public void PauseGame (bool setPause)
     {
+        if(ShopUI.Instance.gameObject.activeSelf == true)
+        {
+            ShopUI.CloseShopUI();
+            return;
+        }
         isPaused = setPause;
 
         pauseDialog.SetActive(isPaused);
@@ -113,6 +129,7 @@ public class GameManager : MonoBehaviour
 
     /// <summary>
     /// returns to title screen
+    /// By Shaina Milde
     /// </summary>
     public void BackToTitle ()
     {

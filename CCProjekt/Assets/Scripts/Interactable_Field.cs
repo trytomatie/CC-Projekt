@@ -10,9 +10,16 @@ public class Interactable_Field : Interactable
     {
         interactableText = "Plant";
     }
+
+    /// <summary>
+    /// Plant crop
+    /// </summary>
+    /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)
     {
+        // Get selected Item
         Item selectedItem = interactor.GetComponent<InventoryManagerUI>().selectedElement.item;
+        // Plant seed depending on item
         if(selectedItem != null)
         {
             isEnabled = false;
@@ -51,6 +58,11 @@ public class Interactable_Field : Interactable
         }
     }
 
+    /// <summary>
+    /// Plant seed
+    /// By Christian Scherzer
+    /// </summary>
+    /// <param name="i"></param>
     private void PlantField(int i)
     {
         GameObject go = Instantiate(cropPrefabs[i], transform.position, transform.rotation,transform);

@@ -18,6 +18,11 @@ public class Interactable_Crop : Interactable
         interactableText = "Harvest";
         cropScript = GetComponent<CropsScript>();
     }
+    /// <summary>
+    /// Harvest crop and give seeds and Crops to the player
+    /// By Christian Scherzer
+    /// </summary>
+    /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)
     {
         Destroy(gameObject);

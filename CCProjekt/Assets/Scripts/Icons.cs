@@ -12,6 +12,11 @@ public class Icons : MonoBehaviour
     {
         instance = GameObject.FindObjectOfType<Icons>();
     }
+    /// <summary>
+    /// Return sprite by id
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
     public static Sprite GetIcon(int id)
     {
         return instance.icons[id];

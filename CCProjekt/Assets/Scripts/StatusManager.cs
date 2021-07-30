@@ -5,6 +5,10 @@ using UnityEngine.Events;
 
 public class StatusManager : MonoBehaviour
 {
+
+    public enum entityFaction { Monster,Player,Plant };
+    public entityFaction faction = entityFaction.Monster;
+
     public float baseMovmentSpeed = 1;
     public float movementspeedModifier = 1;
     public float maxHp = 10;

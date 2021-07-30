@@ -11,6 +11,10 @@ public class Interactable_ItemVendor : Interactable
         item = (Item)ScriptableObject.CreateInstance(itemName);
         interactableText = "Buy <color=yellow>" + item.itemName + "</color> " + item.creditValue + " credits";
     }
+    /// <summary>
+    /// Buys item for credits
+    /// </summary>
+    /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)
     {
         InventoryManager invManager = interactor.GetComponent<InventoryManager>();

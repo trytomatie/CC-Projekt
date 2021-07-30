@@ -11,7 +11,8 @@ public class MouseRaycasterUI : MonoBehaviour
     public GameObject farmlandIndicator;
     public EventSystem eventSystem;
     public GameObject target = null;
-    
+
+    public Material projectionMaterial;
     public int[] test = new int[2];
 
     public Vector3 lastRaycastImpactPoint;
@@ -61,7 +62,7 @@ public class MouseRaycasterUI : MonoBehaviour
     private void Raycast()
     {
         // Only Raycasts if mouse is moving, or player is moving
-        if (lastMousePos != Input.mousePosition || Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        if (lastMousePos != Input.mousePosition || Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0 || Input.GetAxis("Mouse ScrollWheel") != 0)
         {
             target = null;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -80,6 +81,7 @@ public class MouseRaycasterUI : MonoBehaviour
                     lastRaycastImpactPoint = hit.point;
                     // Rounds the impactpoint coordinates up to "Grid"
                     roundedImpactPoint = new Vector3(Mathf.Round(hit.point.x * 2), hit.point.y * 2, Mathf.Round(hit.point.z * 2)) / 2;
+
                     // checks if Item is of the type"Seed"
                     if (inventoryManagerUI.selectedElement.item.itemType == Item.ItemType.Seed)
                     {
@@ -103,6 +105,26 @@ public class MouseRaycasterUI : MonoBehaviour
                         // Checks if floor is hit
                         if (hit.collider.CompareTag("Floor"))
                         {
+                            // Spherecast the Impactpoint
+                            RaycastHit[] collisions = Physics.SphereCastAll(roundedImpactPoint, 0.05f, Vector3.up, 0.01f);
+                            // Checks if Object collides with object other than floor
+                            foreach (RaycastHit collision in collisions)
+                            {
+                                if (collision.collider.tag.Equals("AimDetector"))
+                                {
+                                    continue;
+                                }
+                                if (!collision.collider.tag.Equals("Floor"))
+                                {
+                                    // Places Indicator und makes it unplacable
+                                    projectionMaterial.color = Color.red;
+                                    currentObjectIndicator.transform.position = roundedImpactPoint;
+                                    lastMousePos = Input.mousePosition;
+                                    target = null;
+                                    return;
+                                }
+                            }
+
                             // Chooses Item, depending on the item selected by the inventoryManager
                             switch (inventoryManagerUI.selectedElement.item.itemName)
                             {
@@ -116,6 +138,7 @@ public class MouseRaycasterUI : MonoBehaviour
                                     break;
                             }
                             // Place indicator
+                            projectionMaterial.color = Color.blue;
                             currentObjectIndicator.transform.position = roundedImpactPoint;
                             lastMousePos = Input.mousePosition;
                             target = hit.collider.gameObject;

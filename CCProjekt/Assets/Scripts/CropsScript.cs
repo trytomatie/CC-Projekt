@@ -17,19 +17,15 @@ public class CropsScript : MonoBehaviour
         PlantCrop();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     /// <summary>
-    /// Progesses the current crop stage
+    /// Progreses the current crop stage
     /// by Christian Scherzer
     /// </summary>
     public void ProgressCropStage()
     {
 
+        // If crop isn't fully grown, progress cropgrowth
         if (currentCropStage < cropStages.Count-1)
         {
             currentCropObjet.SetActive(false);
@@ -38,6 +34,7 @@ public class CropsScript : MonoBehaviour
             currentCropObjet.SetActive(true);
         }
 
+        // if crop is fully grown, cancel the growth and make it interactable
         if (currentCropStage >= cropStages.Count-1)
         {
             myInteractable.isEnabled = true;
@@ -46,13 +43,20 @@ public class CropsScript : MonoBehaviour
     }
 
 
-
+    /// <summary>
+    /// Plants the Crop
+    /// - By Christian Scherzer
+    /// </summary>
     public void PlantCrop()
     {
         currentCropObjet = cropStages[currentCropStage];
         InvokeRepeating("ProgressCropStage", growthSpeed, growthSpeed);
     }
 
+    /// <summary>
+    /// Reset the Crop
+    /// - By Christian Scherzer
+    /// </summary>
     public void ResetCrop()
     {
         foreach (GameObject cropStage in cropStages)
@@ -65,6 +69,10 @@ public class CropsScript : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    /// <summary>
+    /// Destroys the crop, and reanables the field to be planted again
+    /// By Christian Scherzer
+    /// </summary>
     public void DeathEvent()
     {
         GetComponent<Interactable_Crop>().field.isEnabled = true;

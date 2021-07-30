@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 4216882780756635535}
   - component: {fileID: 7767359096747336171}
   - component: {fileID: 1768062005}
-  m_Layer: 9
+  - component: {fileID: -2545383086952321114}
+  m_Layer: 10
   m_Name: Seedpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,6 +121,7 @@ MonoBehaviour:
   - ItemCropSeedPumpkin
   - ItemCropSeedTurnip
   - ItemCropSeedWheat
+  item: {fileID: 0}
 --- !u!54 &1768062005
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -136,3 +138,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-2545383086952321114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4985140414925897901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faction: 2
+  baseMovmentSpeed: 1
+  movementspeedModifier: 1
+  maxHp: 1
+  maxStamina: 0
+  staminaRegen: 0
+  staminaRegenEnabled: 1
+  damage: 1
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -2545383086952321114}
+        m_TargetAssemblyTypeName: StatusManager, Assembly-CSharp
+        m_MethodName: BaseDeathEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  takingDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stamina: 0
+  hp: 1

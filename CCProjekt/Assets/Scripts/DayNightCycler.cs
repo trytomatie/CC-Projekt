@@ -10,6 +10,7 @@ public class DayNightCycler : MonoBehaviour
     public float dayTime;
     public float totaltime;
     public int dayCount = 0;
+    public int realDayCount = 0;
     public float dayLenght = 120;
     public int currentDayTimeInMinutes;
 
@@ -21,8 +22,10 @@ public class DayNightCycler : MonoBehaviour
     public Light[] lights;
 
     public TextMeshProUGUI timeText;
+    public TextMeshProUGUI dayText;
 
     private static DayNightCycler instance;
+    private bool afterMidnight = false;
 
 
 
@@ -43,8 +46,14 @@ public class DayNightCycler : MonoBehaviour
     {
         totaltime += Time.deltaTime;
         dayTime += Time.deltaTime;
+        if(!afterMidnight && dayTime > dayLenght/2)
+        {
+            afterMidnight = true;
+            realDayCount++;
+        }
         if (dayTime > dayLenght)
         {
+            afterMidnight = false;
             dayTime -= dayLenght;
             dayCount++;
         }
@@ -72,6 +81,7 @@ public class DayNightCycler : MonoBehaviour
         TimeSpan span = TimeSpan.FromSeconds(86400 * (dayTime / dayLenght) + (86400/2));
         currentDayTimeInMinutes = (int)span.TotalMinutes;
         timeText.text = "Time: " + span.ToString(@"hh\:mm");
+        dayText.text = "Day: " + realDayCount;
     }
 
     public static DayNightCycler Instance { get => instance; private set => instance = value; }
