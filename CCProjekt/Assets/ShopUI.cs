@@ -23,7 +23,6 @@ public class ShopUI : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
-        GameManager.Instance.Credits += 100000;
     }
 
     // Update is called once per frame
