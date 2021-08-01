@@ -22,7 +22,7 @@ public class UpgradeShopUpgradeSprintRegen : UpgradeShopUpgradeUI
     {
         if (GameManager.Instance.Credits >= cost)
         {
-            var emission = player.GetComponent<StatusManager>().staminaRegen += regenAmount;
+            player.GetComponent<StatusManager>().staminaRegen += regenAmount;
 
             GameManager.Instance.Credits -= cost;
             cost = Mathf.RoundToInt(cost * 1.2f);
@@ -32,9 +32,7 @@ public class UpgradeShopUpgradeSprintRegen : UpgradeShopUpgradeUI
 
     private void RefreshDescription()
     {
-        var emission = player.bubbleParticles.emission;
-        
-        upgradeDescription = "Upgrades the firerate from your blaster from <color=blue>" + emission.rateOverTimeMultiplier + "</color> to <color=blue>" + (emission.rateOverTimeMultiplier + waterFireRateUpgrade) + "</color>. \n" +
+        upgradeDescription = "Upgrades sprint regeneration from <color=blue>" + player.GetComponent<StatusManager>().staminaRegen + "</color> to <color=blue>" + (player.GetComponent<StatusManager>().staminaRegen + regenAmount) + "</color>. \n" +
     "Cost: <color=blue>" + cost + "</color> credits";
         RefreshText();
     }
