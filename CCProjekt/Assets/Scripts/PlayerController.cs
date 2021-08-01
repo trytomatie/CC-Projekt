@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     public bool isFiring; 
     public float waterUsage = 7.5f;
-    public float maxWater = 100;
+    public float maxWater = 200;
 
     public Animator anim;
     public ParticleSystem bubbleParticles;
@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        water = maxWater;
         playerRb = GetComponent<Rigidbody>();
         statusmanager = GetComponent<StatusManager>();
         bubbleParticles.Stop();
@@ -103,10 +104,12 @@ public class PlayerController : MonoBehaviour
                 bubbleParticles.Play();
             }
             blasterRig.weight = 1;
+            anim.SetBool("Is_Shooting", true);
             blaster.SetActive(true);
         }
         if (!isFiring)
         {
+            anim.SetBool("Is_Shooting", false);
             bubbleParticles.Stop();
             blasterRig.weight = 0;
             blaster.SetActive(false);

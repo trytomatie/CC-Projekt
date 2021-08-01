@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1761597269786087463}
   - component: {fileID: 1761597269786087482}
   m_Layer: 0
-  m_Name: Field 1
+  m_Name: Field
   m_TagString: Field
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,3 +127,4 @@ MonoBehaviour:
   - {fileID: 7275695964482639707, guid: 9b997c376a23e4a4797e46c41c391567, type: 3}
   - {fileID: 3525755672045999681, guid: 36d045ae72ddc254781188b2c76765a3, type: 3}
   - {fileID: 8438043883924460586, guid: 9b24274a82a10274a957c0fb094d0b9e, type: 3}
+  plantSound: {fileID: 8300000, guid: fc8d8a5357fbd0e44b10e8b6730b736e, type: 3}

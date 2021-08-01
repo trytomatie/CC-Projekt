@@ -6,6 +6,9 @@ public class Interactable_Floor : Interactable
 {
     public GameObject fencePrefab;
     public GameObject farmlandPrefab;
+    public AudioClip placementSound;
+
+
     private void Start()
     {
         interactableText = "Place";
@@ -33,6 +36,7 @@ public class Interactable_Floor : Interactable
                 break;
         }
 
+        GameManager.Instance.SpawnInterfaceSound(placementSound, 0.065f);
         // Remove Item or Item stack from inventory
         selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);
     }

@@ -25,12 +25,15 @@ public class Interactable_Crop : Interactable
     /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)
     {
-        Destroy(gameObject);
+        GameManager.Instance.SpawnInterfaceSound(GameManager.Instance.plopSound, 0.2f);
+
         if (Random.Range(0, 101) < 25 )
         {
             interactor.GetComponent<InventoryManager>().AddItem((Item)ScriptableObject.CreateInstance(seedDrop));
         } 
         interactor.GetComponent<InventoryManager>().AddItem((Item)ScriptableObject.CreateInstance(cropDrop));
         field.isEnabled = true;
+
+        Destroy(gameObject);
     }
 }

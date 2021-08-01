@@ -19,7 +19,7 @@ public class SpawnManager : MonoBehaviour
     private int maxTimeInterval = 3;
 
     private int ratSpawnRate = 1;
-    private int ratSpawnRateGrowth = 1;
+    private float ratSpawnRateGrowth = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +28,15 @@ public class SpawnManager : MonoBehaviour
         {
             case 0:
                 maxTimeInterval = 10;
-                ratSpawnRateGrowth = 2;
+                ratSpawnRateGrowth = 0.5f;
                 break;
             case 1:
                 maxTimeInterval = 7;
-                ratSpawnRateGrowth = 2;
+                ratSpawnRateGrowth = 1;
                 break;
             case 2:
                 maxTimeInterval = 6;
-                ratSpawnRateGrowth = 3;
+                ratSpawnRateGrowth = 1.5f;
                 break;
         }
 
@@ -52,11 +52,11 @@ public class SpawnManager : MonoBehaviour
     }
 
     /// <summary>
-    /// spawns rats at midnight
+    /// spawns rats from midnight until 8am
     /// </summary>
     private void SpawnRat ()
     {
-        if (dnc.dayTime > dnc.dayLenght / 2)
+        if (dnc.dayTime > dnc.dayLenght / 2 && dnc.currentDayTimeInMinutes <= 1920)
         {
             if (timeInterval < maxTimeInterval)
             {
@@ -71,7 +71,7 @@ public class SpawnManager : MonoBehaviour
                 timeInterval = 0;
             }
 
-            for(int i = 0; i < ratSpawnRate + (DayNightCycler.Instance.dayCount * ratSpawnRateGrowth);i++)
+            for(int i = 0; i < ratSpawnRate *(int)((DayNightCycler.Instance.dayCount+1) * ratSpawnRateGrowth);i++)
             { 
                 int randomPos = Random.Range(0, spawnpoints.Length);
 

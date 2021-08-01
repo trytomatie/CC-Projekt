@@ -10,7 +10,7 @@ public class DayNightCycler : MonoBehaviour
     public float dayTime;
     public float totaltime;
     public int dayCount = 0;
-    public int realDayCount = 0;
+    public int realDayCount = 1;
     public float dayLenght = 120;
     public int currentDayTimeInMinutes;
 

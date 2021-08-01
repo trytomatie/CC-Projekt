@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject soundObject;
     public GameObject damageObject;
     public TextMeshProUGUI daysText;
+    public AudioClip plopSound;
 
     public DayNightCycler dayNightCycler;
 
@@ -29,6 +30,8 @@ public class GameManager : MonoBehaviour
     private int credits = 0;
     private static GameManager instance;
     private Camera gameCamera;
+
+    public int cropsSold = 0;
 
 
     // Start is called before the first frame update
@@ -167,6 +170,26 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1; //makes sure that time scale is set to 1
 
         SceneManager.LoadScene(0); // title menu will be loaded
+    }
+
+    public void SpawnInterfaceSound(AudioClip clip)
+    {
+        GameObject go = Instantiate(soundObject, Camera.main.transform.position, Camera.main.transform.rotation, Camera.main.transform);
+        AudioSource audioSource = go.GetComponent<AudioSource>();
+        audioSource.clip = clip;
+        audioSource.volume = 0.5f;
+        audioSource.Play();
+        Destroy(go, 1);
+    }
+
+    public void SpawnInterfaceSound(AudioClip clip, float volume)
+    {
+        GameObject go = Instantiate(soundObject, Camera.main.transform.position, Camera.main.transform.rotation, Camera.main.transform);
+        AudioSource audioSource = go.GetComponent<AudioSource>();
+        audioSource.clip = clip;
+        audioSource.volume = volume;
+        audioSource.Play();
+        Destroy(go, 1);
     }
 
     public static GameManager Instance { get => instance; private set => instance = value; }

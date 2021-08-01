@@ -194,7 +194,7 @@ public class RatAi : MonoBehaviour
         DamageObject damageObject = go.GetComponent<DamageObject>();
         damageObject.origin = gameObject;
         damageObject.damage = statusManager.damage;
-        damageObject.lingeringTime = 0.1f;
+        damageObject.lingeringTime = 0.05f;
     }
 
 
@@ -224,6 +224,7 @@ public class RatAi : MonoBehaviour
     {
         GameObject go = Instantiate(GameManager.Instance.soundObject,transform.position,transform.rotation);
         AudioSource audioSource = go.GetComponent<AudioSource>();
+        audioSource.volume = 0.2f;
         audioSource.clip = damageClip;
         audioSource.pitch = Random.Range(0.8f, 1.2f);
         audioSource.Play();

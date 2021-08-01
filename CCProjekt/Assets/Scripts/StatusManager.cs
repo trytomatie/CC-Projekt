@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class StatusManager : MonoBehaviour
 {
 
-    public enum entityFaction { Monster,Player,Plant };
+    public enum entityFaction { Monster,Player,Plant,DeathZone };
     public entityFaction faction = entityFaction.Monster;
 
     public float baseMovmentSpeed = 1;

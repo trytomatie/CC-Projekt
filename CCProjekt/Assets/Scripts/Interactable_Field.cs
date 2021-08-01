@@ -6,6 +6,7 @@ public class Interactable_Field : Interactable
 {
     public List<CropsScript> crops;
     public List<GameObject> cropPrefabs;
+    public AudioClip plantSound;
     private void Start()
     {
         interactableText = "Plant";
@@ -67,5 +68,6 @@ public class Interactable_Field : Interactable
     {
         GameObject go = Instantiate(cropPrefabs[i], transform.position, transform.rotation,transform);
         go.GetComponent<Interactable_Crop>().field = this;
+        GameManager.Instance.SpawnInterfaceSound(plantSound, 0.2f);
     }
 }

@@ -28,6 +28,7 @@ public class Interactable_Vendor : Interactable
         {
             GameManager.Instance.Credits += item.stackSize * Mathf.RoundToInt(item.creditValue * GameManager.Instance.cropYieldMultipier);
             invManager.RemoveItem(item, item.stackSize);
+            GameManager.Instance.cropsSold++;
         }
     }
 }

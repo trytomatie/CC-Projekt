@@ -9,7 +9,7 @@ public class ItemCropSeedMelon : Item
     {
         itemName = "Melon seed";
         stackSize = 1;
-        itemDescription = "Can be used to plant Melons.";
+        itemDescription = "Can be used to plant Melons.\nValue: 40 credits";
         itemType = ItemType.Seed;
         sprite = Icons.GetIcon(3);
     }

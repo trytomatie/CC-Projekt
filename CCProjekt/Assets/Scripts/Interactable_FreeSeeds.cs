@@ -20,6 +20,7 @@ public class Interactable_FreeSeeds : Interactable
     {
         if(interactor.GetComponent<InventoryManager>().AddItem(item))
         {
+            GameManager.Instance.SpawnInterfaceSound(GameManager.Instance.plopSound, 0.2f);
             Destroy(gameObject);
         }
         else

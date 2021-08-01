@@ -9,7 +9,7 @@ public class ItemCropSeedTurnip : Item
     {
         itemName = "Turnip seed";
         stackSize = 1;
-        itemDescription = "Can be used to plant Turnips.";
+        itemDescription = "Can be used to plant Turnips.\nValue: 120 credits";
         itemType = ItemType.Seed;
         sprite = Icons.GetIcon(4);
     }

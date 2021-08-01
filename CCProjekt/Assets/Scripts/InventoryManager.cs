@@ -7,7 +7,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public List<Item> items = new List<Item>();
-    public int inventoryLimit = 5;
+    public int inventoryLimit = 10;
     public TextMeshProUGUI itemUI;
     private void Start()
     {
