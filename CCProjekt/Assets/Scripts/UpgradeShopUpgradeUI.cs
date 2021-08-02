@@ -12,15 +12,16 @@ public class UpgradeShopUpgradeUI : MonoBehaviour, IPointerEnterHandler, IPointe
 
     public PlayerController player;
     public GameObject upgradeText;
+
     private TextMeshProUGUI upgradeNameText;
     private TextMeshProUGUI upgradeDescriptionText;
+
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
         upgradeNameText = upgradeText.transform.Find("UpgradeName").GetComponent<TextMeshProUGUI>();
         upgradeDescriptionText = upgradeText.transform.Find("UpgradeDescription").GetComponent<TextMeshProUGUI>();
         Initialize();
-
     }
 
 
@@ -31,6 +32,10 @@ public class UpgradeShopUpgradeUI : MonoBehaviour, IPointerEnterHandler, IPointe
         RefreshText();
     }
 
+    /// <summary>
+    /// Refreshes the text
+    /// By Christian Scherzer
+    /// </summary>
     public void RefreshText()
     {
         upgradeNameText.text = upgradeName;

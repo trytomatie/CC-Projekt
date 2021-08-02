@@ -27,8 +27,6 @@ public class DayNightCycler : MonoBehaviour
     private static DayNightCycler instance;
     private bool afterMidnight = false;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +74,10 @@ public class DayNightCycler : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Updates the time text and day text
+    /// By Christian Scherzer
+    /// </summary>
     private void UpdateTimeText()
     {
         TimeSpan span = TimeSpan.FromSeconds(86400 * (dayTime / dayLenght) + (86400/2));
@@ -84,5 +86,9 @@ public class DayNightCycler : MonoBehaviour
         dayText.text = "Day: " + realDayCount;
     }
 
+    /// <summary>
+    /// Singleton
+    /// By Christian Scherzer
+    /// </summary>
     public static DayNightCycler Instance { get => instance; private set => instance = value; }
 }

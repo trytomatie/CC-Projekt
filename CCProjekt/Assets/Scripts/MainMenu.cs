@@ -6,11 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private int difficulty = 0;
     public TextMeshProUGUI difficultyText;
+    public GameObject titleScreen;
+    public GameObject howToPlayText;
+    public TextMeshProUGUI highscore;
+
+    private int difficulty = 0;
+
+    private void Start()
+    {
+        titleScreen.SetActive(true);
+        howToPlayText.SetActive(false);
+
+        int highscoreDays = PlayerPrefs.GetInt("highscoreDays", 0);
+        int highscoreCrops = PlayerPrefs.GetInt("highscoreCrops", 0);
+        highscore.text = "Highscore: \n" +
+            "Days Survived: " + highscoreDays + "\n" +
+            "Crops Sold: " + highscoreCrops;
+    }
 
     /// <summary>
     /// Starts Application
+    /// By Shaina Milde
     /// </summary>
     public void StartGame()
     {
@@ -20,6 +37,7 @@ public class MainMenu : MonoBehaviour
 
     /// <summary>
     /// Closes Application
+    /// By Shaina Milde
     /// </summary>
     public void QuitGame ()
     {
@@ -28,6 +46,7 @@ public class MainMenu : MonoBehaviour
 
     /// <summary>
     /// Decreases difficulty
+    /// By Shaina Milde
     /// </summary>
     public void LeftButton ()
     {
@@ -43,6 +62,7 @@ public class MainMenu : MonoBehaviour
 
     /// <summary>
     /// Increases difficulty
+    /// By Shaina Milde
     /// </summary>
     public void RightButton()
     {
@@ -57,7 +77,28 @@ public class MainMenu : MonoBehaviour
     }
 
     /// <summary>
+    /// Opens the HowToPlay screen
+    /// By Shaina Milde
+    /// </summary>
+    public void HowToPlay ()
+    {
+        titleScreen.SetActive(false);
+        howToPlayText.SetActive(true);
+    }
+
+    /// <summary>
+    /// Returns to Titlescreen
+    /// By Shaina Milde
+    /// </summary>
+    public void ReturnToTitle ()
+    {
+        titleScreen.SetActive(true);
+        howToPlayText.SetActive(false);
+    }
+
+    /// <summary>
     /// Changes text depending on the difficulty
+    /// By Shaina Milde
     /// </summary>
     private void ChangeDifficultyText ()
     {

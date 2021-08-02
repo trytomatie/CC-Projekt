@@ -9,10 +9,8 @@ public class InventoryElementUI : MonoBehaviour , IPointerEnterHandler, IPointer
 {
 
     public Item item;
-
     public Image image;
     public TextMeshProUGUI stackText;
-
 
     private InventoryManagerUI inventoryManagerUI;
 
@@ -20,6 +18,7 @@ public class InventoryElementUI : MonoBehaviour , IPointerEnterHandler, IPointer
     {
         inventoryManagerUI = GameObject.FindObjectOfType<InventoryManagerUI>();
     }
+
     // Update is called once per frame
     void Update()
     {

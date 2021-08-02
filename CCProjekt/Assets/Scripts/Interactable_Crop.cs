@@ -8,7 +8,6 @@ public class Interactable_Crop : Interactable
 
     public string seedDrop;
     public string cropDrop;
-
     public Interactable_Field field;
 
     private CropsScript cropScript;
@@ -18,9 +17,10 @@ public class Interactable_Crop : Interactable
         interactableText = "Harvest";
         cropScript = GetComponent<CropsScript>();
     }
+
     /// <summary>
-    /// Harvest crop and give seeds and Crops to the player
-    /// By Christian Scherzer
+    /// Harvest crop and give seeds and crops to the player
+    /// By Christian Scherzer and Shaina Milde
     /// </summary>
     /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)

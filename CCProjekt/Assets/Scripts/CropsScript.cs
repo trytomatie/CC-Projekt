@@ -17,7 +17,6 @@ public class CropsScript : MonoBehaviour
         PlantCrop();
     }
 
-
     /// <summary>
     /// Progreses the current crop stage
     /// by Christian Scherzer
@@ -45,7 +44,7 @@ public class CropsScript : MonoBehaviour
 
     /// <summary>
     /// Plants the Crop
-    /// - By Christian Scherzer
+    /// - By Christian Scherzer and Shaina Milde
     /// </summary>
     public void PlantCrop()
     {

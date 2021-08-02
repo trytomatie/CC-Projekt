@@ -5,6 +5,7 @@ using UnityEngine;
 public class Interactable_ItemVendor : Interactable
 {
     public string itemName;
+
     private Item item;
     private void Start()
     {
@@ -13,6 +14,7 @@ public class Interactable_ItemVendor : Interactable
     }
     /// <summary>
     /// Buys item for credits
+    /// By Christian Scherzer
     /// </summary>
     /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)

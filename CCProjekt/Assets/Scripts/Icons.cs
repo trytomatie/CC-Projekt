@@ -5,15 +5,16 @@ using UnityEngine;
 public class Icons : MonoBehaviour
 {
     public Sprite[] icons;
-
     public static Icons instance;
 
     private void Awake()
     {
         instance = GameObject.FindObjectOfType<Icons>();
     }
+
     /// <summary>
     /// Return sprite by id
+    /// By Christian Scherzer
     /// </summary>
     /// <param name="id"></param>
     /// <returns></returns>

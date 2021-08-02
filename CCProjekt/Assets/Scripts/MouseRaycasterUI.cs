@@ -34,9 +34,14 @@ public class MouseRaycasterUI : MonoBehaviour
     void Update()
     {
         Raycast();
+
+        // Place the Object
         if(Input.GetMouseButtonDown(0) && target != null && !eventSystem.IsPointerOverGameObject())
         {
+            // Place the object on the floor
             target.GetComponent<Interactable>().Interact(gameObject);
+            
+            // Reset all Indicator Positions
             indicator.transform.position = new Vector3(0, -100, 0);
             fenceIndicator.transform.position = new Vector3(0, -100, 0);
             farmlandIndicator.transform.position = new Vector3(0, -100, 0);
@@ -45,6 +50,9 @@ public class MouseRaycasterUI : MonoBehaviour
                 inventoryManagerUI.selectedElement = null;
             }
         }
+
+        // Rotate Object
+
         if(Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             currentObjectIndicator.transform.Rotate(new Vector3(0, 90, 0));
@@ -58,7 +66,7 @@ public class MouseRaycasterUI : MonoBehaviour
 
     /// <summary>
     /// Raycasts to gameworld for game interaction
-    /// - By Chrsitan Scherzer
+    /// - By Christian Scherzer
     /// </summary>
     private void Raycast()
     {
@@ -155,7 +163,8 @@ public class MouseRaycasterUI : MonoBehaviour
     }
 
     /// <summary>
-    /// Resets the Postion of the Projections - By Christian Scherzer
+    /// Resets the Postion of the Projections
+    /// - By Christian Scherzer
     /// </summary>
     private void ResetProjectionPositions()
     {

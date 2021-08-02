@@ -16,6 +16,7 @@ public class StatusManager : MonoBehaviour
     public float staminaRegen;
 
     public bool staminaRegenEnabled = true;
+    public bool godMode = false;
     public int damage = 1;
 
     public UnityEvent deathEvent;
@@ -31,19 +32,18 @@ public class StatusManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(maxStamina > 0)
+        // If Statusmanager has Stamina Trigger the stamina Regeneration
+        if (maxStamina > 0)
         {
             InvokeRepeating("StaminaRegen", 0, 0.2f);
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
+    /// <summary>
+    /// Apply Damage to Statusmanager
+    /// By Christian Scherzer
+    /// </summary>
+    /// <param name="damage"></param>
     public void ApplyDamage(int damage)
     {
         Hp -= damage;
@@ -51,6 +51,10 @@ public class StatusManager : MonoBehaviour
         takingDamageEvent.Invoke();
     }
 
+    /// <summary>
+    /// The BaseDeathEvent to give a Statusmanager if none is set
+    /// By Shaina Milde
+    /// </summary>
     public void BaseDeathEvent()
     {
         Destroy(gameObject);
@@ -63,11 +67,13 @@ public class StatusManager : MonoBehaviour
         set
         {
             hp = value;
-            if (value <= 0)
+            // If hp reaches or drops under zero, trigger the death event and set the hp to 0
+            if (value <= 0 && !godMode)
             {
                 deathEvent.Invoke();
                 hp = 0;
             }
+            // Makes sure hp can't exceed the maxHp
             if(value > maxHp)
             {
                 hp = maxHp;
@@ -76,12 +82,15 @@ public class StatusManager : MonoBehaviour
         }
     }
 
+    // Return the Movementspeed
     public float MovementSpeed 
     { 
         get => (baseMovmentSpeed * movementspeedModifier); 
     }
+
     public float Stamina { get => stamina; set 
         {
+            // Makes sure staminate cannot exceed the maxStamina
             if(value > maxStamina)
             {
                 stamina = maxStamina;
@@ -93,12 +102,21 @@ public class StatusManager : MonoBehaviour
         } 
     }
 
+    /// <summary>
+    /// Initializes the HP
+    /// By Shaina Milde
+    /// </summary>
+    /// <param name="value"></param>
     public void InitalizeHP (int value)
     {
         maxHp = value;
         hp = value;
     }
 
+    /// <summary>
+    /// Stamina Regen method
+    /// By Christian Scherzer
+    /// </summary>
     private void StaminaRegen()
     {
         if(staminaRegenEnabled)

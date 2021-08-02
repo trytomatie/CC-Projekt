@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject soundObject;
     public GameObject damageObject;
     public TextMeshProUGUI daysText;
+    public TextMeshProUGUI cropsText;
     public AudioClip plopSound;
 
     public DayNightCycler dayNightCycler;
@@ -26,13 +27,11 @@ public class GameManager : MonoBehaviour
     public float growthMulitiplier = 1;
 
     public SpawnManager spawnManager;
+    public int cropsSold = 0;
 
     private int credits = 0;
     private static GameManager instance;
     private Camera gameCamera;
-
-    public int cropsSold = 0;
-
 
     // Start is called before the first frame update
     void Awake()
@@ -117,6 +116,9 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
         daysText.text = "Days survived: " + dayNightCycler.realDayCount;
+        cropsText.text = "Crops sold: " + cropsSold;
+        PlayerPrefs.SetInt("highscoreDays",dayNightCycler.realDayCount);
+        PlayerPrefs.SetInt("highscoreCrops", cropsSold);
         gameOverDialog.SetActive(true); // game over dialog will be displayed
 
         Time.timeScale = 0;             // freezes the game
@@ -172,6 +174,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0); // title menu will be loaded
     }
 
+    /// <summary>
+    /// Spawns soundeffect gameObject and plays sound
+    /// By Christian Scherzer and Shaina Milde
+    /// </summary>
+    /// <param name="clip"></param>
     public void SpawnInterfaceSound(AudioClip clip)
     {
         GameObject go = Instantiate(soundObject, Camera.main.transform.position, Camera.main.transform.rotation, Camera.main.transform);
@@ -182,6 +189,12 @@ public class GameManager : MonoBehaviour
         Destroy(go, 1);
     }
 
+    /// <summary>
+    /// Spawns soundeffect gameObject and plays sound
+    /// By Christian Scherzer and Shaina Milde
+    /// </summary>
+    /// <param name="clip"></param>
+    /// <param name="volume"></param>
     public void SpawnInterfaceSound(AudioClip clip, float volume)
     {
         GameObject go = Instantiate(soundObject, Camera.main.transform.position, Camera.main.transform.rotation, Camera.main.transform);

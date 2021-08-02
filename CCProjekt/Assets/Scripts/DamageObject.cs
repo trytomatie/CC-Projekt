@@ -8,6 +8,7 @@ public class DamageObject : MonoBehaviour
     public List<ParticleCollisionEvent> collisionEvents;
     public GameObject origin;
     public float lingeringTime = 0;
+
     private ParticleSystem part;
 
     private void Start()
@@ -21,6 +22,7 @@ public class DamageObject : MonoBehaviour
     }
     /// <summary>
     /// Applies damage on Particle Collision
+    /// by Christian Scherzer
     /// </summary>
     /// <param name="other"></param>
     private void OnParticleCollision(GameObject other)
@@ -41,6 +43,7 @@ public class DamageObject : MonoBehaviour
 
     /// <summary>
     /// Apply Damage to gameObject with Statusmanager
+    /// by Christian Scherzer
     /// </summary>
     /// <param name="other"></param>
     private void ApplyDamage(GameObject other)
@@ -54,6 +57,7 @@ public class DamageObject : MonoBehaviour
 
     /// <summary>
     /// Apply Damage on trigger enter
+    /// by Christian Scherzer
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)

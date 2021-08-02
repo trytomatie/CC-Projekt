@@ -51,6 +51,7 @@ public class InteractionManager : MonoBehaviour
     }
     /// <summary>
     /// Add Interactables from Interactablelist
+    /// by Christian Scherzer
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
@@ -62,6 +63,7 @@ public class InteractionManager : MonoBehaviour
     }
     /// <summary>
     /// Remove Interactables from Interactablelist
+    /// by Christian Scherzer
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerExit(Collider other)

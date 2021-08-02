@@ -12,8 +12,10 @@ public class Interactable_FreeSeeds : Interactable
         // Generate Random Seed
         item = (Item)ScriptableObject.CreateInstance(seedDrops[Random.Range(0, seedDrops.Length)]);
     }
+
     /// <summary>
     /// Add Random seed to Inventory
+    /// by Christian Scherzer and Shaina Milde
     /// </summary>
     /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)
@@ -26,6 +28,15 @@ public class Interactable_FreeSeeds : Interactable
         else
         {
             GameManager.SpawnFloatingText("Cannot pickup any more Items!", transform);
+        }
+    }
+
+    private void Update()
+    {
+        // destroy Object if it's out of bounds
+        if(transform.position.y > 100 || transform.position.y < -100)
+        {
+            Destroy(gameObject);
         }
     }
 }

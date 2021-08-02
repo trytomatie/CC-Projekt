@@ -7,7 +7,6 @@ public class ShopUI : MonoBehaviour
 
     public PlayerController player;
 
-
     private static ShopUI instance;
 
     private void Awake()
@@ -26,11 +25,6 @@ public class ShopUI : MonoBehaviour
         player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     /// <summary>
     /// Closes Shop UI
     /// By Christian Scherzer

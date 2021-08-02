@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7767359096747336171}
   - component: {fileID: 1768062005}
   - component: {fileID: -2545383086952321114}
-  m_Layer: 10
+  m_Layer: 13
   m_Name: Seedpack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,6 +157,7 @@ MonoBehaviour:
   maxStamina: 0
   staminaRegen: 0
   staminaRegenEnabled: 1
+  godMode: 0
   damage: 1
   deathEvent:
     m_PersistentCalls:

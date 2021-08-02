@@ -9,11 +9,11 @@ public class UpgradeShopUpgradeUICropYield : UpgradeShopUpgradeUI
     public float increase = 0.1f;
     public int cost = 100;
 
-
     public override void Initialize()
     {
         RefreshDescription();
     }
+
     /// <summary>
     /// Upgrades the Firerate
     /// By Christian Scherzer
@@ -24,11 +24,14 @@ public class UpgradeShopUpgradeUICropYield : UpgradeShopUpgradeUI
         {
             GameManager.Instance.cropYieldMultipier += increase;
             GameManager.Instance.Credits -= cost;
-            cost = Mathf.RoundToInt(cost * 1.2f);
+            cost = Mathf.RoundToInt(cost + 20);
             RefreshDescription();
         }
     }
-
+    /// <summary>
+    /// Refreshes the Description
+    /// By Christian Scherzer
+    /// </summary>
     private void RefreshDescription()
     {
         var emission = player.bubbleParticles.emission;

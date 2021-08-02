@@ -19,10 +19,12 @@ public class TooltipScriptUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // hide tooltop
         if(tooltipTarget == null)
         {
             rTransform.localPosition = new Vector3(10000, 0, 0);
         }
+        // show tooltip 
         else
         {
             transform.position = c.WorldToScreenPoint(tooltipTarget.position + offset);

@@ -11,7 +11,6 @@ public class Item : ScriptableObject
     public ItemType itemType;
     public InventoryManager attachedInventory;
     public int creditValue = 0;
-
     public enum ItemType {Seed,Crop,Other};
 
 }

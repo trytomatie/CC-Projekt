@@ -9,11 +9,11 @@ public class UpgradeShopUpgradeUIWaterCapacity : UpgradeShopUpgradeUI
     public int cost = 30;
     public int waterCappacityUpgrade = 20;
 
-
     public override void Initialize()
     {
         RefreshDescription();
     }
+
     /// <summary>
     /// Upgrades the watercappacity
     /// By Christian Scherzer
@@ -30,7 +30,10 @@ public class UpgradeShopUpgradeUIWaterCapacity : UpgradeShopUpgradeUI
         }
 
     }
-
+    /// <summary>
+    /// Refreshes the Description
+    /// By Christian Scherzer
+    /// </summary>
     private void RefreshDescription()
     {
         upgradeDescription = "Upgrades the water capacity from <color=blue>" + player.maxWater + "</color> to <color=blue>" + (player.maxWater + waterCappacityUpgrade) + "</color>. \n" +

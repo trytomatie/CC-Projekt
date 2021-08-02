@@ -28,31 +28,26 @@ public class SpawnManager : MonoBehaviour
         {
             case 0:
                 maxTimeInterval = 10;
-                ratSpawnRateGrowth = 0.5f;
+                ratSpawnRateGrowth = 3f;
                 break;
             case 1:
                 maxTimeInterval = 7;
-                ratSpawnRateGrowth = 1;
+                ratSpawnRateGrowth = 3f;
                 break;
             case 2:
                 maxTimeInterval = 6;
-                ratSpawnRateGrowth = 1.5f;
+                ratSpawnRateGrowth = 4f;
                 break;
         }
 
         InvokeRepeating("SpawnRat", 0f, 1f); // spawns rat at midnight
-        InvokeRepeating("SpawnMultipleSeeds", 0f, GameManager.Instance.dayNightCycler.dayLenght); // spawns seeds at the beginning of the day
-        InvokeRepeating("SpawnMultipleRats", 0f, GameManager.Instance.dayNightCycler.dayLenght); // spawns caverats at the beginning of the day
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-  
+        Invoke("SpawnMultipleSeeds", 0f); // spawns seeds on the first day
+        InvokeRepeating("SpawnMultipleRats", 0f, GameManager.Instance.dayNightCycler.dayLenght); // spawns caverats at 12pm
     }
 
     /// <summary>
     /// spawns rats from midnight until 8am
+    /// by Shaina Milde
     /// </summary>
     private void SpawnRat ()
     {
@@ -71,6 +66,7 @@ public class SpawnManager : MonoBehaviour
                 timeInterval = 0;
             }
 
+            // Spawn multiple rats depending on Daycount and ratSpawnRateGrowth
             for(int i = 0; i < ratSpawnRate *(int)((DayNightCycler.Instance.dayCount+1) * ratSpawnRateGrowth);i++)
             { 
                 int randomPos = Random.Range(0, spawnpoints.Length);
@@ -82,6 +78,7 @@ public class SpawnManager : MonoBehaviour
 
     /// <summary>
     /// checks if location already has an object, if not a seedpack is spawned
+    /// by Shaina Milde
     /// </summary>
     private void SpawnSeeds ()
     {
@@ -104,6 +101,7 @@ public class SpawnManager : MonoBehaviour
     }
     /// <summary>
     /// spawns 6 seed packs
+    /// by Shaina Milde
     /// </summary>
     private void SpawnMultipleSeeds ()
     {
@@ -115,6 +113,7 @@ public class SpawnManager : MonoBehaviour
 
     /// <summary>
     /// spawns 5 rats in the cave
+    /// by Shaina Milde
     /// </summary>
     private void SpawnMultipleRats ()
     {

@@ -11,8 +11,10 @@ public class Interactable_DroppedField : Interactable
         // Generate Random Seed
         item = (Item)ScriptableObject.CreateInstance("ItemOtherFarmland");
     }
+
     /// <summary>
     /// Add Random seed to Inventory
+    /// By Christian Scherzer
     /// </summary>
     /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)

@@ -5,11 +5,6 @@ using UnityEngine;
 public class AimController : MonoBehaviour
 {
     public Vector3 lastMousePos;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -36,7 +31,7 @@ public class AimController : MonoBehaviour
                     Quaternion currentRotation = transform.rotation;
                     transform.LookAt(hit.point);
                     Quaternion targetRotation = transform.rotation;
-                    transform.rotation = Quaternion.Euler(0,  Mathf.LerpAngle(currentRotation.eulerAngles.y,targetRotation.eulerAngles.y,0.04f), 0);
+                    transform.rotation = Quaternion.Euler(0, targetRotation.eulerAngles.y, 0);
                     break;
                 }
             }

@@ -13,8 +13,9 @@ public class Interactable_Floor : Interactable
     {
         interactableText = "Place";
     }
+
     /// <summary>
-    /// Place placable Items on the ground
+    /// Place placable items on the ground
     /// By Christian Scherzer
     /// </summary>
     /// <param name="interactor"></param>
@@ -36,6 +37,7 @@ public class Interactable_Floor : Interactable
                 break;
         }
 
+        // Sound for placing fields and fences
         GameManager.Instance.SpawnInterfaceSound(placementSound, 0.065f);
         // Remove Item or Item stack from inventory
         selectedItem.attachedInventory.RemoveItem(selectedItem.itemName, 1);

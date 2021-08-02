@@ -48,6 +48,11 @@ public class RatAi : MonoBehaviour
         }
 
         waterParticles.Stop();
+
+        if (isCaveRat)
+        {
+            Destroy(gameObject, DayNightCycler.Instance.dayLenght);
+        }
     }
 
     private bool FindTarget()
@@ -84,12 +89,17 @@ public class RatAi : MonoBehaviour
             target = null;
             return false;
         }
+        else if(isCaveRat)
+        {
+            target = GameObject.Find("Player");
+        }
         return true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        IsDead();
         if (target == null)
         {
             if (!FindTarget())
@@ -112,7 +122,10 @@ public class RatAi : MonoBehaviour
             CheckForAttack();
         }
 
-        IsDead();
+        if(DayNightCycler.Instance.dayTime >= 0 && DayNightCycler.Instance.dayTime < DayNightCycler.Instance.dayLenght / 2 && !isCaveRat && !isDead)
+        {
+            DeathEvent();
+        }
     }
 
     /// <summary>
@@ -200,24 +213,34 @@ public class RatAi : MonoBehaviour
 
     /// <summary>
     /// if HP reaches 0 and rat didnt die yet, it returns to one of the spawnpoints
+    /// By Shaina Milde
     /// </summary>
     private void IsDead()
     {
         if (statusManager.Hp == 0 && !isDead)
         {
-            Destroy(gameObject, 20f); // guarantees that game object will be destroyed after 20 seconds
-            gameObject.layer = 9; // rat ignores collision except the floor
-            isDead = true;
-            Instantiate(spawnManager.seedPrefab, transform.position, spawnManager.seedPrefab.transform.rotation); // rat drops a seed once it dies
-            target = spawnManager.spawnpoints[Random.Range(0, spawnManager.spawnpoints.Length)].gameObject;       // rat returns to one of the set spawnpoints
-            waterParticles.Play();
+            DeathEvent();
 
             if (Random.Range(0, 101) < 25)
             {
                 Instantiate(spawnManager.fieldPrefab, transform.position, spawnManager.fieldPrefab.transform.rotation);
             }
 
+            Instantiate(spawnManager.seedPrefab, transform.position, spawnManager.seedPrefab.transform.rotation); // rat drops a seed once it dies
         }
+    }
+
+    /// <summary>
+    /// event handling rat reaching 0 hp
+    /// </summary>
+    private void DeathEvent()
+    {
+        Destroy(gameObject, 20f); // guarantees that game object will be destroyed after 20 seconds
+        gameObject.layer = 9; // rat ignores collision except the floor
+        statusManager.movementspeedModifier = 1; // reset Movementspeed to 1
+        isDead = true; 
+        target = spawnManager.spawnpoints[Random.Range(0, spawnManager.spawnpoints.Length)].gameObject;       // rat returns to one of the set spawnpoints
+        waterParticles.Play();
     }
 
     public void OnTakingDamage()

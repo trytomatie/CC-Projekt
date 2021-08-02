@@ -9,8 +9,10 @@ public class Interactable_Spring : Interactable
     {
         interactableText = "Refill water";
     }
+
     /// <summary>
-    /// Refil the Water of the interactor
+    /// Refill the Water of the interactor
+    /// By Christian Scherzer
     /// </summary>
     /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)

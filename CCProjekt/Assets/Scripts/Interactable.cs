@@ -11,6 +11,7 @@ public class Interactable : MonoBehaviour
 
     /// <summary>
     /// Virtual method for Interaction
+    /// By Christian Scherzer
     /// </summary>
     /// <param name="interactor"></param>
     public virtual void Interact(GameObject interactor)

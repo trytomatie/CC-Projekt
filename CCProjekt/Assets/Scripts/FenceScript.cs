@@ -5,20 +5,10 @@ using UnityEngine;
 public class FenceScript : MonoBehaviour
 {
     public float speedModifer = 0.1f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     /// <summary>
     /// Slows Enemys on enter
+    /// By Christian Scherzer
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)
@@ -31,6 +21,7 @@ public class FenceScript : MonoBehaviour
 
     /// <summary>
     /// Sets Enemy speed back to 100%
+    /// By Christian Scherzer
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerExit(Collider other)

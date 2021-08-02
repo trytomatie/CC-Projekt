@@ -14,6 +14,7 @@ public class Interactable_Field : Interactable
 
     /// <summary>
     /// Plant crop
+    /// By Christian Scherzer
     /// </summary>
     /// <param name="interactor"></param>
     public override void Interact(GameObject interactor)
@@ -61,7 +62,7 @@ public class Interactable_Field : Interactable
 
     /// <summary>
     /// Plant seed
-    /// By Christian Scherzer
+    /// By Christian Scherzer and Shaina Milde
     /// </summary>
     /// <param name="i"></param>
     private void PlantField(int i)

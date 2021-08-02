@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 3043383782422191230}
   - component: {fileID: 3043383782422191225}
   - component: {fileID: 3043383782422191228}
-  - component: {fileID: 2268657760595953728}
   m_Layer: 10
   m_Name: FenceProjection
   m_TagString: Untagged
@@ -157,6 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3339ab8ad6141b441b4ab25b750859f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  faction: 0
   baseMovmentSpeed: 1
   movementspeedModifier: 1
   maxHp: 10
@@ -184,15 +184,3 @@ MonoBehaviour:
       m_Calls: []
   stamina: 0
   hp: 10
---- !u!114 &2268657760595953728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3043383782422191224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d5b5d743284b6648b8cbdf6ebbe8be6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -5,10 +5,7 @@ using UnityEngine;
 public class Interactable_UpgradeShop : Interactable
 {
     public GameObject upgradeUI;
-    private void Start()
-    {
 
-    }
     /// <summary>
     /// Open Upgrade Ui
     /// By Christian Scherzer

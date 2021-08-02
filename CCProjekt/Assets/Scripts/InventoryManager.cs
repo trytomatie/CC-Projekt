@@ -11,6 +11,7 @@ public class InventoryManager : MonoBehaviour
     public TextMeshProUGUI itemUI;
     private void Start()
     {
+        // Adds starting Items
         AddItem(ScriptableObject.CreateInstance<ItemOtherFence>());
         AddItem(ScriptableObject.CreateInstance<ItemOtherFence>());
         AddItem(ScriptableObject.CreateInstance<ItemOtherFence>());
@@ -33,15 +34,9 @@ public class InventoryManager : MonoBehaviour
         AddItem(ScriptableObject.CreateInstance<ItemOtherFarmland>());
         AddItem(ScriptableObject.CreateInstance<ItemOtherFarmland>());
     }
-
-    public void Update()
-    {
-
-    }
-
 
     /// <summary>
-    /// Add Item to Inventory
+    /// Add item to inventory
     /// - By Chstian Scherzer
     /// </summary>
     /// <param name="itemToAdd"></param>
@@ -67,7 +62,7 @@ public class InventoryManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Remove Item from Inventory
+    /// Remove item from inventory
     /// - By Chrstian Scherzer
     /// </summary>
     /// <param name="itemName"></param>
@@ -97,7 +92,7 @@ public class InventoryManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Remove Item from Inventory
+    /// Remove item from inventory
     /// - By Chrstian Scherzer
     /// </summary>
     /// <param name="itemName"></param>
