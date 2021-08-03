@@ -11,6 +11,7 @@ public class Interactable_FreeSeeds : Interactable
         interactableText = "Pickup seed";
         // Generate Random Seed
         item = (Item)ScriptableObject.CreateInstance(seedDrops[Random.Range(0, seedDrops.Length)]);
+        Destroy(gameObject, DayNightCycler.Instance.dayLenght);
     }
 
     /// <summary>
